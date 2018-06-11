@@ -1,0 +1,15 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "base:Learning_Outcome" "base:Competence" "base:Category" ; /*classes style*/
+	"base:develops" -> "base:contributesTo" [ label = "rdfs:subPropertyOf" ];
+	"base:partiallyDevelops" -> "base:contributesTo" [ label = "rdfs:subPropertyOf" ];
+	"http://www.semanticweb.org/lsarni/ontologies/competences" -> "http://www.semanticweb.org/lsarni/ontologies" [ label = "owl:imports" ];
+	"NULL" -> "base:Category" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "base:Competence" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "http://www.semanticweb.org/lsarni/ontologies#partOf" [ label = "owl:onProperty" ];
+	"base:hasLearningOutcome" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	"owl:Thing" -> "base:Competence" [ label = "base:contributesTo" ];
+	"owl:Thing" -> "base:Learning_Outcome" [ label = "base:hasLearningOutcome" ];
+
+}
