@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1528066978286" name="http://www.semanticweb.org/lsarni/ontologies" uri="ontologies.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1528066978286" name="http://www.semanticweb.org/lsarni/ontologies/acm-ccs" uri="acm-ccs.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1528066978286" name="http://www.semanticweb.org/lsarni/ontologies/competencies" uri="competencies.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1528066978286" name="http://www.semanticweb.org/lsarni/ontologies/curricula" uri="curricula.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1528066978286" name="http://www.semanticweb.org/lsarni/ontologies/professors" uri="professors.owl"/>
+    </group>
+</catalog>
