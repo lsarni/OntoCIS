@@ -1,0 +1,69 @@
+<http://www.semanticweb.org/lsarni/ontologies/topics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/lsarni/ontologies/topics> <http://www.w3.org/2000/01/rdf-schema#comment> "Brinda informaci\u00F3n sobre los temas que son dictados durante una carrera universitaria."@es .
+<http://www.semanticweb.org/lsarni/ontologies/topics> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides information about topics taught during a degree."@en .
+<http://www.semanticweb.org/lsarni/ontologies/topics> <http://www.w3.org/2000/01/rdf-schema#label> "OntoCIS Temas"@es .
+<http://www.semanticweb.org/lsarni/ontologies/topics> <http://www.w3.org/2000/01/rdf-schema#label> "OntoCIS Topics"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/lsarni/ontologies/topics#altLabel
+<http://www.semanticweb.org/lsarni/ontologies/topics#altLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.semanticweb.org/lsarni/ontologies/topics#altLabel> <http://www.w3.org/2000/01/rdf-schema#comment> "Agrega sin\u00F3nimos, t\u00E9rminos relacionados o variantes del t\u00E9rmino includo en la anotaci\u00F3n rdfs:label."@es .
+<http://www.semanticweb.org/lsarni/ontologies/topics#altLabel> <http://www.w3.org/2000/01/rdf-schema#comment> "Used for synoyms, related terms or different combinantions of the term that appears in the rdfs:label annotation."@en .
+<http://www.semanticweb.org/lsarni/ontologies/topics#altLabel> <http://www.w3.org/2000/01/rdf-schema#label> "altLabel"@en .
+<http://www.semanticweb.org/lsarni/ontologies/topics#altLabel> <http://www.w3.org/2000/01/rdf-schema#label> "etiquetaAlternativa"@es .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/lsarni/ontologies/topics#relatedTo
+<http://www.semanticweb.org/lsarni/ontologies/topics#relatedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/lsarni/ontologies/topics#relatedTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/lsarni/ontologies/topics#relatedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://www.semanticweb.org/lsarni/ontologies/topics#relatedTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/lsarni/ontologies/topics#Topic> .
+<http://www.semanticweb.org/lsarni/ontologies/topics#relatedTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/lsarni/ontologies/topics#Topic> .
+<http://www.semanticweb.org/lsarni/ontologies/topics#relatedTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica que un tema esta relacionado con otro tema"@es .
+<http://www.semanticweb.org/lsarni/ontologies/topics#relatedTo> <http://www.w3.org/2000/01/rdf-schema#comment> "It states that a topic is related to another topic"@en .
+<http://www.semanticweb.org/lsarni/ontologies/topics#relatedTo> <http://www.w3.org/2000/01/rdf-schema#label> "relacionadoCon"@es .
+<http://www.semanticweb.org/lsarni/ontologies/topics#relatedTo> <http://www.w3.org/2000/01/rdf-schema#label> "relatedTo"@en .
+# 
+# http://www.semanticweb.org/lsarni/ontologies/topics#subtopicOf
+<http://www.semanticweb.org/lsarni/ontologies/topics#subtopicOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/lsarni/ontologies/topics#subtopicOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/lsarni/ontologies/topics#relatedTo> .
+<http://www.semanticweb.org/lsarni/ontologies/topics#subtopicOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.semanticweb.org/lsarni/ontologies/topics#subtopicOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/lsarni/ontologies/topics#Topic> .
+<http://www.semanticweb.org/lsarni/ontologies/topics#subtopicOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/lsarni/ontologies/topics#Topic> .
+<http://www.semanticweb.org/lsarni/ontologies/topics#subtopicOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica que un tema es parte de otro tema m\u00E1s general"@es .
+<http://www.semanticweb.org/lsarni/ontologies/topics#subtopicOf> <http://www.w3.org/2000/01/rdf-schema#comment> "It states that a topic is part of a broader or more general topic"@en .
+<http://www.semanticweb.org/lsarni/ontologies/topics#subtopicOf> <http://www.w3.org/2000/01/rdf-schema#label> "subtemaDe"@es .
+<http://www.semanticweb.org/lsarni/ontologies/topics#subtopicOf> <http://www.w3.org/2000/01/rdf-schema#label> "subtopicOf"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/lsarni/ontologies/topics#Topic
+<http://www.semanticweb.org/lsarni/ontologies/topics#Topic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/lsarni/ontologies/topics#Topic> <http://www.w3.org/2000/01/rdf-schema#comment> "A matter dealt with in a text, discourse, conversation, etc."@en .
+<http://www.semanticweb.org/lsarni/ontologies/topics#Topic> <http://www.w3.org/2000/01/rdf-schema#comment> "Asunto o materia sobre la que se trata en una conversaci\u00F3n, un discurso, un escrito, etc."@es .
+<http://www.semanticweb.org/lsarni/ontologies/topics#Topic> <http://www.w3.org/2000/01/rdf-schema#label> "Tema"@es .
+<http://www.semanticweb.org/lsarni/ontologies/topics#Topic> <http://www.w3.org/2000/01/rdf-schema#label> "Topic"@en .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

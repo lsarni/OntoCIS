@@ -1,0 +1,10 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "base:Topic" ; /*classes style*/
+	"base:relatedTo" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:subtopicOf" -> "base:relatedTo" [ label = "rdfs:subPropertyOf" ];
+	"base:Topic" -> "base:Topic" [ label = "base:relatedTo" ];
+	"base:Topic" -> "base:Topic" [ label = "base:subtopicOf" ];
+
+}

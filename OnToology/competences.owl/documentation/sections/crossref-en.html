@@ -1,0 +1,212 @@
+<h2  id="crossreference" class="list">Cross reference for OntoCIS Competences classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by OntoCIS Competences.
+<div id="classes">
+   <h3 id="classes" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#Category"
+            title="http://www.semanticweb.org/lsarni/ontologies/competences#Category">Category</a>
+      </li>
+      <li>
+         <a href="#Competence"
+            title="http://www.semanticweb.org/lsarni/ontologies/competences#Competence">Competency</a>
+      </li>
+      <li>
+         <a href="#Learning_Outcome"
+            title="http://www.semanticweb.org/lsarni/ontologies/competences#Learning_Outcome">Learning Outcome</a>
+      </li>
+   </ul>
+   <div class="entity" id="Category">
+      <h3>Category<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/lsarni/ontologies/competences#Category</p>
+      <div class="comment">
+         <span class="markdown">Categories under which the competences are organized</span>
+      </div>
+   </div>
+   <div class="entity" id="Competence">
+      <h3>Competency<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/lsarni/ontologies/competences#Competence</p>
+      <div class="comment">
+         <span class="markdown">A general statement detailing the desired knowledge and skills of student graduating from our course or program.</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <span class="dotted"
+                  title="http://www.semanticweb.org/lsarni/ontologies#partOf">part of</span>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <a href="#Category"
+               title="http://www.semanticweb.org/lsarni/ontologies/competences#Category">Category</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#contributesTo"
+               title="http://www.semanticweb.org/lsarni/ontologies/competences#contributesTo">contributesTo</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Learning_Outcome">
+      <h3>Learning Outcome<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/lsarni/ontologies/competences#Learning_Outcome</p>
+      <div class="comment">
+         <span class="markdown">A very specific statement that describes exactly what a student will be able to do in some measurable way</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <span class="dotted"
+                  title="http://www.semanticweb.org/lsarni/ontologies#partOf">part of</span>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <a href="#Competence"
+               title="http://www.semanticweb.org/lsarni/ontologies/competences#Competence">Competency</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasLearningOutcome"
+               title="http://www.semanticweb.org/lsarni/ontologies/competences#hasLearningOutcome">hasLearningOutcome</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#contributesTo"
+            title="http://www.semanticweb.org/lsarni/ontologies/competences#contributesTo">contributesTo</a>
+      </li>
+      <li>
+         <a href="#develops"
+            title="http://www.semanticweb.org/lsarni/ontologies/competences#develops">develops</a>
+      </li>
+      <li>
+         <a href="#hasLearningOutcome"
+            title="http://www.semanticweb.org/lsarni/ontologies/competences#hasLearningOutcome">hasLearningOutcome</a>
+      </li>
+      <li>
+         <a href="#partiallyDevelops"
+            title="http://www.semanticweb.org/lsarni/ontologies/competences#partiallyDevelops">partiallyDevelops</a>
+      </li>
+   </ul>
+   <div class="entity" id="contributesTo">
+      <h3>contributesTo<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/lsarni/ontologies/competences#contributesTo</p>
+      <div class="comment">
+         <span class="markdown">It states the degree of contribution to the development of a competency</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#develops"
+                  title="http://www.semanticweb.org/lsarni/ontologies/competences#develops">develops</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#partiallyDevelops"
+                  title="http://www.semanticweb.org/lsarni/ontologies/competences#partiallyDevelops">partiallyDevelops</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Competence"
+                  title="http://www.semanticweb.org/lsarni/ontologies/competences#Competence">Competency</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="develops">
+      <h3>develops<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/lsarni/ontologies/competences#develops</p>
+      <div class="comment">
+         <span class="markdown">It states that the competency is totally or partially developed in a course, it is assessed and there is evidence of the assessment.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#contributesTo"
+                  title="http://www.semanticweb.org/lsarni/ontologies/competences#contributesTo">contributesTo</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasLearningOutcome">
+      <h3>hasLearningOutcome<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/lsarni/ontologies/competences#hasLearningOutcome</p>
+      <div class="comment">
+         <span class="markdown">It states the learning outcomes for a certain thing.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Learning_Outcome"
+                  title="http://www.semanticweb.org/lsarni/ontologies/competences#Learning_Outcome">Learning Outcome</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="partiallyDevelops">
+      <h3>partiallyDevelops<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/lsarni/ontologies/competences#partiallyDevelops</p>
+      <div class="comment">
+         <span class="markdown">It states that the course contributes to the development of the competency but it is not assessed.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#contributesTo"
+                  title="http://www.semanticweb.org/lsarni/ontologies/competences#contributesTo">contributesTo</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>
