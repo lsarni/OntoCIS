@@ -3,6 +3,7 @@
      xml:base="http://www.semanticweb.org/lsarni/ontologies/topics"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:topics="http://www.semanticweb.org/lsarni/ontologies/topics#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
