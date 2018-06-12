@@ -19,6 +19,11 @@ This section provides details for each class and property defined by OntoCIS Top
          <span class="markdown">A matter dealt with in a text, discourse, conversation, etc.</span>
       </div>
       <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
          <dt>is in domain of</dt>
          <dd>
             <a href="#relatedTo"
@@ -45,6 +50,24 @@ This section provides details for each class and property defined by OntoCIS Top
             title="http://www.semanticweb.org/lsarni/ontologies/topics#relatedTo">relatedTo</a>
       </li>
       <li>
+         <a href="#skos:broader"
+            title="http://www.semanticweb.org/lsarni/ontologies/topics#skos:broader">
+            <span>skos:broader</span>
+         </a>
+      </li>
+      <li>
+         <a href="#skos:narrower"
+            title="http://www.semanticweb.org/lsarni/ontologies/topics#skos:narrower">
+            <span>skos:narrower</span>
+         </a>
+      </li>
+      <li>
+         <a href="#skos:related"
+            title="http://www.semanticweb.org/lsarni/ontologies/topics#skos:related">
+            <span>skos:related</span>
+         </a>
+      </li>
+      <li>
          <a href="#subtopicOf"
             title="http://www.semanticweb.org/lsarni/ontologies/topics#subtopicOf">subtopicOf</a>
       </li>
@@ -63,6 +86,12 @@ This section provides details for each class and property defined by OntoCIS Top
          <p>
             <strong>has characteristics:</strong> symmetric</p>
          <dl>
+            <dt>has equivalent properties</dt>
+            <dd>
+               <a href="#skos:related"
+                  title="http://www.semanticweb.org/lsarni/ontologies/topics#skos:related">skos:related</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
             <dt>has super-properties</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
@@ -88,6 +117,66 @@ This section provides details for each class and property defined by OntoCIS Top
          </dl>
       </div>
    </div>
+   <div class="entity" id="skos:broader">
+      <h3>skos:broader<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/lsarni/ontologies/topics#skos:broader</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="skos:narrower">
+      <h3>skos:narrower<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/lsarni/ontologies/topics#skos:narrower</p>
+      <div class="description">
+         <dl>
+            <dt>has equivalent properties</dt>
+            <dd>
+               <a href="#subtopicOf"
+                  title="http://www.semanticweb.org/lsarni/ontologies/topics#subtopicOf">subtopicOf</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="skos:related">
+      <h3>skos:related<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/lsarni/ontologies/topics#skos:related</p>
+      <div class="description">
+         <dl>
+            <dt>has equivalent properties</dt>
+            <dd>
+               <a href="#relatedTo"
+                  title="http://www.semanticweb.org/lsarni/ontologies/topics#relatedTo">relatedTo</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="subtopicOf">
       <h3>subtopicOf<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -102,6 +191,12 @@ This section provides details for each class and property defined by OntoCIS Top
          <p>
             <strong>has characteristics:</strong> transitive</p>
          <dl>
+            <dt>has equivalent properties</dt>
+            <dd>
+               <a href="#skos:narrower"
+                  title="http://www.semanticweb.org/lsarni/ontologies/topics#skos:narrower">skos:narrower</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
             <dt>has super-properties</dt>
             <dd>
                <a href="#relatedTo"

@@ -1,10 +1,18 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "base:Topic" ; /*classes style*/
-	"base:relatedTo" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
-	"base:subtopicOf" -> "base:relatedTo" [ label = "rdfs:subPropertyOf" ];
-	"base:Topic" -> "base:Topic" [ label = "base:relatedTo" ];
-	"base:Topic" -> "base:Topic" [ label = "base:subtopicOf" ];
+node [shape = rectangle, color="orange"]; "skos:Concept" "topics:Topic" ; /*classes style*/
+	"http://www.semanticweb.org/lsarni/ontologies/topics#skos:related" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	"http://www.semanticweb.org/lsarni/ontologies/topics#skos:narrower" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	"topics:subtopicOf" -> "http://www.semanticweb.org/lsarni/ontologies/topics#skos:narrower" [ label = "owl:equivalentProperty" ];
+	"topics:subtopicOf" -> "topics:relatedTo" [ label = "rdfs:subPropertyOf" ];
+	"topics:subtopicOf" -> "3cedcf47:163f63bdb2c:-7ffc" [ label = "owl:equivalentProperty" ];
+	"topics:Topic" -> "skos:Concept" [ label = "owl:equivalentClass" ];
+	"topics:relatedTo" -> "http://www.semanticweb.org/lsarni/ontologies/topics#skos:related" [ label = "owl:equivalentProperty" ];
+	"topics:relatedTo" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	"http://www.semanticweb.org/lsarni/ontologies/topics#skos:broader" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	"topics:altLabel" -> "skos:altLabel" [ label = "rdfs:subPropertyOf" ];
+	"topics:Topic" -> "topics:Topic" [ label = "topics:relatedTo" ];
+	"topics:Topic" -> "topics:Topic" [ label = "topics:subtopicOf" ];
 
 }
