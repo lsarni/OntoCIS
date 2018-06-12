@@ -1,0 +1,8 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "http://xmlns.com/foaf/0.1/Group" "base:Professor" "base:Person" "base:Nationality" ; /*classes style*/
+	"base:Professor" -> "base:Person" [ label = "rdfs:subClassOf" ];
+	"base:Nationality" -> "http://xmlns.com/foaf/0.1/Group" [ label = "rdfs:subClassOf" ];
+
+}

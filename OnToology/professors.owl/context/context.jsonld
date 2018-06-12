@@ -1,0 +1,66 @@
+{
+  "@context" : {
+    "Professor" : {
+      "@id" : "http://www.semanticweb.org/lsarni/ontologies/professors#Professor"
+    },
+    "member" : {
+      "@id" : "http://xmlns.com/foaf/0.1/member",
+      "@type" : "@id"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "hasEducationLevel" : {
+      "@id" : "http://www.semanticweb.org/lsarni/ontologies/professors#hasEducationLevel",
+      "@type" : "@id"
+    },
+    "inChargeOf" : {
+      "@id" : "http://www.semanticweb.org/lsarni/ontologies/professors#inChargeOf",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "familyName" : {
+      "@id" : "http://www.semanticweb.org/lsarni/ontologies/professors#foaf:familyName"
+    },
+    "Nationality" : {
+      "@id" : "http://www.semanticweb.org/lsarni/ontologies/professors#Nationality"
+    },
+    "Person" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Person"
+    },
+    "hasNationality" : {
+      "@id" : "http://www.semanticweb.org/lsarni/ontologies/professors#hasNationality",
+      "@type" : "@id"
+    },
+    "givenName" : {
+      "@id" : "http://www.semanticweb.org/lsarni/ontologies/professors#foaf:givenName"
+    },
+    "name" : {
+      "@id" : "http://www.semanticweb.org/lsarni/ontologies/professors#name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "surname" : {
+      "@id" : "http://www.semanticweb.org/lsarni/ontologies/professors#surname",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Education_Level" : {
+      "@id" : "http://www.semanticweb.org/lsarni/ontologies/professors#Education_Level"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Group" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Group"
+    },
+    "isExperienced" : {
+      "@id" : "http://www.semanticweb.org/lsarni/ontologies/professors#isExperienced",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    }
+  }
+}

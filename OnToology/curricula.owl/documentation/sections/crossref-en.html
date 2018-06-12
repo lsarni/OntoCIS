@@ -1,0 +1,672 @@
+<h2  id="crossreference" class="list">Cross reference for OntoCIS classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by OntoCIS.
+<div id="classes">
+   <h3 id="classes" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#Core_Course"
+            title="http://www.semanticweb.org/lsarni/ontologies/curricula#Core_Course">Core Course</a>
+      </li>
+      <li>
+         <a href="#Course"
+            title="http://www.semanticweb.org/lsarni/ontologies/curricula#Course">Course</a>
+      </li>
+      <li>
+         <a href="#Curricula"
+            title="http://www.semanticweb.org/lsarni/ontologies/curricula#Curricula">Curricula</a>
+      </li>
+      <li>
+         <a href="#Elective_Course"
+            title="http://www.semanticweb.org/lsarni/ontologies/curricula#Elective_Course">Elective Course</a>
+      </li>
+      <li>
+         <a href="#Knowledge_Area"
+            title="http://www.semanticweb.org/lsarni/ontologies/curricula#Knowledge_Area">Knowledge Area</a>
+      </li>
+      <li>
+         <a href="#Knowledge_Group"
+            title="http://www.semanticweb.org/lsarni/ontologies/curricula#Knowledge_Group">Knowledge Group</a>
+      </li>
+      <li>
+         <a href="#Placeholder_Course"
+            title="http://www.semanticweb.org/lsarni/ontologies/curricula#Placeholder_Course">Placeholder Course</a>
+      </li>
+      <li>
+         <a href="#Term"
+            title="http://www.semanticweb.org/lsarni/ontologies/curricula#Term">Term</a>
+      </li>
+      <li>
+         <a href="#Year"
+            title="http://www.semanticweb.org/lsarni/ontologies/curricula#Year">Year</a>
+      </li>
+   </ul>
+   <div class="entity" id="Core_Course">
+      <h3>Core Course<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/lsarni/ontologies/curricula#Core_Course</p>
+      <div class="comment">
+         <span class="markdown">Course that the students must attend as part of the curricula to obtain a degree.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Course"
+               title="http://www.semanticweb.org/lsarni/ontologies/curricula#Course">Course</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Elective_Course"
+               title="http://www.semanticweb.org/lsarni/ontologies/curricula#Elective_Course">Elective Course</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Course">
+      <h3>Course<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/lsarni/ontologies/curricula#Course</p>
+      <div class="comment">
+         <span class="markdown">Unit of teaching that typically lasts one academic term, is led by one or more instructors, and has a fixed roster of students.</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#Core_Course"
+               title="http://www.semanticweb.org/lsarni/ontologies/curricula#Core_Course">Core Course</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">or</span> 
+            <a href="#Elective_Course"
+               title="http://www.semanticweb.org/lsarni/ontologies/curricula#Elective_Course">Elective Course</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Core_Course"
+               title="http://www.semanticweb.org/lsarni/ontologies/curricula#Core_Course">Core Course</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Elective_Course"
+               title="http://www.semanticweb.org/lsarni/ontologies/curricula#Elective_Course">Elective Course</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#credits"
+               title="http://www.semanticweb.org/lsarni/ontologies/curricula#credits">credits</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hours"
+               title="http://www.semanticweb.org/lsarni/ontologies/curricula#hours">hours</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#isPrerequisite"
+               title="http://www.semanticweb.org/lsarni/ontologies/curricula#isPrerequisite">isPrerequiste</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#minimumCreditsRequired"
+               title="http://www.semanticweb.org/lsarni/ontologies/curricula#minimumCreditsRequired">minimumCreditsRequired</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#partialCreditScore"
+               title="http://www.semanticweb.org/lsarni/ontologies/curricula#partialCreditScore">partialCreditScore</a>
+            <sup class="type-dp" title="data property">dp</sup>, <span class="dotted"
+                  title="http://www.semanticweb.org/lsarni/ontologies/degrees#requiredFor">required for</span>, <a href="#totalCreditScore"
+               title="http://www.semanticweb.org/lsarni/ontologies/curricula#totalCreditScore">totalCreditScore</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#isPrerequisite"
+               title="http://www.semanticweb.org/lsarni/ontologies/curricula#isPrerequisite">isPrerequiste</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#taughtIn"
+               title="http://www.semanticweb.org/lsarni/ontologies/curricula#taughtIn">taughtIn</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Curricula">
+      <h3>Curricula<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/lsarni/ontologies/curricula#Curricula</p>
+      <div class="comment">
+         <span class="markdown">Set of courses that need to be taken in order to obtain a certain degree.</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <span class="logic">inverse</span> 
+            <span class="dotted"
+                  title="http://www.semanticweb.org/lsarni/ontologies#partOf">part of</span>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <a href="#Knowledge_Group"
+               title="http://www.semanticweb.org/lsarni/ontologies/curricula#Knowledge_Group">Knowledge Group</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">or</span> 
+            <a href="#Year"
+               title="http://www.semanticweb.org/lsarni/ontologies/curricula#Year">Year</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Elective_Course">
+      <h3>Elective Course<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/lsarni/ontologies/curricula#Elective_Course</p>
+      <div class="comment">
+         <span class="markdown">Course that the students can attend according their interests and preferences. To obtain a degree, a student must attend a set or certain amount of elective courses defined by each degree.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Course"
+               title="http://www.semanticweb.org/lsarni/ontologies/curricula#Course">Course</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Placeholder_Course"
+               title="http://www.semanticweb.org/lsarni/ontologies/curricula#Placeholder_Course">Placeholder Course</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Core_Course"
+               title="http://www.semanticweb.org/lsarni/ontologies/curricula#Core_Course">Core Course</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Knowledge_Area">
+      <h3>Knowledge Area<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/lsarni/ontologies/curricula#Knowledge_Area</p>
+      <div class="comment">
+         <span class="markdown">Topical areas of study in which the knowledge groups are divided.</span>
+      </div>
+   </div>
+   <div class="entity" id="Knowledge_Group">
+      <h3>Knowledge Group<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/lsarni/ontologies/curricula#Knowledge_Group</p>
+      <div class="comment">
+         <span class="markdown">Knowledge groups in which the knowledge body is divided.</span>
+      </div>
+   </div>
+   <div class="entity" id="Placeholder_Course">
+      <h3>Placeholder Course<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/lsarni/ontologies/curricula#Placeholder_Course</p>
+      <div class="comment">
+         <span class="markdown">Course used to state that the student must take a course but can choose among any elective course.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Elective_Course"
+               title="http://www.semanticweb.org/lsarni/ontologies/curricula#Elective_Course">Elective Course</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Term">
+      <h3>Term<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/lsarni/ontologies/curricula#Term</p>
+      <div class="comment">
+         <span class="markdown">A portion of an academic year, the time during which an educational institution holds classes.</span>
+      </div>
+   </div>
+   <div class="entity" id="Year">
+      <h3>Year<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/lsarni/ontologies/curricula#Year</p>
+      <div class="comment">
+         <span class="markdown">Period of time in which students attend courses.</span>
+      </div>
+   </div>
+</div><div id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#isPrerequisiteToEnroll"
+            title="http://www.semanticweb.org/lsarni/ontologies/curricula#isPrerequisiteToEnroll">isPrerequisiteToEnroll</a>
+      </li>
+      <li>
+         <a href="#isPrerequisiteToPass"
+            title="http://www.semanticweb.org/lsarni/ontologies/curricula#isPrerequisiteToPass">isPrerequisiteToPass</a>
+      </li>
+      <li>
+         <a href="#isPrerequisite"
+            title="http://www.semanticweb.org/lsarni/ontologies/curricula#isPrerequisite">isPrerequiste</a>
+      </li>
+      <li>
+         <a href="#partialCreditIsPrerequisiteToEnroll"
+            title="http://www.semanticweb.org/lsarni/ontologies/curricula#partialCreditIsPrerequisiteToEnroll">partialCreditIsPrerequisiteToEnroll</a>
+      </li>
+      <li>
+         <a href="#partialCreditIsPrerequisiteToPass"
+            title="http://www.semanticweb.org/lsarni/ontologies/curricula#partialCreditIsPrerequisiteToPass">partialCreditIsPrerequisiteToPass</a>
+      </li>
+      <li>
+         <a href="#taughtIn"
+            title="http://www.semanticweb.org/lsarni/ontologies/curricula#taughtIn">taughtIn</a>
+      </li>
+      <li>
+         <a href="#totalCreditIsPrerequisiteToEnroll"
+            title="http://www.semanticweb.org/lsarni/ontologies/curricula#totalCreditIsPrerequisiteToEnroll">totalCreditIsPrerequisiteToEnroll</a>
+      </li>
+      <li>
+         <a href="#totalCreditIsPrerequisiteToPass"
+            title="http://www.semanticweb.org/lsarni/ontologies/curricula#totalCreditIsPrerequisiteToPass">totalCreditIsPrerequisiteToPass</a>
+      </li>
+   </ul>
+   <div class="entity" id="isPrerequisiteToEnroll">
+      <h3>isPrerequisiteToEnroll<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/lsarni/ontologies/curricula#isPrerequisiteToEnroll</p>
+      <div class="comment">
+         <span class="markdown">It states which courses a student needs to take before hand in order to be allowed to enroll for a course.
+Only if the student has obtained partial or total credit for these subjects will he be able to enroll in the course and eventually obtain partial credit for it.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#isPrerequisite"
+                  title="http://www.semanticweb.org/lsarni/ontologies/curricula#isPrerequisite">isPrerequiste</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#partialCreditIsPrerequisiteToEnroll"
+                  title="http://www.semanticweb.org/lsarni/ontologies/curricula#partialCreditIsPrerequisiteToEnroll">partialCreditIsPrerequisiteToEnroll</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#totalCreditIsPrerequisiteToEnroll"
+                  title="http://www.semanticweb.org/lsarni/ontologies/curricula#totalCreditIsPrerequisiteToEnroll">totalCreditIsPrerequisiteToEnroll</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isPrerequisiteToPass">
+      <h3>isPrerequisiteToPass<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/lsarni/ontologies/curricula#isPrerequisiteToPass</p>
+      <div class="comment">
+         <span class="markdown">It states which courses the student needs to take before hand in order to be able to pass (get the total credits) a certain course.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#isPrerequisite"
+                  title="http://www.semanticweb.org/lsarni/ontologies/curricula#isPrerequisite">isPrerequiste</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#partialCreditIsPrerequisiteToPass"
+                  title="http://www.semanticweb.org/lsarni/ontologies/curricula#partialCreditIsPrerequisiteToPass">partialCreditIsPrerequisiteToPass</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#totalCreditIsPrerequisiteToPass"
+                  title="http://www.semanticweb.org/lsarni/ontologies/curricula#totalCreditIsPrerequisiteToPass">totalCreditIsPrerequisiteToPass</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isPrerequisite">
+      <h3>isPrerequiste<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/lsarni/ontologies/curricula#isPrerequisite</p>
+      <div class="comment">
+         <span class="markdown">It states which courses the student needs to take in order to be allowed to enroll or pass a course.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> transitive</p>
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+            </dd>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#isPrerequisiteToEnroll"
+                  title="http://www.semanticweb.org/lsarni/ontologies/curricula#isPrerequisiteToEnroll">isPrerequisiteToEnroll</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#isPrerequisiteToPass"
+                  title="http://www.semanticweb.org/lsarni/ontologies/curricula#isPrerequisiteToPass">isPrerequisiteToPass</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Course"
+                  title="http://www.semanticweb.org/lsarni/ontologies/curricula#Course">Course</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Course"
+                  title="http://www.semanticweb.org/lsarni/ontologies/curricula#Course">Course</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="partialCreditIsPrerequisiteToEnroll">
+      <h3>partialCreditIsPrerequisiteToEnroll<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/lsarni/ontologies/curricula#partialCreditIsPrerequisiteToEnroll</p>
+      <div class="comment">
+         <span class="markdown">It states which courses a student must have the partial credit for in order to enroll to another course.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#isPrerequisiteToEnroll"
+                  title="http://www.semanticweb.org/lsarni/ontologies/curricula#isPrerequisiteToEnroll">isPrerequisiteToEnroll</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="partialCreditIsPrerequisiteToPass">
+      <h3>partialCreditIsPrerequisiteToPass<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/lsarni/ontologies/curricula#partialCreditIsPrerequisiteToPass</p>
+      <div class="comment">
+         <span class="markdown">It states which courses a student must have the partial credit for in order to pass (obtain total credits) another course.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#isPrerequisiteToPass"
+                  title="http://www.semanticweb.org/lsarni/ontologies/curricula#isPrerequisiteToPass">isPrerequisiteToPass</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="taughtIn">
+      <h3>taughtIn<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/lsarni/ontologies/curricula#taughtIn</p>
+      <div class="comment">
+         <span class="markdown">It states that a topic is taught during a course</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.semanticweb.org/lsarni/ontologies/topics#Topic">topic</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Course"
+                  title="http://www.semanticweb.org/lsarni/ontologies/curricula#Course">Course</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="totalCreditIsPrerequisiteToEnroll">
+      <h3>totalCreditIsPrerequisiteToEnroll<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/lsarni/ontologies/curricula#totalCreditIsPrerequisiteToEnroll</p>
+      <div class="comment">
+         <span class="markdown">It states which courses a student must have the total credit for in order to enroll to another course.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#isPrerequisiteToEnroll"
+                  title="http://www.semanticweb.org/lsarni/ontologies/curricula#isPrerequisiteToEnroll">isPrerequisiteToEnroll</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="totalCreditIsPrerequisiteToPass">
+      <h3>totalCreditIsPrerequisiteToPass<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/lsarni/ontologies/curricula#totalCreditIsPrerequisiteToPass</p>
+      <div class="comment">
+         <span class="markdown">It states which courses a student must have the total credit for in order to pass (obtain total credits) another course.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#isPrerequisiteToPass"
+                  title="http://www.semanticweb.org/lsarni/ontologies/curricula#isPrerequisiteToPass">isPrerequisiteToPass</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="dataproperties">
+   <h3 id="dataproperties" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#credits"
+            title="http://www.semanticweb.org/lsarni/ontologies/curricula#credits">credits</a>
+      </li>
+      <li>
+         <a href="#hours"
+            title="http://www.semanticweb.org/lsarni/ontologies/curricula#hours">hours</a>
+      </li>
+      <li>
+         <a href="#minimumCreditsRequired"
+            title="http://www.semanticweb.org/lsarni/ontologies/curricula#minimumCreditsRequired">minimumCreditsRequired</a>
+      </li>
+      <li>
+         <a href="#partialCreditScore"
+            title="http://www.semanticweb.org/lsarni/ontologies/curricula#partialCreditScore">partialCreditScore</a>
+      </li>
+      <li>
+         <a href="#totalCreditScore"
+            title="http://www.semanticweb.org/lsarni/ontologies/curricula#totalCreditScore">totalCreditScore</a>
+      </li>
+   </ul>
+   <div class="entity" id="credits">
+      <h3>credits<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/lsarni/ontologies/curricula#credits</p>
+      <div class="comment">
+         <span class="markdown">Amount of credits obtained when approving a course.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Course"
+                  title="http://www.semanticweb.org/lsarni/ontologies/curricula#Course">Course</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd/>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hours">
+      <h3>hours<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/lsarni/ontologies/curricula#hours</p>
+      <div class="comment">
+         <span class="markdown">Amount of hours taught for a course.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Course"
+                  title="http://www.semanticweb.org/lsarni/ontologies/curricula#Course">Course</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd/>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="minimumCreditsRequired">
+      <h3>minimumCreditsRequired<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/lsarni/ontologies/curricula#minimumCreditsRequired</p>
+      <div class="comment">
+         <span class="markdown">Minumum number of credits required in order to take a course</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Course"
+                  title="http://www.semanticweb.org/lsarni/ontologies/curricula#Course">Course</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd/>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="partialCreditScore">
+      <h3>partialCreditScore<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/lsarni/ontologies/curricula#partialCreditScore</p>
+      <div class="comment">
+         <span class="markdown">Minimum score required to obtain the partial credit for a course and have be allowed to sit an exam.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Course"
+                  title="http://www.semanticweb.org/lsarni/ontologies/curricula#Course">Course</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd/>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="totalCreditScore">
+      <h3>totalCreditScore<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/lsarni/ontologies/curricula#totalCreditScore</p>
+      <div class="comment">
+         <span class="markdown">Minimum score requiered to approve a course.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Course"
+                  title="http://www.semanticweb.org/lsarni/ontologies/curricula#Course">Course</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd/>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>
