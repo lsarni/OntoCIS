@@ -5,12 +5,13 @@
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/lsarni/ontologies/topics">
         <rdfs:label xml:lang="en">OntoCIS Topics</rdfs:label>
+        <rdfs:comment xml:lang="en">Provides information about topics taught during a degree.</rdfs:comment>
         <rdfs:label xml:lang="es">OntoCIS Temas</rdfs:label>
         <rdfs:comment xml:lang="es">Brinda información sobre los temas que son dictados durante una carrera universitaria.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Provides information about topics taught during a degree.</rdfs:comment>
     </owl:Ontology>
     
 
@@ -33,7 +34,14 @@
         <rdfs:comment xml:lang="en">Used for synoyms, related terms or different combinantions of the term that appears in the rdfs:label annotation.</rdfs:comment>
         <rdfs:label xml:lang="en">altLabel</rdfs:label>
         <rdfs:label xml:lang="es">etiquetaAlternativa</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
     
 
 
@@ -51,6 +59,7 @@
     <!-- http://www.semanticweb.org/lsarni/ontologies/topics#relatedTo -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lsarni/ontologies/topics#relatedTo">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/lsarni/ontologies/topics#skos:related"/>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lsarni/ontologies/topics#Topic"/>
@@ -66,6 +75,12 @@
     <!-- http://www.semanticweb.org/lsarni/ontologies/topics#subtopicOf -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lsarni/ontologies/topics#subtopicOf">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/lsarni/ontologies/topics#skos:narrower"/>
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/lsarni/ontologies/topics#skos:broader"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lsarni/ontologies/topics#relatedTo"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lsarni/ontologies/topics#Topic"/>
@@ -74,6 +89,30 @@
         <rdfs:comment xml:lang="en">It states that a topic is part of a broader or more general topic</rdfs:comment>
         <rdfs:label xml:lang="es">subtemaDe</rdfs:label>
         <rdfs:label xml:lang="en">subtopicOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lsarni/ontologies/topics#skos:broader -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lsarni/ontologies/topics#skos:broader">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lsarni/ontologies/topics#skos:narrower -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lsarni/ontologies/topics#skos:narrower">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lsarni/ontologies/topics#skos:related -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lsarni/ontologies/topics#skos:related">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -92,11 +131,18 @@
     <!-- http://www.semanticweb.org/lsarni/ontologies/topics#Topic -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/lsarni/ontologies/topics#Topic">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:comment xml:lang="en">A matter dealt with in a text, discourse, conversation, etc.</rdfs:comment>
         <rdfs:comment xml:lang="es">Asunto o materia sobre la que se trata en una conversación, un discurso, un escrito, etc.</rdfs:comment>
         <rdfs:label xml:lang="es">Tema</rdfs:label>
         <rdfs:label xml:lang="en">Topic</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
 </rdf:RDF>
 
 
