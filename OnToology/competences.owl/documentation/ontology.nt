@@ -1,0 +1,90 @@
+<http://www.semanticweb.org/lsarni/ontologies/competences> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/lsarni/ontologies/competences> <http://www.w3.org/2002/07/owl#imports> <http://www.semanticweb.org/lsarni/ontologies> .
+<http://www.semanticweb.org/lsarni/ontologies/competences> <http://www.w3.org/2000/01/rdf-schema#comment> "Describe un conjunto de competencias, frases que describen de manera general el conocimiento y capacidades que debe adquirir un estudiante durante una asignatura o programa, y categorias bajo las cuales organizarlas."@es .
+<http://www.semanticweb.org/lsarni/ontologies/competences> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes a set of competences, general statementes detailing the desired knowledge and skills of student graduating from a course or program should adquire, and categories under which organize them."@en .
+<http://www.semanticweb.org/lsarni/ontologies/competences> <http://www.w3.org/2000/01/rdf-schema#label> "OntoCIS Competences"@en .
+<http://www.semanticweb.org/lsarni/ontologies/competences> <http://www.w3.org/2000/01/rdf-schema#label> "OntoCIS Competencias"@es .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/lsarni/ontologies#partOf
+<http://www.semanticweb.org/lsarni/ontologies#partOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.semanticweb.org/lsarni/ontologies/competences#contributesTo
+<http://www.semanticweb.org/lsarni/ontologies/competences#contributesTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/lsarni/ontologies/competences#contributesTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/lsarni/ontologies/competences#Competence> .
+<http://www.semanticweb.org/lsarni/ontologies/competences#contributesTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica el grado de contribuci\u00F3n al desarrollo de una competencia"@es .
+<http://www.semanticweb.org/lsarni/ontologies/competences#contributesTo> <http://www.w3.org/2000/01/rdf-schema#comment> "It states the degree of contribution to the development of a competency"@en .
+<http://www.semanticweb.org/lsarni/ontologies/competences#contributesTo> <http://www.w3.org/2000/01/rdf-schema#label> "contributesTo"@en .
+<http://www.semanticweb.org/lsarni/ontologies/competences#contributesTo> <http://www.w3.org/2000/01/rdf-schema#label> "contribuyeA"@es .
+# 
+# http://www.semanticweb.org/lsarni/ontologies/competences#develops
+<http://www.semanticweb.org/lsarni/ontologies/competences#develops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/lsarni/ontologies/competences#develops> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/lsarni/ontologies/competences#contributesTo> .
+<http://www.semanticweb.org/lsarni/ontologies/competences#develops> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica que la competencia es total o parcialmente desarrollada a lo largo de una asignatura, es evaluada en la asignatura y se cuenta con evidencia de la evaluaci\u00F3n."@es .
+<http://www.semanticweb.org/lsarni/ontologies/competences#develops> <http://www.w3.org/2000/01/rdf-schema#comment> "It states that the competency is totally or partially developed in a course, it is assessed and there is evidence of the assessment."@en .
+<http://www.semanticweb.org/lsarni/ontologies/competences#develops> <http://www.w3.org/2000/01/rdf-schema#label> "desarrolla"@es .
+<http://www.semanticweb.org/lsarni/ontologies/competences#develops> <http://www.w3.org/2000/01/rdf-schema#label> "develops"@en .
+# 
+# http://www.semanticweb.org/lsarni/ontologies/competences#hasLearningOutcome
+<http://www.semanticweb.org/lsarni/ontologies/competences#hasLearningOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/lsarni/ontologies/competences#hasLearningOutcome> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/lsarni/ontologies/competences#hasLearningOutcome> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/lsarni/ontologies/competences#Learning_Outcome> .
+<http://www.semanticweb.org/lsarni/ontologies/competences#hasLearningOutcome> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica que objetivos de aprendizaje que tiene una cosa."@es .
+<http://www.semanticweb.org/lsarni/ontologies/competences#hasLearningOutcome> <http://www.w3.org/2000/01/rdf-schema#comment> "It states the learning outcomes for a certain thing."@en .
+<http://www.semanticweb.org/lsarni/ontologies/competences#hasLearningOutcome> <http://www.w3.org/2000/01/rdf-schema#label> "hasLearningOutcome"@en .
+<http://www.semanticweb.org/lsarni/ontologies/competences#hasLearningOutcome> <http://www.w3.org/2000/01/rdf-schema#label> "tieneComoObjetivoDeAprendizaje"@es .
+# 
+# http://www.semanticweb.org/lsarni/ontologies/competences#partiallyDevelops
+<http://www.semanticweb.org/lsarni/ontologies/competences#partiallyDevelops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/lsarni/ontologies/competences#partiallyDevelops> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/lsarni/ontologies/competences#contributesTo> .
+<http://www.semanticweb.org/lsarni/ontologies/competences#partiallyDevelops> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica que la asignatura contribuye de alguna manera al desarrollo de la competencia, pero no esta no es evaluada."@es .
+<http://www.semanticweb.org/lsarni/ontologies/competences#partiallyDevelops> <http://www.w3.org/2000/01/rdf-schema#comment> "It states that the course contributes to the development of the competency but it is not assessed."@en .
+<http://www.semanticweb.org/lsarni/ontologies/competences#partiallyDevelops> <http://www.w3.org/2000/01/rdf-schema#label> "desarrollaParcialmente"@es .
+<http://www.semanticweb.org/lsarni/ontologies/competences#partiallyDevelops> <http://www.w3.org/2000/01/rdf-schema#label> "partiallyDevelops"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/lsarni/ontologies/competences#Category
+<http://www.semanticweb.org/lsarni/ontologies/competences#Category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/lsarni/ontologies/competences#Category> <http://www.w3.org/2000/01/rdf-schema#comment> "Categories under which the competences are organized"@en .
+<http://www.semanticweb.org/lsarni/ontologies/competences#Category> <http://www.w3.org/2000/01/rdf-schema#comment> "Categor\u00EDas bajo las cuales se organizan las competencias"@es .
+<http://www.semanticweb.org/lsarni/ontologies/competences#Category> <http://www.w3.org/2000/01/rdf-schema#label> "Category"@en .
+<http://www.semanticweb.org/lsarni/ontologies/competences#Category> <http://www.w3.org/2000/01/rdf-schema#label> "Categor\u00EDa"@es .
+# 
+# http://www.semanticweb.org/lsarni/ontologies/competences#Competence
+<http://www.semanticweb.org/lsarni/ontologies/competences#Competence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/lsarni/ontologies/competences#Competence> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/lsarni/ontologies#partOf> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/lsarni/ontologies/competences#Category> .
+<http://www.semanticweb.org/lsarni/ontologies/competences#Competence> <http://www.w3.org/2000/01/rdf-schema#comment> "A general statement detailing the desired knowledge and skills of student graduating from our course or program."@en .
+<http://www.semanticweb.org/lsarni/ontologies/competences#Competence> <http://www.w3.org/2000/01/rdf-schema#comment> "Una frase que describe de manera general el conocimiento y capacidades que debe adquirir un estudiante."@es .
+<http://www.semanticweb.org/lsarni/ontologies/competences#Competence> <http://www.w3.org/2000/01/rdf-schema#label> "Competencia"@es .
+<http://www.semanticweb.org/lsarni/ontologies/competences#Competence> <http://www.w3.org/2000/01/rdf-schema#label> "Competency"@en .
+# 
+# http://www.semanticweb.org/lsarni/ontologies/competences#Learning_Outcome
+<http://www.semanticweb.org/lsarni/ontologies/competences#Learning_Outcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/lsarni/ontologies/competences#Learning_Outcome> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/lsarni/ontologies#partOf> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/lsarni/ontologies/competences#Competence> .
+<http://www.semanticweb.org/lsarni/ontologies/competences#Learning_Outcome> <http://www.w3.org/2000/01/rdf-schema#comment> "A very specific statement that describes exactly what a student will be able to do in some measurable way"@en .
+<http://www.semanticweb.org/lsarni/ontologies/competences#Learning_Outcome> <http://www.w3.org/2000/01/rdf-schema#comment> "Una frase que describe exactamente lo que un estudiante podr\u00E1 hacer de manera mensurable/evaluable."@es .
+<http://www.semanticweb.org/lsarni/ontologies/competences#Learning_Outcome> <http://www.w3.org/2000/01/rdf-schema#label> "Learning Outcome"@en .
+<http://www.semanticweb.org/lsarni/ontologies/competences#Learning_Outcome> <http://www.w3.org/2000/01/rdf-schema#label> "Objetivo de Aprendizaje"@es .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

@@ -1,0 +1,43 @@
+{
+  "@context" : {
+    "relatedTo" : {
+      "@id" : "http://www.semanticweb.org/lsarni/ontologies/topics#relatedTo",
+      "@type" : "@id"
+    },
+    "altLabel" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#altLabel"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "narrower" : {
+      "@id" : "http://www.semanticweb.org/lsarni/ontologies/topics#skos:narrower",
+      "@type" : "@id"
+    },
+    "Concept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "related" : {
+      "@id" : "http://www.semanticweb.org/lsarni/ontologies/topics#skos:related",
+      "@type" : "@id"
+    },
+    "Topic" : {
+      "@id" : "http://www.semanticweb.org/lsarni/ontologies/topics#Topic"
+    },
+    "subtopicOf" : {
+      "@id" : "http://www.semanticweb.org/lsarni/ontologies/topics#subtopicOf",
+      "@type" : "@id"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "broader" : {
+      "@id" : "http://www.semanticweb.org/lsarni/ontologies/topics#skos:broader",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    }
+  }
+}
