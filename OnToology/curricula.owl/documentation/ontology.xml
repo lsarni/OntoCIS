@@ -1,0 +1,482 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/lsarni/ontologies/curricula#"
+     xml:base="http://www.semanticweb.org/lsarni/ontologies/curricula"
+     xmlns:competences="http://www.semanticweb.org/lsarni/ontologies/competences#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:degrees="http://www.semanticweb.org/lsarni/ontologies/degrees#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/lsarni/ontologies/curricula">
+        <owl:imports rdf:resource="http://www.semanticweb.org/lsarni/ontologies/competences"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/lsarni/ontologies/composition"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/lsarni/ontologies/degrees"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/lsarni/ontologies/professors"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/lsarni/ontologies/topics"/>
+        <rdfs:comment xml:lang="en">An ontology that describes the curricula of the degree in Software Engineering at Universidad ORT Uruguay.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una ontología que describe el currículo de la carrera Ingeniería en Sistemas en la Universidad ORT Uruguay.</rdfs:comment>
+        <rdfs:label xml:lang="en">OntoCIS</rdfs:label>
+        <rdfs:label xml:lang="es">OntoCIS</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/lsarni/ontologies/competences#contributesTo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/lsarni/ontologies/competences#contributesTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lsarni/ontologies/curricula#Course"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lsarni/ontologies/competences#hasLearningOutcome -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/lsarni/ontologies/competences#hasLearningOutcome">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lsarni/ontologies/curricula#Course"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lsarni/ontologies/degrees#requiredFor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/lsarni/ontologies/degrees#requiredFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lsarni/ontologies/curricula#Course"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/lsarni/ontologies/curricula#isPrerequisite -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lsarni/ontologies/curricula#isPrerequisite">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lsarni/ontologies/curricula#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lsarni/ontologies/curricula#Course"/>
+        <rdfs:comment xml:lang="es">Indica que asignaturas debe haber cursado un estudiante para poder inscribirse o aprovar una asignatura.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It states which courses the student needs to take in order to be allowed to enroll or pass a course.</rdfs:comment>
+        <rdfs:label xml:lang="es">esPrevia</rdfs:label>
+        <rdfs:label xml:lang="en">isPrerequiste</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lsarni/ontologies/curricula#isPrerequisiteToEnroll -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lsarni/ontologies/curricula#isPrerequisiteToEnroll">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lsarni/ontologies/curricula#isPrerequisite"/>
+        <rdfs:comment xml:lang="es">Indica que asignaturas que deben haber cursado el estudiante para poder inscribirse a una asignatura. 
+Solamente si el estudiante ha obtenido el crédito parcial o total de estas asignaturas, según corresponda, podrá inscribirse a la asignatura y eventualmente obtener el crédito parcial para el mismo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It states which courses a student needs to take before hand in order to be allowed to enroll for a course.
+Only if the student has obtained partial or total credit for these subjects will he be able to enroll in the course and eventually obtain partial credit for it.</rdfs:comment>
+        <rdfs:label xml:lang="es">esPreviaParaInscribirse</rdfs:label>
+        <rdfs:label xml:lang="en">isPrerequisiteToEnroll</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lsarni/ontologies/curricula#isPrerequisiteToPass -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lsarni/ontologies/curricula#isPrerequisiteToPass">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lsarni/ontologies/curricula#isPrerequisite"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lsarni/ontologies/curricula#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lsarni/ontologies/curricula#Course"/>
+        <rdfs:comment xml:lang="es">Indica que asignaturas debe haber cursado previamente un estudiante para poder aprobar (obtener el crédito total) una asignatura.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It states which courses the student needs to take before hand in order to be able to pass (get the total credits) a certain course.</rdfs:comment>
+        <rdfs:label xml:lang="es">esPreviaParaAprobación</rdfs:label>
+        <rdfs:label xml:lang="en">isPrerequisiteToPass</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lsarni/ontologies/curricula#partialCreditIsPrerequisiteToEnroll -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lsarni/ontologies/curricula#partialCreditIsPrerequisiteToEnroll">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lsarni/ontologies/curricula#isPrerequisiteToEnroll"/>
+        <rdfs:comment xml:lang="es">Indica para que asignaturas el estudiante debe tener el crédito parcial antes de poder inscribirse a una asignatura.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It states which courses a student must have the partial credit for in order to enroll to another course.</rdfs:comment>
+        <rdfs:label xml:lang="es">creditoParcialEsPreviaParaInscribirse</rdfs:label>
+        <rdfs:label xml:lang="en">partialCreditIsPrerequisiteToEnroll</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lsarni/ontologies/curricula#partialCreditIsPrerequisiteToPass -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lsarni/ontologies/curricula#partialCreditIsPrerequisiteToPass">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lsarni/ontologies/curricula#isPrerequisiteToPass"/>
+        <rdfs:comment xml:lang="es">Indica para que asignaturas el estudiante debe tener el crédito parcial antes de poder inscribirse a una asignatura.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It states which courses a student must have the partial credit for in order to pass (obtain total credits) another course.</rdfs:comment>
+        <rdfs:label xml:lang="es">creditoParcialEsPreviaParaAprobar</rdfs:label>
+        <rdfs:label xml:lang="en">partialCreditIsPrerequisiteToPass</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lsarni/ontologies/curricula#taughtIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lsarni/ontologies/curricula#taughtIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lsarni/ontologies/topics#Topic"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lsarni/ontologies/curricula#Course"/>
+        <rdfs:comment xml:lang="es">Indica que un tema se eseña o dicta durante una asignatura</rdfs:comment>
+        <rdfs:comment xml:lang="en">It states that a topic is taught during a course</rdfs:comment>
+        <rdfs:label xml:lang="es">enseñadoEn</rdfs:label>
+        <rdfs:label xml:lang="en">taughtIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lsarni/ontologies/curricula#totalCreditIsPrerequisiteToEnroll -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lsarni/ontologies/curricula#totalCreditIsPrerequisiteToEnroll">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lsarni/ontologies/curricula#isPrerequisiteToEnroll"/>
+        <rdfs:comment xml:lang="es">Indica para que asignaturas el estudiante debe tener el crédito total antes de poder inscribirse a una asignatura.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It states which courses a student must have the total credit for in order to enroll to another course.</rdfs:comment>
+        <rdfs:label xml:lang="es">creditoTotalEsPreviaParaInscribirse</rdfs:label>
+        <rdfs:label xml:lang="en">totalCreditIsPrerequisiteToEnroll</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lsarni/ontologies/curricula#totalCreditIsPrerequisiteToPass -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lsarni/ontologies/curricula#totalCreditIsPrerequisiteToPass">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lsarni/ontologies/curricula#isPrerequisiteToPass"/>
+        <rdfs:comment xml:lang="es">Indica para que asignaturas el estudiante debe tener el crédito total antes de poder inscribirse a una asignatura.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It states which courses a student must have the total credit for in order to pass (obtain total credits) another course.</rdfs:comment>
+        <rdfs:label xml:lang="es">creditoTotalEsPreviaParaIAprobar</rdfs:label>
+        <rdfs:label xml:lang="en">totalCreditIsPrerequisiteToPass</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lsarni/ontologies/professors#inChargeOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lsarni/ontologies/professors#inChargeOf">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lsarni/ontologies/curricula#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/lsarni/ontologies/curricula#credits -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lsarni/ontologies/curricula#credits">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lsarni/ontologies/curricula#Course"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minExclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Amount of credits obtained when approving a course.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Cantidad de créditos que se obtienen al aprobar una asignatura.</rdfs:comment>
+        <rdfs:label xml:lang="en">credits</rdfs:label>
+        <rdfs:label xml:lang="es">créditos</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lsarni/ontologies/curricula#hours -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lsarni/ontologies/curricula#hours">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lsarni/ontologies/curricula#Course"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minExclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="es">Amount of hours taught for a course.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Cantidad de horas que se dictan para una asignatura</rdfs:comment>
+        <rdfs:label xml:lang="es">horas</rdfs:label>
+        <rdfs:label xml:lang="en">hours</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lsarni/ontologies/curricula#minimumCreditsRequired -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lsarni/ontologies/curricula#minimumCreditsRequired">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lsarni/ontologies/curricula#Course"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minExclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="es">Cantidad mínima de créditos requeridos para poder cursar una asignatura.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Minumum number of credits required in order to take a course</rdfs:comment>
+        <rdfs:label xml:lang="es">minimoCreditosRequeridos</rdfs:label>
+        <rdfs:label xml:lang="en">minimumCreditsRequired</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lsarni/ontologies/curricula#partialCreditScore -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lsarni/ontologies/curricula#partialCreditScore">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lsarni/ontologies/curricula#Course"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Minimum score required to obtain the partial credit for a course and have be allowed to sit an exam.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Puntaje mínimo que debe alcanzarse para obtener el crédito parcial de una asignatura, y tener derecho a dar examen.</rdfs:comment>
+        <rdfs:label xml:lang="en">partialCreditScore</rdfs:label>
+        <rdfs:label xml:lang="es">puntajeCréditoParcial</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lsarni/ontologies/curricula#totalCreditScore -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lsarni/ontologies/curricula#totalCreditScore">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lsarni/ontologies/curricula#Course"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="es">Minimum score requiered to approve a course.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Puntaje mínimo requerido para aprobar una asignatura.</rdfs:comment>
+        <rdfs:label xml:lang="es">puntajeCréditoTotal</rdfs:label>
+        <rdfs:label xml:lang="en">totalCreditScore</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/lsarni/ontologies/curricula#Core_Course -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lsarni/ontologies/curricula#Core_Course">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lsarni/ontologies/curricula#Course"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lsarni/ontologies/curricula#Elective_Course"/>
+        <rdfs:comment xml:lang="es">Asignatura que los estudiantes deben cursar como parte de la currícula para obtener un título.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Course that the students must attend as part of the curricula to obtain a degree.</rdfs:comment>
+        <rdfs:label xml:lang="es">Asignatura Obligatoria</rdfs:label>
+        <rdfs:label xml:lang="en">Core Course</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lsarni/ontologies/curricula#Course -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lsarni/ontologies/curricula#Course">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/lsarni/ontologies/curricula#Core_Course"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/lsarni/ontologies/curricula#Elective_Course"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="es">Materia o unidad de enseñanza que generalmente dura un período académico, está dirigida por uno o más instructores y tiene una lista fija de estudiantes.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Unit of teaching that typically lasts one academic term, is led by one or more instructors, and has a fixed roster of students.</rdfs:comment>
+        <rdfs:label xml:lang="es">Asignatura</rdfs:label>
+        <rdfs:label xml:lang="en">Course</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lsarni/ontologies/curricula#Curricula -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lsarni/ontologies/curricula#Curricula">
+        <rdfs:comment xml:lang="es">Conjunto de enseñanzas y prácticas que, con determinada disposición, han de cursarse para cumplir un ciclo de estudios u obtener un título.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Set of courses that need to be taken in order to obtain a certain degree.</rdfs:comment>
+        <rdfs:label xml:lang="en">Curricula</rdfs:label>
+        <rdfs:label xml:lang="es">Curriculo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lsarni/ontologies/curricula#Elective_Course -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lsarni/ontologies/curricula#Elective_Course">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lsarni/ontologies/curricula#Course"/>
+        <rdfs:comment xml:lang="es">Asignatura que los estudiantes pueden cursar según sus intereses y preferencias. Para obtener un título, los estudiantes deben cursar un conjunto o una cantidad determinada de asignaturas electivas, definida para cada título.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Course that the students can attend according their interests and preferences. To obtain a degree, a student must attend a set or certain amount of elective courses defined by each degree.</rdfs:comment>
+        <rdfs:label xml:lang="es">Electiva</rdfs:label>
+        <rdfs:label xml:lang="en">Elective Course</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lsarni/ontologies/curricula#Knowledge_Area -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lsarni/ontologies/curricula#Knowledge_Area">
+        <rdfs:comment xml:lang="en">Topical areas of study in which the knowledge groups are divided.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Áreas temáticas en las que se dividen los grupos temáticos.</rdfs:comment>
+        <rdfs:label xml:lang="en">Knowledge Area</rdfs:label>
+        <rdfs:label xml:lang="es">Área Temática</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lsarni/ontologies/curricula#Knowledge_Group -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lsarni/ontologies/curricula#Knowledge_Group">
+        <rdfs:comment xml:lang="es">Grupos temáticos en los que se divide el conocimiento abarcado por el currículo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Knowledge groups in which the knowledge body is divided.</rdfs:comment>
+        <rdfs:label xml:lang="es">Grupo Temático</rdfs:label>
+        <rdfs:label xml:lang="en">Knowledge Group</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lsarni/ontologies/curricula#Placeholder_Course -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lsarni/ontologies/curricula#Placeholder_Course">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lsarni/ontologies/curricula#Elective_Course"/>
+        <rdfs:comment xml:lang="es">Asignatura utilizada para indicar que el estudiante debe tomar una asignatura electiva a su elección.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Course used to state that the student must take a course but can choose among any elective course.</rdfs:comment>
+        <rdfs:label xml:lang="es">Asignatura Placeholder</rdfs:label>
+        <rdfs:label xml:lang="en">Placeholder Course</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lsarni/ontologies/curricula#Term -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lsarni/ontologies/curricula#Term">
+        <rdfs:comment xml:lang="en">A portion of an academic year, the time during which an educational institution holds classes.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Parte de un año académico, el tiempo durante el cual una institución educativa imparte clases a los estudiantes que cursan una o mas asignaturas.</rdfs:comment>
+        <rdfs:label xml:lang="es">Periodo</rdfs:label>
+        <rdfs:label xml:lang="en">Term</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lsarni/ontologies/curricula#Year -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lsarni/ontologies/curricula#Year">
+        <rdfs:comment xml:lang="en">Period of time in which students attend courses.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Período del año en que los estudiantes asisten a asignaturas.</rdfs:comment>
+        <rdfs:label xml:lang="es">Año</rdfs:label>
+        <rdfs:label xml:lang="en">Year</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lsarni/ontologies/topics#Topic -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lsarni/ontologies/topics#Topic"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+
+
