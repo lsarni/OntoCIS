@@ -1,0 +1,85 @@
+<https://w3id.org/ontocis/topics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/ontocis/topics> <http://www.w3.org/2000/01/rdf-schema#comment> "Brinda informaci\u00F3n sobre los temas que son dictados durante una carrera universitaria."@es .
+<https://w3id.org/ontocis/topics> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides information about topics taught during a degree."@en .
+<https://w3id.org/ontocis/topics> <http://www.w3.org/2000/01/rdf-schema#label> "OntoCIS Temas"@es .
+<https://w3id.org/ontocis/topics> <http://www.w3.org/2000/01/rdf-schema#label> "OntoCIS Topics"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2004/02/skos/core#altLabel
+<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/ontocis/topics#altLabel
+<https://w3id.org/ontocis/topics#altLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/ontocis/topics#altLabel> <http://www.w3.org/2000/01/rdf-schema#comment> "Agrega sin\u00F3nimos, t\u00E9rminos relacionados o variantes del t\u00E9rmino includo en la anotaci\u00F3n rdfs:label."@es .
+<https://w3id.org/ontocis/topics#altLabel> <http://www.w3.org/2000/01/rdf-schema#comment> "Used for synoyms, related terms or different combinantions of the term that appears in the rdfs:label annotation."@en .
+<https://w3id.org/ontocis/topics#altLabel> <http://www.w3.org/2000/01/rdf-schema#label> "alternative label"@en .
+<https://w3id.org/ontocis/topics#altLabel> <http://www.w3.org/2000/01/rdf-schema#label> "etiqueta alternativa"@es .
+<https://w3id.org/ontocis/topics#altLabel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#altLabel> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2004/02/skos/core#narrower
+<http://www.w3.org/2004/02/skos/core#narrower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2004/02/skos/core#narrower> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/ontocis/topics#subtopicOf> .
+# 
+# http://www.w3.org/2004/02/skos/core#related
+<http://www.w3.org/2004/02/skos/core#related> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2004/02/skos/core#related> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/ontocis/topics#relatedTo> .
+# 
+# https://w3id.org/ontocis/topics#relatedTo
+<https://w3id.org/ontocis/topics#relatedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ontocis/topics#relatedTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/ontocis/topics#relatedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<https://w3id.org/ontocis/topics#relatedTo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ontocis/topics#Topic> .
+<https://w3id.org/ontocis/topics#relatedTo> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ontocis/topics#Topic> .
+<https://w3id.org/ontocis/topics#relatedTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica que un tema esta relacionado con otro tema"@es .
+<https://w3id.org/ontocis/topics#relatedTo> <http://www.w3.org/2000/01/rdf-schema#comment> "It states that a topic is related to another topic"@en .
+<https://w3id.org/ontocis/topics#relatedTo> <http://www.w3.org/2000/01/rdf-schema#label> "relacionado con"@es .
+<https://w3id.org/ontocis/topics#relatedTo> <http://www.w3.org/2000/01/rdf-schema#label> "related to"@en .
+# 
+# https://w3id.org/ontocis/topics#subtopicOf
+<https://w3id.org/ontocis/topics#subtopicOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ontocis/topics#subtopicOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/ontocis/topics#relatedTo> .
+<https://w3id.org/ontocis/topics#subtopicOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://w3id.org/ontocis/topics#subtopicOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ontocis/topics#Topic> .
+<https://w3id.org/ontocis/topics#subtopicOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ontocis/topics#Topic> .
+<https://w3id.org/ontocis/topics#subtopicOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica que un tema es parte de otro tema m\u00E1s general"@es .
+<https://w3id.org/ontocis/topics#subtopicOf> <http://www.w3.org/2000/01/rdf-schema#comment> "It states that a topic is part of a broader or more general topic"@en .
+<https://w3id.org/ontocis/topics#subtopicOf> <http://www.w3.org/2000/01/rdf-schema#label> "subtema de"@es .
+<https://w3id.org/ontocis/topics#subtopicOf> <http://www.w3.org/2000/01/rdf-schema#label> "subtopic of"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/ontocis/topics#Topic> .
+# 
+# https://w3id.org/ontocis/topics#Topic
+<https://w3id.org/ontocis/topics#Topic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ontocis/topics#Topic> <http://www.w3.org/2000/01/rdf-schema#comment> "A matter dealt with in a text, discourse, conversation, etc."@en .
+<https://w3id.org/ontocis/topics#Topic> <http://www.w3.org/2000/01/rdf-schema#comment> "Asunto o materia sobre la que se trata en una conversaci\u00F3n, un discurso, un escrito, etc."@es .
+<https://w3id.org/ontocis/topics#Topic> <http://www.w3.org/2000/01/rdf-schema#label> "Tema"@es .
+<https://w3id.org/ontocis/topics#Topic> <http://www.w3.org/2000/01/rdf-schema#label> "Topic"@en .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

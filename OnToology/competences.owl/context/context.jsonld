@@ -1,0 +1,43 @@
+{
+  "@context" : {
+    "Category" : {
+      "@id" : "https://w3id.org/ontocis/competences#Category"
+    },
+    "partiallyDevelops" : {
+      "@id" : "https://w3id.org/ontocis/competences#partiallyDevelops",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "develops" : {
+      "@id" : "https://w3id.org/ontocis/competences#develops",
+      "@type" : "@id"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "Learning_Outcome" : {
+      "@id" : "https://w3id.org/ontocis/competences#Learning_Outcome"
+    },
+    "partOf" : {
+      "@id" : "https://w3id.org/ontocis/composition#partOf",
+      "@type" : "@id"
+    },
+    "Competence" : {
+      "@id" : "https://w3id.org/ontocis/competences#Competence"
+    },
+    "contributesTo" : {
+      "@id" : "https://w3id.org/ontocis/competences#contributesTo",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "hasLearningOutcome" : {
+      "@id" : "https://w3id.org/ontocis/competences#hasLearningOutcome",
+      "@type" : "@id"
+    }
+  }
+}
