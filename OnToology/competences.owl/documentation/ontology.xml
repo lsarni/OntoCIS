@@ -1,0 +1,147 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/ontocis/competences#"
+     xml:base="https://w3id.org/ontocis/competences"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://w3id.org/ontocis/competences">
+        <owl:imports rdf:resource="https://w3id.org/ontocis/composition"/>
+        <rdfs:comment xml:lang="es">Describe un conjunto de competencias, frases que describen de manera general el conocimiento y capacidades que debe adquirir un estudiante durante una asignatura o programa, y categorias bajo las cuales organizarlas.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Describes a set of competences, general statementes detailing the desired knowledge and skills of student graduating from a course or program should adquire, and categories under which organize them.</rdfs:comment>
+        <rdfs:label xml:lang="en">OntoCIS Competences</rdfs:label>
+        <rdfs:label xml:lang="es">OntoCIS Competencias</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/ontocis/competences#contributesTo -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontocis/competences#contributesTo">
+        <rdfs:range rdf:resource="https://w3id.org/ontocis/competences#Competence"/>
+        <rdfs:comment xml:lang="es">Indica el grado de contribución al desarrollo de una competencia</rdfs:comment>
+        <rdfs:comment xml:lang="en">It states the degree of contribution to the development of a competency</rdfs:comment>
+        <rdfs:label xml:lang="en">contributes to</rdfs:label>
+        <rdfs:label xml:lang="es">contribuye a</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontocis/competences#develops -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontocis/competences#develops">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/ontocis/competences#contributesTo"/>
+        <rdfs:comment xml:lang="es">Indica que la competencia es total o parcialmente desarrollada a lo largo de una asignatura, es evaluada en la asignatura y se cuenta con evidencia de la evaluación.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It states that the competency is totally or partially developed in a course, it is assessed and there is evidence of the assessment.</rdfs:comment>
+        <rdfs:label xml:lang="es">desarrolla</rdfs:label>
+        <rdfs:label xml:lang="en">develops</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontocis/competences#hasLearningOutcome -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontocis/competences#hasLearningOutcome">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontocis/competences#Learning_Outcome"/>
+        <rdfs:comment xml:lang="es">Indica que objetivos de aprendizaje que tiene una cosa.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It states the learning outcomes for a certain thing.</rdfs:comment>
+        <rdfs:label xml:lang="en">has learning outcome</rdfs:label>
+        <rdfs:label xml:lang="es">tiene como objetivo de aprendizaje</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontocis/competences#partiallyDevelops -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontocis/competences#partiallyDevelops">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/ontocis/competences#contributesTo"/>
+        <rdfs:comment xml:lang="es">Indica que la asignatura contribuye de alguna manera al desarrollo de la competencia, pero no esta no es evaluada.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It states that the course contributes to the development of the competency but it is not assessed.</rdfs:comment>
+        <rdfs:label xml:lang="es">desarrolla parcialmente</rdfs:label>
+        <rdfs:label xml:lang="en">partially develops</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/ontocis/competences#Category -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ontocis/competences#Category">
+        <rdfs:comment xml:lang="en">Categories under which the competences are organized</rdfs:comment>
+        <rdfs:comment xml:lang="es">Categorías bajo las cuales se organizan las competencias</rdfs:comment>
+        <rdfs:label xml:lang="en">Category</rdfs:label>
+        <rdfs:label xml:lang="es">Categoría</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontocis/competences#Competence -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ontocis/competences#Competence">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontocis/composition#partOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/ontocis/competences#Category"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">A general statement detailing the desired knowledge and skills of student graduating from our course or program.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una frase que describe de manera general el conocimiento y capacidades que debe adquirir un estudiante.</rdfs:comment>
+        <rdfs:label xml:lang="es">Competencia</rdfs:label>
+        <rdfs:label xml:lang="en">Competency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontocis/competences#Learning_Outcome -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ontocis/competences#Learning_Outcome">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontocis/composition#partOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/ontocis/competences#Competence"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">A very specific statement that describes exactly what a student will be able to do in some measurable way</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una frase que describe exactamente lo que un estudiante podrá hacer de manera mensurable/evaluable.</rdfs:comment>
+        <rdfs:label xml:lang="en">Learning Outcome</rdfs:label>
+        <rdfs:label xml:lang="es">Objetivo de Aprendizaje</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+
+

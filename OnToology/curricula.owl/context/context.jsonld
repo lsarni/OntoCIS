@@ -1,0 +1,110 @@
+{
+  "@context" : {
+    "Knowledge_Area" : {
+      "@id" : "https://w3id.org/ontocis/curricula#Knowledge_Area"
+    },
+    "Knowledge_Group" : {
+      "@id" : "https://w3id.org/ontocis/curricula#Knowledge_Group"
+    },
+    "Core_Course" : {
+      "@id" : "https://w3id.org/ontocis/curricula#Core_Course"
+    },
+    "totalCreditIsPrerequisiteToEnroll" : {
+      "@id" : "https://w3id.org/ontocis/curricula#totalCreditIsPrerequisiteToEnroll",
+      "@type" : "@id"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "hours" : {
+      "@id" : "https://w3id.org/ontocis/curricula#hours"
+    },
+    "Course" : {
+      "@id" : "https://w3id.org/ontocis/curricula#Course"
+    },
+    "inChargeOf" : {
+      "@id" : "https://w3id.org/ontocis/professors#inChargeOf",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Curricula" : {
+      "@id" : "https://w3id.org/ontocis/curricula#Curricula"
+    },
+    "requiredFor" : {
+      "@id" : "https://w3id.org/ontocis/degrees#requiredFor",
+      "@type" : "@id"
+    },
+    "Topic" : {
+      "@id" : "https://w3id.org/ontocis/topics#Topic"
+    },
+    "minimumCreditsRequired" : {
+      "@id" : "https://w3id.org/ontocis/curricula#minimumCreditsRequired"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "isPrerequisite" : {
+      "@id" : "https://w3id.org/ontocis/curricula#isPrerequisite",
+      "@type" : "@id"
+    },
+    "taughtIn" : {
+      "@id" : "https://w3id.org/ontocis/curricula#taughtIn",
+      "@type" : "@id"
+    },
+    "isPrerequisiteToPass" : {
+      "@id" : "https://w3id.org/ontocis/curricula#isPrerequisiteToPass",
+      "@type" : "@id"
+    },
+    "Elective_Course" : {
+      "@id" : "https://w3id.org/ontocis/curricula#Elective_Course"
+    },
+    "partialCreditScore" : {
+      "@id" : "https://w3id.org/ontocis/curricula#partialCreditScore"
+    },
+    "partialCreditIsPrerequisiteToPass" : {
+      "@id" : "https://w3id.org/ontocis/curricula#partialCreditIsPrerequisiteToPass",
+      "@type" : "@id"
+    },
+    "Year" : {
+      "@id" : "https://w3id.org/ontocis/curricula#Year"
+    },
+    "isPrerequisiteToEnroll" : {
+      "@id" : "https://w3id.org/ontocis/curricula#isPrerequisiteToEnroll",
+      "@type" : "@id"
+    },
+    "totalCreditScore" : {
+      "@id" : "https://w3id.org/ontocis/curricula#totalCreditScore"
+    },
+    "contributesTo" : {
+      "@id" : "https://w3id.org/ontocis/competences#contributesTo",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "hasLearningOutcome" : {
+      "@id" : "https://w3id.org/ontocis/competences#hasLearningOutcome",
+      "@type" : "@id"
+    },
+    "partialCreditIsPrerequisiteToEnroll" : {
+      "@id" : "https://w3id.org/ontocis/curricula#partialCreditIsPrerequisiteToEnroll",
+      "@type" : "@id"
+    },
+    "Term" : {
+      "@id" : "https://w3id.org/ontocis/curricula#Term"
+    },
+    "Placeholder_Course" : {
+      "@id" : "https://w3id.org/ontocis/curricula#Placeholder_Course"
+    },
+    "credits" : {
+      "@id" : "https://w3id.org/ontocis/curricula#credits"
+    },
+    "totalCreditIsPrerequisiteToPass" : {
+      "@id" : "https://w3id.org/ontocis/curricula#totalCreditIsPrerequisiteToPass",
+      "@type" : "@id"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "@context" : {
+    "relatedTo" : {
+      "@id" : "https://w3id.org/ontocis/topics#relatedTo",
+      "@type" : "@id"
+    },
+    "altLabel" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#altLabel"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "narrower" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#narrower",
+      "@type" : "@id"
+    },
+    "Concept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "related" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#related",
+      "@type" : "@id"
+    },
+    "Topic" : {
+      "@id" : "https://w3id.org/ontocis/topics#Topic"
+    },
+    "subtopicOf" : {
+      "@id" : "https://w3id.org/ontocis/topics#subtopicOf",
+      "@type" : "@id"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    }
+  }
+}

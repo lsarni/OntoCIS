@@ -1,0 +1,66 @@
+{
+  "@context" : {
+    "Professor" : {
+      "@id" : "https://w3id.org/ontocis/professors#Professor"
+    },
+    "member" : {
+      "@id" : "http://xmlns.com/foaf/0.1/member",
+      "@type" : "@id"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "hasEducationLevel" : {
+      "@id" : "https://w3id.org/ontocis/professors#hasEducationLevel",
+      "@type" : "@id"
+    },
+    "inChargeOf" : {
+      "@id" : "https://w3id.org/ontocis/professors#inChargeOf",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "familyName" : {
+      "@id" : "http://xmlns.com/foaf/0.1/familyName"
+    },
+    "Nationality" : {
+      "@id" : "https://w3id.org/ontocis/professors#Nationality"
+    },
+    "Person" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Person"
+    },
+    "hasNationality" : {
+      "@id" : "https://w3id.org/ontocis/professors#hasNationality",
+      "@type" : "@id"
+    },
+    "givenName" : {
+      "@id" : "http://xmlns.com/foaf/0.1/givenName"
+    },
+    "name" : {
+      "@id" : "https://w3id.org/ontocis/professors#name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "surname" : {
+      "@id" : "https://w3id.org/ontocis/professors#surname",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Education_Level" : {
+      "@id" : "https://w3id.org/ontocis/professors#Education_Level"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Group" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Group"
+    },
+    "isExperienced" : {
+      "@id" : "https://w3id.org/ontocis/professors#isExperienced",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    }
+  }
+}

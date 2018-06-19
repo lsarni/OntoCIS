@@ -1,0 +1,14 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "skos:Concept" "topics:Topic" ; /*classes style*/
+	"topics:relatedTo" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	"topics:relatedTo" -> "skos:related" [ label = "owl:equivalentProperty" ];
+	"topics:Topic" -> "skos:Concept" [ label = "owl:equivalentClass" ];
+	"topics:subtopicOf" -> "topics:relatedTo" [ label = "rdfs:subPropertyOf" ];
+	"topics:subtopicOf" -> "skos:narrower" [ label = "owl:equivalentProperty" ];
+	"topics:altLabel" -> "skos:altLabel" [ label = "rdfs:subPropertyOf" ];
+	"topics:Topic" -> "topics:Topic" [ label = "topics:relatedTo" ];
+	"topics:Topic" -> "topics:Topic" [ label = "topics:subtopicOf" ];
+
+}

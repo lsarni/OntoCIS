@@ -1,0 +1,463 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/ontocis/curricula#"
+     xml:base="https://w3id.org/ontocis/curricula"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:topics="https://w3id.org/ontocis/topics#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://w3id.org/ontocis/curricula">
+        <owl:imports rdf:resource="https://w3id.org/ontocis/competences"/>
+        <owl:imports rdf:resource="https://w3id.org/ontocis/composition"/>
+        <owl:imports rdf:resource="https://w3id.org/ontocis/degrees"/>
+        <owl:imports rdf:resource="https://w3id.org/ontocis/professors"/>
+        <owl:imports rdf:resource="https://w3id.org/ontocis/topics"/>
+        <rdfs:comment xml:lang="en">An ontology that describes the curricula of the degree in Software Engineering at Universidad ORT Uruguay.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una ontología que describe el currículo de la carrera Ingeniería en Sistemas en la Universidad ORT Uruguay.</rdfs:comment>
+        <rdfs:label xml:lang="en">OntoCIS</rdfs:label>
+        <rdfs:label xml:lang="es">OntoCIS</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/ontocis/competences#contributesTo -->
+
+
+    <rdf:Description rdf:about="https://w3id.org/ontocis/competences#contributesTo">
+        <rdfs:domain rdf:resource="https://w3id.org/ontocis/curricula#Course"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/ontocis/competences#hasLearningOutcome -->
+
+
+    <rdf:Description rdf:about="https://w3id.org/ontocis/competences#hasLearningOutcome">
+        <rdfs:domain rdf:resource="https://w3id.org/ontocis/curricula#Course"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/ontocis/curricula#isPrerequisite -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontocis/curricula#isPrerequisite">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontocis/curricula#Course"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontocis/curricula#Course"/>
+        <rdfs:comment xml:lang="es">Indica que asignaturas debe haber cursado un estudiante para poder inscribirse o aprovar una asignatura.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It states which courses the student needs to take in order to be allowed to enroll or pass a course.</rdfs:comment>
+        <rdfs:label xml:lang="es">es previa</rdfs:label>
+        <rdfs:label xml:lang="en">is prerequiste</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontocis/curricula#isPrerequisiteToEnroll -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontocis/curricula#isPrerequisiteToEnroll">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/ontocis/curricula#isPrerequisite"/>
+        <rdfs:comment xml:lang="es">Indica que asignaturas que deben haber cursado el estudiante para poder inscribirse a una asignatura.
+Solamente si el estudiante ha obtenido el crédito parcial o total de estas asignaturas, según corresponda, podrá inscribirse a la asignatura y eventualmente obtener el crédito parcial para el mismo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It states which courses a student needs to take before hand in order to be allowed to enroll for a course.
+Only if the student has obtained partial or total credit for these subjects will he be able to enroll in the course and eventually obtain partial credit for it.</rdfs:comment>
+        <rdfs:label xml:lang="es">es previa para inscribirse</rdfs:label>
+        <rdfs:label xml:lang="en">is prerequisite to enroll</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontocis/curricula#isPrerequisiteToPass -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontocis/curricula#isPrerequisiteToPass">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/ontocis/curricula#isPrerequisite"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontocis/curricula#Course"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontocis/curricula#Course"/>
+        <rdfs:comment xml:lang="es">Indica que asignaturas debe haber cursado previamente un estudiante para poder aprobar (obtener el crédito total) una asignatura.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It states which courses the student needs to take before hand in order to be able to pass (get the total credits) a certain course.</rdfs:comment>
+        <rdfs:label xml:lang="es">es previa para aprobar</rdfs:label>
+        <rdfs:label xml:lang="en">is prerequisite to pass</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontocis/curricula#partialCreditIsPrerequisiteToEnroll -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontocis/curricula#partialCreditIsPrerequisiteToEnroll">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/ontocis/curricula#isPrerequisiteToEnroll"/>
+        <rdfs:comment xml:lang="es">Indica para que asignaturas el estudiante debe tener el crédito parcial antes de poder inscribirse a una asignatura.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It states which courses a student must have the partial credit for in order to enroll to another course.</rdfs:comment>
+        <rdfs:label xml:lang="es">credito parcial es previa para inscribirse</rdfs:label>
+        <rdfs:label xml:lang="en">partial credit is prerequisite to enroll</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontocis/curricula#partialCreditIsPrerequisiteToPass -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontocis/curricula#partialCreditIsPrerequisiteToPass">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/ontocis/curricula#isPrerequisiteToPass"/>
+        <rdfs:comment xml:lang="es">Indica para que asignaturas el estudiante debe tener el crédito parcial antes de poder inscribirse a una asignatura.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It states which courses a student must have the partial credit for in order to pass (obtain total credits) another course.</rdfs:comment>
+        <rdfs:label xml:lang="es">credito parcial es previa para aprobar</rdfs:label>
+        <rdfs:label xml:lang="en">partial credit is prerequisite to pass</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontocis/curricula#taughtIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontocis/curricula#taughtIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontocis/topics#Topic"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontocis/curricula#Course"/>
+        <rdfs:comment xml:lang="es">Indica que un tema se eseña o dicta durante una asignatura</rdfs:comment>
+        <rdfs:comment xml:lang="en">It states that a topic is taught during a course</rdfs:comment>
+        <rdfs:label xml:lang="es">enseñado en</rdfs:label>
+        <rdfs:label xml:lang="en">taught in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontocis/curricula#totalCreditIsPrerequisiteToEnroll -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontocis/curricula#totalCreditIsPrerequisiteToEnroll">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/ontocis/curricula#isPrerequisiteToEnroll"/>
+        <rdfs:comment xml:lang="es">Indica para que asignaturas el estudiante debe tener el crédito total antes de poder inscribirse a una asignatura.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It states which courses a student must have the total credit for in order to enroll to another course.</rdfs:comment>
+        <rdfs:label xml:lang="es">credito total es previa para inscribirse</rdfs:label>
+        <rdfs:label xml:lang="en">total credit is prerequisite to enroll</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontocis/curricula#totalCreditIsPrerequisiteToPass -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontocis/curricula#totalCreditIsPrerequisiteToPass">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/ontocis/curricula#isPrerequisiteToPass"/>
+        <rdfs:comment xml:lang="es">Indica para que asignaturas el estudiante debe tener el crédito total antes de poder inscribirse a una asignatura.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It states which courses a student must have the total credit for in order to pass (obtain total credits) another course.</rdfs:comment>
+        <rdfs:label xml:lang="es">credito total es previa para aprobar</rdfs:label>
+        <rdfs:label xml:lang="en">total credit is prerequisite to pass</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontocis/degrees#requiredFor -->
+
+
+    <rdf:Description rdf:about="https://w3id.org/ontocis/degrees#requiredFor">
+        <rdfs:domain rdf:resource="https://w3id.org/ontocis/curricula#Course"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/ontocis/professors#inChargeOf -->
+
+
+    <rdf:Description rdf:about="https://w3id.org/ontocis/professors#inChargeOf">
+        <rdfs:range rdf:resource="https://w3id.org/ontocis/curricula#Course"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/ontocis/curricula#credits -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontocis/curricula#credits">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontocis/curricula#Course"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minExclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Amount of credits obtained when approving a course.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Cantidad de créditos que se obtienen al aprobar una asignatura.</rdfs:comment>
+        <rdfs:label xml:lang="en">credits</rdfs:label>
+        <rdfs:label xml:lang="es">créditos</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/ontocis/curricula#hours -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontocis/curricula#hours">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontocis/curricula#Course"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minExclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="es">Amount of hours taught for a course.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Cantidad de horas que se dictan para una asignatura</rdfs:comment>
+        <rdfs:label xml:lang="es">horas</rdfs:label>
+        <rdfs:label xml:lang="en">hours</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/ontocis/curricula#minimumCreditsRequired -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontocis/curricula#minimumCreditsRequired">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontocis/curricula#Course"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minExclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="es">Cantidad mínima de créditos requeridos para poder cursar una asignatura.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Minumum number of credits required in order to take a course</rdfs:comment>
+        <rdfs:label xml:lang="es">minimo de creditos requeridos</rdfs:label>
+        <rdfs:label xml:lang="en">minimum credits required</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/ontocis/curricula#partialCreditScore -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontocis/curricula#partialCreditScore">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontocis/curricula#Course"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Minimum score required to obtain the partial credit for a course and have be allowed to sit an exam.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Puntaje mínimo que debe alcanzarse para obtener el crédito parcial de una asignatura, y tener derecho a dar examen.</rdfs:comment>
+        <rdfs:label xml:lang="en">partial credit score</rdfs:label>
+        <rdfs:label xml:lang="es">puntaje para crédito parcial</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/ontocis/curricula#totalCreditScore -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontocis/curricula#totalCreditScore">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontocis/curricula#Course"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="es">Minimum score requiered to approve a course.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Puntaje mínimo requerido para aprobar una asignatura.</rdfs:comment>
+        <rdfs:label xml:lang="es">puntaje para crédito total</rdfs:label>
+        <rdfs:label xml:lang="en">total credit score</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/ontocis/curricula#Core_Course -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ontocis/curricula#Core_Course">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontocis/curricula#Course"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/ontocis/curricula#Elective_Course"/>
+        <rdfs:comment xml:lang="es">Asignatura que los estudiantes deben cursar como parte de la currícula para obtener un título.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Course that the students must attend as part of the curricula to obtain a degree.</rdfs:comment>
+        <rdfs:label xml:lang="es">Asignatura Obligatoria</rdfs:label>
+        <rdfs:label xml:lang="en">Core Course</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontocis/curricula#Course -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ontocis/curricula#Course">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/ontocis/curricula#Core_Course"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontocis/curricula#Elective_Course"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="es">Materia o unidad de enseñanza que generalmente dura un período académico, está dirigida por uno o más instructores y tiene una lista fija de estudiantes.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Unit of teaching that typically lasts one academic term, is led by one or more instructors, and has a fixed roster of students.</rdfs:comment>
+        <rdfs:label xml:lang="es">Asignatura</rdfs:label>
+        <rdfs:label xml:lang="en">Course</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontocis/curricula#Curricula -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ontocis/curricula#Curricula">
+        <rdfs:comment xml:lang="es">Conjunto de enseñanzas y prácticas que, con determinada disposición, han de cursarse para cumplir un ciclo de estudios u obtener un título.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Set of courses that need to be taken in order to obtain a certain degree.</rdfs:comment>
+        <rdfs:label xml:lang="en">Curricula</rdfs:label>
+        <rdfs:label xml:lang="es">Curriculo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontocis/curricula#Elective_Course -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ontocis/curricula#Elective_Course">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontocis/curricula#Course"/>
+        <rdfs:comment xml:lang="es">Asignatura que los estudiantes pueden cursar según sus intereses y preferencias. Para obtener un título, los estudiantes deben cursar un conjunto o una cantidad determinada de asignaturas electivas, definida para cada título.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Course that the students can attend according their interests and preferences. To obtain a degree, a student must attend a set or certain amount of elective courses defined by each degree.</rdfs:comment>
+        <rdfs:label xml:lang="es">Electiva</rdfs:label>
+        <rdfs:label xml:lang="en">Elective Course</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontocis/curricula#Knowledge_Area -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ontocis/curricula#Knowledge_Area">
+        <rdfs:comment xml:lang="en">Topical areas of study in which the knowledge groups are divided.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Áreas temáticas en las que se dividen los grupos temáticos.</rdfs:comment>
+        <rdfs:label xml:lang="en">Knowledge Area</rdfs:label>
+        <rdfs:label xml:lang="es">Área Temática</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontocis/curricula#Knowledge_Group -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ontocis/curricula#Knowledge_Group">
+        <rdfs:comment xml:lang="es">Grupos temáticos en los que se divide el conocimiento abarcado por el currículo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Knowledge groups in which the knowledge body is divided.</rdfs:comment>
+        <rdfs:label xml:lang="es">Grupo Temático</rdfs:label>
+        <rdfs:label xml:lang="en">Knowledge Group</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontocis/curricula#Placeholder_Course -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ontocis/curricula#Placeholder_Course">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontocis/curricula#Elective_Course"/>
+        <rdfs:comment xml:lang="es">Asignatura utilizada para indicar que el estudiante debe tomar una asignatura electiva a su elección.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Course used to state that the student must take a course but can choose among any elective course.</rdfs:comment>
+        <rdfs:label xml:lang="es">Asignatura Placeholder</rdfs:label>
+        <rdfs:label xml:lang="en">Placeholder Course</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontocis/curricula#Term -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ontocis/curricula#Term">
+        <rdfs:comment xml:lang="en">A portion of an academic year, the time during which an educational institution holds classes.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Parte de un año académico, el tiempo durante el cual una institución educativa imparte clases a los estudiantes que cursan una o mas asignaturas.</rdfs:comment>
+        <rdfs:label xml:lang="es">Periodo</rdfs:label>
+        <rdfs:label xml:lang="en">Term</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontocis/curricula#Year -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ontocis/curricula#Year">
+        <rdfs:comment xml:lang="en">Period of time in which students attend courses.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Período del año en que los estudiantes asisten a asignaturas.</rdfs:comment>
+        <rdfs:label xml:lang="es">Año</rdfs:label>
+        <rdfs:label xml:lang="en">Year</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+
+
