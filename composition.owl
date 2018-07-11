@@ -6,8 +6,10 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dcterms="http://purl.org/dc/terms/#"
      xmlns:ontologies="https://w3id.org/ontocis/composition#">
     <owl:Ontology rdf:about="https://w3id.org/ontocis/composition">
+        <dcterms:license rdf:resource="https://opensource.org/licenses/MIT"/>
         <rdfs:label xml:lang="en">OntoCIS Composition</rdfs:label>
         <rdfs:label xml:lang="es">OntoCIS Composición</rdfs:label>
         <rdfs:comment xml:lang="en">It contains properties that help define simple composition relationships (part-whole).</rdfs:comment>

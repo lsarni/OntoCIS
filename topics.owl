@@ -7,8 +7,10 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:dcterms="http://purl.org/dc/terms/#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="https://w3id.org/ontocis/topics">
+        <dcterms:license rdf:resource="https://opensource.org/licenses/MIT"/>
         <rdfs:label xml:lang="en">OntoCIS Topics</rdfs:label>
         <rdfs:comment xml:lang="en">Provides information about topics taught during a degree.</rdfs:comment>
         <rdfs:label xml:lang="es">OntoCIS Temas</rdfs:label>
@@ -35,14 +37,9 @@
         <rdfs:comment xml:lang="en">Used for synoyms, related terms or different combinantions of the term that appears in the rdfs:label annotation.</rdfs:comment>
         <rdfs:label xml:lang="en">alternative label</rdfs:label>
         <rdfs:label xml:lang="es">etiqueta alternativa</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
     </owl:AnnotationProperty>
 
 
-
-    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
 
 
 
@@ -54,13 +51,22 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+     <!-- https://w3id.org/ontocis/topics#taughtIn -->
+
+     <owl:ObjectProperty rdf:about="https://w3id.org/ontocis/topics#taughtIn">
+         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+         <rdfs:domain rdf:resource="https://w3id.org/ontocis/topics#Topic"/>
+         <rdfs:comment xml:lang="es">Indica que un tema se eseña o dicta durante una asignatura</rdfs:comment>
+         <rdfs:comment xml:lang="en">It states that a topic is taught during a course</rdfs:comment>
+         <rdfs:label xml:lang="es">enseñado en</rdfs:label>
+         <rdfs:label xml:lang="en">taught in</rdfs:label>
+     </owl:ObjectProperty>
 
 
 
     <!-- https://w3id.org/ontocis/topics#relatedTo -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontocis/topics#relatedTo">
-        <owl:equivalentProperty rdf:resource="http://www.w3.org/2004/02/skos/core#related"/>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/ontocis/topics#Topic"/>
@@ -76,7 +82,6 @@
     <!-- https://w3id.org/ontocis/topics#subtopicOf -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontocis/topics#subtopicOf">
-        <owl:equivalentProperty rdf:resource="http://www.w3.org/2004/02/skos/core#narrower"/>
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/ontocis/topics#relatedTo"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/ontocis/topics#Topic"/>
@@ -86,18 +91,6 @@
         <rdfs:label xml:lang="es">subtema de</rdfs:label>
         <rdfs:label xml:lang="en">subtopic of</rdfs:label>
     </owl:ObjectProperty>
-
-
-
-    <!-- http://www.w3.org/2004/02/skos/core#narrower -->
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#narrower"/>
-
-
-
-    <!-- http://www.w3.org/2004/02/skos/core#related -->
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#related"/>
 
 
 

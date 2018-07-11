@@ -7,9 +7,11 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dcterms="http://purl.org/dc/terms/#"
      xmlns:composition="https://w3id.org/ontocis/composition#">
     <owl:Ontology rdf:about="https://w3id.org/ontocis/competences">
         <owl:imports rdf:resource="https://w3id.org/ontocis/composition"/>
+        <dcterms:license rdf:resource="https://opensource.org/licenses/MIT"/>
         <rdfs:label xml:lang="es">OntoCIS Competencias</rdfs:label>
         <rdfs:label xml:lang="en">OntoCIS Competences</rdfs:label>
         <rdfs:comment xml:lang="en">Describes a set of competences, general statementes detailing the desired knowledge and skills of student graduating from a course or program should adquire, and categories under which organize them.</rdfs:comment>
@@ -58,7 +60,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/ontocis/competences#hasLearningOutcome">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:range rdf:resource="https://w3id.org/ontocis/competences#Learning_Outcome"/>
-        <rdfs:comment xml:lang="es">Indica que objetivos de aprendizaje que tiene una cosa.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Indica que objetivos de aprendizaje tiene una cosa.</rdfs:comment>
         <rdfs:comment xml:lang="en">It states the learning outcomes for a certain thing.</rdfs:comment>
         <rdfs:label xml:lang="en">has learning outcome</rdfs:label>
         <rdfs:label xml:lang="es">tiene como objetivo de aprendizaje</rdfs:label>

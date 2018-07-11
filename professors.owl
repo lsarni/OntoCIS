@@ -7,8 +7,10 @@
      xmlns:professors="https://w3id.org/ontocis/professors#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dcterms="http://purl.org/dc/terms/#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/#">
     <owl:Ontology rdf:about="https://w3id.org/ontocis/professors">
+        <dcterms:license rdf:resource="https://opensource.org/licenses/MIT"/>
         <rdfs:label xml:lang="en">OntoCIS Professors</rdfs:label>
         <rdfs:label xml:lang="es">OntoCIS Docentes</rdfs:label>
         <rdfs:comment xml:lang="es">Brinda información básica sobre los docentes de una facultad o universidad.</rdfs:comment>
