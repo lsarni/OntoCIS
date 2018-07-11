@@ -2,16 +2,12 @@
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <uri id="Imports Wizard Entry" name="http://www.w3.org/2004/02/skos/core" uri="http://www.w3.org/TR/skos-reference/skos.rdf"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1529162616120" name="http://www.semanticweb.org/lsarni/ontologies/acm-ccs" uri="acm-ccs-lite.owl"/>
         <uri id="Automatically generated entry, Timestamp=1529162616120" name="http://www.semanticweb.org/lsarni/ontologies/competences" uri="competences.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1529162616120" name="http://www.semanticweb.org/lsarni/ontologies/competences-instance" uri="competences-instance.owl"/>
         <uri id="Automatically generated entry, Timestamp=1529162616120" name="http://www.semanticweb.org/lsarni/ontologies/composition" uri="composition.owl"/>
         <uri id="Automatically generated entry, Timestamp=1529162616120" name="http://www.semanticweb.org/lsarni/ontologies/curricula" uri="curricula.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1529162616120" name="http://www.semanticweb.org/lsarni/ontologies/curricula-instance" uri="curricula-instance.owl"/>
         <uri id="Automatically generated entry, Timestamp=1529162616120" name="http://www.semanticweb.org/lsarni/ontologies/degrees" uri="degrees.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1529162616120" name="http://www.semanticweb.org/lsarni/ontologies/degrees-instance" uri="degrees-instance.owl"/>
         <uri id="Automatically generated entry, Timestamp=1529162616120" name="http://www.semanticweb.org/lsarni/ontologies/professors" uri="professors.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1529162616120" name="http://www.semanticweb.org/lsarni/ontologies/professors-instance" uri="professors-instance.owl"/>
         <uri id="Automatically generated entry, Timestamp=1529162616120" name="http://www.semanticweb.org/lsarni/ontologies/topics" uri="topics.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529162616120" name="http://www.semanticweb.org/lsarni/ontologies/courses" uri="courses.owl"/>
     </group>
 </catalog>
