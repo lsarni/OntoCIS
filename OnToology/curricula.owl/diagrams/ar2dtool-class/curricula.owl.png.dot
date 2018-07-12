@@ -1,0 +1,17 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"https://w3id.org/ontocis/curricula" -> "https://w3id.org/ontocis/degrees" [ label = "owl:imports" ];
+	"https://w3id.org/ontocis/curricula" -> "https://w3id.org/ontocis/composition" [ label = "owl:imports" ];
+	"https://w3id.org/ontocis/curricula" -> "https://w3id.org/ontocis/courses" [ label = "owl:imports" ];
+	"https://w3id.org/ontocis/curricula" -> "https://w3id.org/ontocis/topics" [ label = "owl:imports" ];
+	"https://w3id.org/ontocis/curricula" -> "https://w3id.org/ontocis/professors" [ label = "owl:imports" ];
+	"https://w3id.org/ontocis/curricula" -> "https://opensource.org/licenses/MIT" [ label = "dcterms:license" ];
+	"https://w3id.org/ontocis/curricula" -> "https://w3id.org/ontocis/competences" [ label = "owl:imports" ];
+	"courses:Course" -> "owl:Thing" [ label = "degrees:requiredFor" ];
+	"courses:Course" -> "owl:Thing" [ label = "competences:contributesTo" ];
+	"owl:Thing" -> "courses:Course" [ label = "professors:inChargeOf" ];
+	"courses:Course" -> "owl:Thing" [ label = "competences:hasLearningOutcome" ];
+	"courses:Course" -> "owl:Thing" [ label = "topics:taughtIn" ];
+
+}
