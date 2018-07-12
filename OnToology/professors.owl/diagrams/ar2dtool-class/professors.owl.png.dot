@@ -1,0 +1,49 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "http://xmlns.com/foaf/0.1/Person" "professors:Professor" "professors:Person" "1f127e3c:1648bcb08b4:-7ff5" "professors:Nationality" "1f127e3c:1648bcb08b4:-7ffc" "professors:Education_Level" ; /*classes style*/
+	"professors:name" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"professors:name" -> "http://xmlns.com/foaf/0.1/givenName" [ label = "owl:equivalentProperty" ];
+	"professors:hasEducationLevel" -> "http://xmlns.com/foaf/0.1/member" [ label = "rdfs:subPropertyOf" ];
+	"professors:surname" -> "http://xmlns.com/foaf/0.1/familyName" [ label = "owl:equivalentProperty" ];
+	"professors:surname" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"professors:hasNationality" -> "http://xmlns.com/foaf/0.1/member" [ label = "rdfs:subPropertyOf" ];
+	"https://w3id.org/ontocis/professors" -> "https://opensource.org/licenses/MIT" [ label = "dcterms:license" ];
+	"professors:Person" -> "http://xmlns.com/foaf/0.1/Person" [ label = "owl:equivalentClass" ];
+	"professors:Education_Level" -> "1f127e3c:1648bcb08b4:-7ffc" [ label = "owl:equivalentClass" ];
+	"professors:isExperienced" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"NULL" -> "professors:Master" [ label = "rdf:first" ];
+	"NULL" -> "professors:University" [ label = "rdf:first" ];
+	"NULL" -> "1f127e3c:1648bcb08b4:-7ffa" [ label = "rdf:rest" ];
+	"NULL" -> "1f127e3c:1648bcb08b4:-7ff0" [ label = "rdf:rest" ];
+	"NULL" -> "1f127e3c:1648bcb08b4:-7ff3" [ label = "rdf:rest" ];
+	"NULL" -> "1f127e3c:1648bcb08b4:-7ff6" [ label = "rdf:rest" ];
+	"NULL" -> "professors:Russian" [ label = "rdf:first" ];
+	"NULL" -> "1f127e3c:1648bcb08b4:-7ff9" [ label = "rdf:rest" ];
+	"NULL" -> "professors:Tertiary" [ label = "rdf:first" ];
+	"NULL" -> "1f127e3c:1648bcb08b4:-7ff4" [ label = "owl:oneOf" ];
+	"NULL" -> "1f127e3c:1648bcb08b4:-7ffb" [ label = "owl:oneOf" ];
+	"NULL" -> "1f127e3c:1648bcb08b4:-7ff2" [ label = "rdf:rest" ];
+	"NULL" -> "1f127e3c:1648bcb08b4:-7ff8" [ label = "rdf:rest" ];
+	"NULL" -> "professors:Spanish" [ label = "rdf:first" ];
+	"NULL" -> "professors:Argentinian" [ label = "rdf:first" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "professors:Specialization" [ label = "rdf:first" ];
+	"NULL" -> "professors:Uruguayan" [ label = "rdf:first" ];
+	"NULL" -> "1f127e3c:1648bcb08b4:-7fef" [ label = "rdf:rest" ];
+	"NULL" -> "professors:Doctor" [ label = "rdf:first" ];
+	"NULL" -> "professors:Chilean" [ label = "rdf:first" ];
+	"NULL" -> "1f127e3c:1648bcb08b4:-7ff1" [ label = "rdf:rest" ];
+	"NULL" -> "1f127e3c:1648bcb08b4:-7ff7" [ label = "rdf:rest" ];
+	"NULL" -> "professors:Technical" [ label = "rdf:first" ];
+	"NULL" -> "professors:Brazilian" [ label = "rdf:first" ];
+	"professors:inChargeOf" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	"professors:Nationality" -> "1f127e3c:1648bcb08b4:-7ff5" [ label = "owl:equivalentClass" ];
+	"professors:Person" -> "xsd:string" [ label = "professors:name" ];
+	"professors:Person" -> "xsd:string" [ label = "professors:surname" ];
+	"professors:Person" -> "owl:Thing" [ label = "professors:inChargeOf" ];
+	"professors:Person" -> "professors:Education_Level" [ label = "professors:hasEducationLevel" ];
+	"professors:Professor" -> "xsd:boolean" [ label = "professors:isExperienced" ];
+	"professors:Person" -> "professors:Nationality" [ label = "professors:hasNationality" ];
+
+}

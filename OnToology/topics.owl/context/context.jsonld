@@ -1,0 +1,38 @@
+{
+  "@context" : {
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/#license"
+    },
+    "relatedTo" : {
+      "@id" : "https://w3id.org/ontocis/topics#relatedTo",
+      "@type" : "@id"
+    },
+    "altLabel" : {
+      "@id" : "https://w3id.org/ontocis/topics#altLabel"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Concept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "Topic" : {
+      "@id" : "https://w3id.org/ontocis/topics#Topic"
+    },
+    "subtopicOf" : {
+      "@id" : "https://w3id.org/ontocis/topics#subtopicOf",
+      "@type" : "@id"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "taughtIn" : {
+      "@id" : "https://w3id.org/ontocis/topics#taughtIn",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    }
+  }
+}
