@@ -1,0 +1,168 @@
+<h2  id="crossreference" class="list">T&eacute;rminos de OntoCIS Temas para clases, propiedades y propiedades de datos <span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h2>
+Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad definida por OntoCIS Temas.
+<div id="classes">
+   <h3 id="classes-headline" class="list">Clases</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#Topic"
+            title="https://w3id.org/ontocis/topics#Topic">Tema</a>
+      </li>
+   </ul>
+   <div class="entity" id="Topic">
+      <h3>Tema<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/topics#Topic</p>
+      <div class="comment">
+         <span class="markdown">Asunto o materia sobre la que se trata en una conversación, un discurso, un escrito, etc.</span>
+      </div>
+      <dl class="description">
+         <dt>equivalente a</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</span>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>en dominio de</dt>
+         <dd>
+            <a href="#relatedTo"
+               title="https://w3id.org/ontocis/topics#relatedTo">relacionado con</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#subtopicOf"
+               title="https://w3id.org/ontocis/topics#subtopicOf">subtema de</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+         <dt>en rango de</dt>
+         <dd>
+            <a href="#relatedTo"
+               title="https://w3id.org/ontocis/topics#relatedTo">relacionado con</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#subtopicOf"
+               title="https://w3id.org/ontocis/topics#subtopicOf">subtema de</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h2>Propiedades entre objetos</h2>
+   <ul class="hlist">
+      <li>
+         <a href="#relatedTo"
+            title="https://w3id.org/ontocis/topics#relatedTo">relacionado con</a>
+      </li>
+      <li>
+         <a href="#subtopicOf"
+            title="https://w3id.org/ontocis/topics#subtopicOf">subtema de</a>
+      </li>
+      <li>
+         <a href="#taughtIn"
+            title="https://w3id.org/ontocis/topics#taughtIn">enseñado en</a>
+      </li>
+   </ul>
+   <div class="entity" id="relatedTo">
+      <h3>relacionado con<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/topics#relatedTo</p>
+      <div class="comment">
+         <span class="markdown">Indica que un tema esta relacionado con otro tema</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>tiene características:</strong> simetrica</p>
+         <dl>
+            <dt>tiene superpropiedades</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">owl:topObjectProperty</span>
+            </dd>
+            <dt>tiene subpropiedades</dt>
+            <dd>
+               <a href="#subtopicOf"
+                  title="https://w3id.org/ontocis/topics#subtopicOf">subtema de</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Topic"
+                  title="https://w3id.org/ontocis/topics#Topic">Tema</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#Topic"
+                  title="https://w3id.org/ontocis/topics#Topic">Tema</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="subtopicOf">
+      <h3>subtema de<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/topics#subtopicOf</p>
+      <div class="comment">
+         <span class="markdown">Indica que un tema es parte de otro tema más general</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>tiene características:</strong> transitiva</p>
+         <dl>
+            <dt>tiene superpropiedades</dt>
+            <dd>
+               <a href="#relatedTo"
+                  title="https://w3id.org/ontocis/topics#relatedTo">relacionado con</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Topic"
+                  title="https://w3id.org/ontocis/topics#Topic">Tema</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#Topic"
+                  title="https://w3id.org/ontocis/topics#Topic">Tema</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="taughtIn">
+      <h3>enseñado en<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/curricula#taughtIn</p>
+      <div class="comment">
+         <span class="markdown">Indica que un tema se eseña o dicta durante una asignatura</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>tiene superpropiedades</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+            </dd>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Topic"
+                  title="https://w3id.org/ontocis/topics#Topic">Tema</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Leyenda <span class="backlink"> volver a <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Clases">c</sup>: Clases <br/>
+<sup class="type-op" title="Propiedades de objeto">op</sup>: Propiedades de objeto <br/>
+<sup class="type-dp" title="Propiedades de datos">dp</sup>: Propiedades de datos <br/>
+<sup class="type-ni" title="Individuos">ni</sup>: Individuos
+</div>
+</div>

@@ -1,7 +1,7 @@
 {
   "@context" : {
     "relatedTo" : {
-      "@id" : "http://www.semanticweb.org/lsarni/ontologies/topics#relatedTo",
+      "@id" : "https://w3id.org/ontocis/topics#relatedTo",
       "@type" : "@id"
     },
     "altLabel" : {
@@ -11,21 +11,21 @@
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
     },
     "narrower" : {
-      "@id" : "http://www.semanticweb.org/lsarni/ontologies/topics#skos:narrower",
+      "@id" : "https://w3id.org/ontocis/topics#skos:narrower",
       "@type" : "@id"
     },
     "Concept" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
     },
     "related" : {
-      "@id" : "http://www.semanticweb.org/lsarni/ontologies/topics#skos:related",
+      "@id" : "https://w3id.org/ontocis/topics#skos:related",
       "@type" : "@id"
     },
     "Topic" : {
-      "@id" : "http://www.semanticweb.org/lsarni/ontologies/topics#Topic"
+      "@id" : "https://w3id.org/ontocis/topics#Topic"
     },
     "subtopicOf" : {
-      "@id" : "http://www.semanticweb.org/lsarni/ontologies/topics#subtopicOf",
+      "@id" : "https://w3id.org/ontocis/topics#subtopicOf",
       "@type" : "@id"
     },
     "topObjectProperty" : {
@@ -33,7 +33,7 @@
       "@type" : "@id"
     },
     "broader" : {
-      "@id" : "http://www.semanticweb.org/lsarni/ontologies/topics#skos:broader",
+      "@id" : "https://w3id.org/ontocis/topics#skos:broader",
       "@type" : "@id"
     },
     "comment" : {

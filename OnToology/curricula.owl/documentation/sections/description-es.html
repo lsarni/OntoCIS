@@ -1,0 +1,26 @@
+<h2 id="desc" class="list">OntoCIS: Descripci&oacute;n <span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h2>
+<span class="markdown">
+![Diagrama UML](resources/image1.png)
+
+En el diagrama UML muestra como queda la estructura de la ontología una vez establecidas las relaciones entre los diferentes módulos (en rojo) a partir de las siguientes aserciones:
+* **Enseñado en (topics:taughtIn):** tiene como rango las asignaturas. Es decir, un tema puede ser enseñado en una asignatura.
+* **Contribuye a (competences:contributesTo):** tiene como dominio las asignaturas. Es decir, una asignatura contribuye a una competencia.
+* **Tiene como objetivo de aprendizaje (competences:hasLearningOutcome):** tiene como dominio las asignaturas. Es decir, una asignatura tiene como objetivo de aprendizaje un objetivo de aprendizaje.
+* **Requerido para (degrees:requiredFor):** tiene como dominio las asignaturas. Es decir, una asignatura es requerida para un título.
+* **A cargo de (professors:inChargeOf):** tiene como rango las asignaturas. Es decir, un profesor está a cargo de una asignatura.
+
+No es de extrañar que, en todos los casos, la clase que figura en estas aserciones sea la que representa a las asignaturas. Como habíamos mencionado, las asignaturas son el concepto central de todo OntoCIS, son claves para el desarrollo de nuevos planes de estudio, por lo que los demás módulos buscan darles un contexto o agregar información acerca de ellas.
+
+También se encarga de importar todos los módulos, por lo que, si nos interesa instanciar toda la ontología en un solo archivo, basta con importar este módulo (todos los demás se incluirán de manera indirecta).
+
+![Clases y propiedades](resources/image2.png)
+
+En total, incluyendo lo importado, este archivo contiene:
+* 30 clases
+* 21 propiedades entre objetos
+* 11 propiedades de datos
+
+![Instanciación Alegra lineal](resources/image3.png)
+
+La instanciación de este módulo nos permite acceder a toda la información modelada para el currículo. Por ejemplo, el grafo arriba muestra todas las propiedades para Álgebra lineal.
+</span>

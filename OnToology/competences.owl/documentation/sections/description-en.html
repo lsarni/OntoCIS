@@ -1,3 +1,22 @@
 <h2 id="desc" class="list">OntoCIS Competences: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.</span>
+The module is made from three classes, shown in the following UML diagram, and four object properties:
+
+![Module UML](resources/image1.png)
+
+As it’s shown in the diagram, we use the object property `partOf` from [OntoCIS Composition]( ../../composition.owl/documentation/index-en.html) to establish that:
+* A competence is part of a category
+  * A learning outcome is part of a competence
+
+To define three of the four object properties described in this module, we based ourselves on the guide defined by [2]. In order to represent the level of contribution defined there with a numeric value (between 0 and 2) we create the following properties:
+* **Develops:** this represents the value 2
+* **Partially develops:** this represents the value 1
+
+By transforming the courses-competences table created from the auto evaluation done on [2], using these entities, we can establish the relation between the courses and the competences. That way we can see which competences are developed in a course as shown in the following graph for Databases 1:
+
+![Competences contributed to by Databases 1](resources/image2.png)
+
+Or the other way around, see which courses contribute to the development of a competence, as shown in the next graph for C8 (“Understanding of what current technologies can and cannot accomplish” [2]):
+
+![Courses that contribute to the developments of C8](resources/image3.png)
+</span>

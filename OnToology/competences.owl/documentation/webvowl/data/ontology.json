@@ -1,0 +1,389 @@
+{
+  "_comment": "Created with OWL2VOWL (version 0.3.3-SNAPSHOT), http://vowl.visualdataweb.org [Additional Information added by WebVOWL Exporter Version: 0.0.2]",
+  "header": {
+    "languages": [
+      "en",
+      "es"
+    ],
+    "baseIris": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+      "https://w3id.org/ontocis/composition",
+      "http://www.w3.org/2000/01/rdf-schema",
+      "https://w3id.org/ontocis/competences",
+      "http://www.w3.org/2001/XMLSchema"
+    ],
+    "title": {
+      "en": "OntoCIS Competences",
+      "es": "OntoCIS Competencias"
+    },
+    "iri": "https://w3id.org/ontocis/competences",
+    "author": [
+      "Lucía Sarni"
+    ],
+    "description": {
+      "en": "Describes a set of competences, general statements detailing the desired knowledge and skills of student graduating from a course or program should acquire, and categories under which organize them.",
+      "es": "Describe un conjunto de competencias, frases que describen de manera general el conocimiento y capacidades que debe adquirir un estudiante durante una asignatura o programa, y categorias bajo las cuales organizarlas."
+    },
+    "other": {
+      "creator": [
+        {
+          "identifier": "creator",
+          "language": "en",
+          "value": "Lucía Sarni",
+          "type": "label"
+        }
+      ],
+      "title": [
+        {
+          "identifier": "title",
+          "language": "en",
+          "value": "OntoCIS Competences",
+          "type": "label"
+        },
+        {
+          "identifier": "title",
+          "language": "es",
+          "value": "OntoCIS Competencias",
+          "type": "label"
+        }
+      ]
+    }
+  },
+  "namespace": [],
+  "metrics": {
+    "classCount": 3,
+    "objectPropertyCount": 5,
+    "datatypePropertyCount": 0,
+    "individualCount": 0
+  },
+  "settings": {
+    "global": {
+      "zoom": 0.8894761540250925,
+      "translation": [
+        -17.22772189934898,
+        91.66772551006179
+      ],
+      "paused": false
+    },
+    "gravity": {
+      "classDistance": 200,
+      "datatypeDistance": 120
+    },
+    "filter": {
+      "checkBox": [
+        {
+          "id": "datatypeFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "objectPropertyFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "subclassFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "disjointFilterCheckbox",
+          "checked": true
+        },
+        {
+          "id": "setoperatorFilterCheckbox",
+          "checked": false
+        }
+      ],
+      "degreeSliderValue": "0"
+    },
+    "modes": {
+      "checkBox": [
+        {
+          "id": "pickandpinModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "nodescalingModuleCheckbox",
+          "checked": true
+        },
+        {
+          "id": "compactnotationModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "colorexternalsModuleCheckbox",
+          "checked": true
+        }
+      ],
+      "colorSwitchState": false
+    }
+  },
+  "class": [
+    {
+      "id": "2",
+      "type": "owl:Class"
+    },
+    {
+      "id": "3",
+      "type": "owl:Class"
+    },
+    {
+      "id": "1",
+      "type": "owl:Thing"
+    },
+    {
+      "id": "6",
+      "type": "owl:Class"
+    }
+  ],
+  "classAttribute": [
+    {
+      "iri": "https://w3id.org/ontocis/competences#Learning_Outcome",
+      "baseIri": "https://w3id.org/ontocis/competences",
+      "instances": 0,
+      "label": {
+        "IRI-based": "Learning_Outcome",
+        "en": "Learning Outcome",
+        "es": "Objetivo de Aprendizaje"
+      },
+      "comment": {
+        "en": "A very specific statement that describes exactly what a student will be able to do in some measurable way",
+        "es": "Una frase que describe exactamente lo que un estudiante podrá hacer de manera mensurable/evaluable."
+      },
+      "id": "2",
+      "pos": [
+        587.7195569343857,
+        -85.56977041474677
+      ]
+    },
+    {
+      "iri": "https://w3id.org/ontocis/competences#Category",
+      "baseIri": "https://w3id.org/ontocis/competences",
+      "instances": 0,
+      "label": {
+        "IRI-based": "Category",
+        "en": "Category",
+        "es": "Categoría"
+      },
+      "comment": {
+        "en": "Categories under which the competences are organized",
+        "es": "Categorías bajo las cuales se organizan las competencias"
+      },
+      "id": "3",
+      "pos": [
+        430.9379221470301,
+        -201.70605860147157
+      ]
+    },
+    {
+      "iri": "http://www.w3.org/2002/07/owl#Thing",
+      "baseIri": "http://owl2vowl.de",
+      "id": "1",
+      "label": {
+        "es": "Thing",
+        "en": "Thing"
+      },
+      "pos": [
+        501.57921647946273,
+        211.46966583789742
+      ]
+    },
+    {
+      "iri": "https://w3id.org/ontocis/competences#Competence",
+      "baseIri": "https://w3id.org/ontocis/competences",
+      "instances": 0,
+      "label": {
+        "IRI-based": "Competence",
+        "en": "Competency",
+        "es": "Competencia"
+      },
+      "comment": {
+        "en": "A general statement detailing the desired knowledge and skills of student graduating from our course or program.",
+        "es": "Una frase que describe de manera general el conocimiento y capacidades que debe adquirir un estudiante."
+      },
+      "id": "6",
+      "pos": [
+        685.6316600398809,
+        -425.2310194033296
+      ]
+    }
+  ],
+  "property": [
+    {
+      "id": "0",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "4",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "7",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "8",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "9",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "10",
+      "type": "owl:someValuesFrom"
+    }
+  ],
+  "propertyAttribute": [
+    {
+      "iri": "https://w3id.org/ontocis/competences#hasLearningOutcome",
+      "baseIri": "https://w3id.org/ontocis/competences",
+      "range": "2",
+      "label": {
+        "IRI-based": "hasLearningOutcome",
+        "en": "has learning outcome",
+        "es": "tiene como objetivo de aprendizaje"
+      },
+      "domain": "1",
+      "comment": {
+        "en": "It states the learning outcomes for a certain thing.",
+        "es": "Indica que objetivos de aprendizaje tiene una cosa."
+      },
+      "attributes": [
+        "object"
+      ],
+      "id": "0",
+      "pos": [
+        541.8641748945612,
+        72.55424857943
+      ]
+    },
+    {
+      "iri": "https://w3id.org/ontocis/competences#develops",
+      "baseIri": "https://w3id.org/ontocis/competences",
+      "range": "6",
+      "label": {
+        "IRI-based": "develops",
+        "en": "develops",
+        "es": "desarrolla"
+      },
+      "superproperty": [
+        "7"
+      ],
+      "domain": "1",
+      "comment": {
+        "en": "It states that the competency is totally or partially developed in a course, it is assessed and there is evidence of the assessment.",
+        "es": "Indica que la competencia es total o parcialmente desarrollada a lo largo de una asignatura, es evaluada en la asignatura y se cuenta con evidencia de la evaluación."
+      },
+      "attributes": [
+        "object"
+      ],
+      "id": "4",
+      "pos": [
+        823.2002770974333,
+        -306.3869640122562
+      ]
+    },
+    {
+      "iri": "https://w3id.org/ontocis/competences#contributesTo",
+      "baseIri": "https://w3id.org/ontocis/competences",
+      "range": "6",
+      "label": {
+        "IRI-based": "contributesTo",
+        "en": "contributes to",
+        "es": "contribuye a"
+      },
+      "subproperty": [
+        "4",
+        "8"
+      ],
+      "domain": "1",
+      "comment": {
+        "en": "It states the degree of contribution to the development of a competency",
+        "es": "Indica el grado de contribución al desarrollo de una competencia"
+      },
+      "attributes": [
+        "object"
+      ],
+      "id": "7",
+      "pos": [
+        775.0586082691652,
+        -287.903299177174
+      ]
+    },
+    {
+      "iri": "https://w3id.org/ontocis/competences#partiallyDevelops",
+      "baseIri": "https://w3id.org/ontocis/competences",
+      "range": "6",
+      "label": {
+        "IRI-based": "partiallyDevelops",
+        "en": "partially develops",
+        "es": "desarrolla parcialmente"
+      },
+      "superproperty": [
+        "7"
+      ],
+      "domain": "1",
+      "comment": {
+        "en": "It states that the course contributes to the development of the competency but it is not assessed.",
+        "es": "Indica que la asignatura contribuye de alguna manera al desarrollo de la competencia, pero no esta no es evaluada."
+      },
+      "attributes": [
+        "object"
+      ],
+      "id": "8",
+      "pos": [
+        698.5002781953798,
+        -258.2361987515882
+      ]
+    },
+    {
+      "iri": "https://w3id.org/ontocis/composition#partOf",
+      "baseIri": "https://w3id.org/ontocis/composition",
+      "range": "3",
+      "label": {
+        "IRI-based": "part of",
+        "en": "part of",
+        "es": "parte de"
+      },
+      "domain": "6",
+      "comment": {
+        "en": "It states part-whole relations",
+        "es": "Indica la composición entre individuos"
+      },
+      "attributes": [
+        "object",
+        "external",
+        "someValues"
+      ],
+      "id": "9",
+      "pos": [
+        558.2847910934555,
+        -313.4685390024006
+      ]
+    },
+    {
+      "iri": "https://w3id.org/ontocis/composition#partOf",
+      "baseIri": "https://w3id.org/ontocis/composition",
+      "range": "6",
+      "label": {
+        "IRI-based": "part of",
+        "en": "part of",
+        "es": "parte de"
+      },
+      "domain": "2",
+      "comment": {
+        "en": "It states part-whole relations",
+        "es": "Indica la composición entre individuos"
+      },
+      "attributes": [
+        "object",
+        "external",
+        "someValues"
+      ],
+      "id": "10",
+      "pos": [
+        636.6756084871333,
+        -255.40039490903817
+      ]
+    }
+  ]
+}

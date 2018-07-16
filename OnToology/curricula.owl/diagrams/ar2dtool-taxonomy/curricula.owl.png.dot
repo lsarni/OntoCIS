@@ -1,9 +1,0 @@
-digraph ar2dtool_diagram { 
-rankdir=LR;
-size="1000"
-node [shape = rectangle, color="black"]; "curricula:Placeholder_Course" "curricula:Elective_Course" "curricula:Core_Course" "curricula:Course" ; /*classes style*/
-	"curricula:Elective_Course" -> "curricula:Course" [ label = "rdfs:subClassOf" ];
-	"curricula:Placeholder_Course" -> "curricula:Elective_Course" [ label = "rdfs:subClassOf" ];
-	"curricula:Core_Course" -> "curricula:Course" [ label = "rdfs:subClassOf" ];
-
-}

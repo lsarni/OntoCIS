@@ -1,0 +1,24 @@
+<h2 id="desc" class="list">OntoCIS Courses: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+![UML diagram](resources/image1.png)
+
+The diagram shows 5 classes representing the different levels of the hierarchies and 1 class for the courses, with a few child classes modeling different kind of courses. The property `partOf` defined in [OntoCIS Composition](../../composition.owl/documentation/index-en.html) is used to establish the relation between the hierarchy levels.
+
+![Elective placeholders in the typical courses distribution](resources/image2.png)
+
+During the development process for this model we identified a problem. The typical courses distribution used a placeholder to indicate when was it expected for a student to take an elective course. This couldn’t be modelled with the initial courses classes (Core_Course and Elective_Course).
+
+![Instance for the “Elective 1”](resources/image3.png)
+
+These placeholders had to be included since they hold important information, both for the students and to validate that the curricula matches some of the national requirements. So, a new class, called Placeholder_Course, was created as a child of Elective_Course.
+
+![Course graph](resources/image4.png)
+
+For each course we set the following information:
+* Term and/or year
+* Knowledge area and group
+* Amount of hours
+* Credits
+* Scores needed to get a partial or total credit
+* Prerequisites
+</span>

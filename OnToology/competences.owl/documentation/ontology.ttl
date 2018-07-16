@@ -1,13 +1,14 @@
-@prefix : <http://www.semanticweb.org/lsarni/ontologies/competences#> .
+@prefix : <https://w3id.org/ontocis/competences#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/lsarni/ontologies/competences> .
+@base <https://w3id.org/ontocis/competences> .
 
-<http://www.semanticweb.org/lsarni/ontologies/competences> rdf:type owl:Ontology ;
-                                                            owl:imports <http://www.semanticweb.org/lsarni/ontologies> ;
+<https://w3id.org/ontocis/competences> rdf:type owl:Ontology ;
+                                                            owl:imports <https://w3id.org/ontocis/composition> ;
+                                                            <http://purl.org/dc/terms/#license> <https://opensource.org/licenses/MIT> ;
                                                             rdfs:comment "Describe un conjunto de competencias, frases que describen de manera general el conocimiento y capacidades que debe adquirir un estudiante durante una asignatura o programa, y categorias bajo las cuales organizarlas."@es ,
                                                                          "Describes a set of competences, general statementes detailing the desired knowledge and skills of student graduating from a course or program should adquire, and categories under which organize them."@en ;
                                                             rdfs:label "OntoCIS Competences"@en ,
@@ -17,20 +18,16 @@
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/lsarni/ontologies#partOf
-<http://www.semanticweb.org/lsarni/ontologies#partOf> rdf:type owl:ObjectProperty .
-
-
-###  http://www.semanticweb.org/lsarni/ontologies/competences#contributesTo
+###  https://w3id.org/ontocis/competences#contributesTo
 :contributesTo rdf:type owl:ObjectProperty ;
                rdfs:range :Competence ;
                rdfs:comment "Indica el grado de contribución al desarrollo de una competencia"@es ,
                             "It states the degree of contribution to the development of a competency"@en ;
-               rdfs:label "contributesTo"@en ,
-                          "contribuyeA"@es .
+               rdfs:label "contributes to"@en ,
+                          "contribuye a"@es .
 
 
-###  http://www.semanticweb.org/lsarni/ontologies/competences#develops
+###  https://w3id.org/ontocis/competences#develops
 :develops rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf :contributesTo ;
           rdfs:comment "Indica que la competencia es total o parcialmente desarrollada a lo largo de una asignatura, es evaluada en la asignatura y se cuenta con evidencia de la evaluación."@es ,
@@ -39,30 +36,34 @@
                      "develops"@en .
 
 
-###  http://www.semanticweb.org/lsarni/ontologies/competences#hasLearningOutcome
+###  https://w3id.org/ontocis/competences#hasLearningOutcome
 :hasLearningOutcome rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf owl:topObjectProperty ;
                     rdfs:range :Learning_Outcome ;
-                    rdfs:comment "Indica que objetivos de aprendizaje que tiene una cosa."@es ,
+                    rdfs:comment "Indica que objetivos de aprendizaje tiene una cosa."@es ,
                                  "It states the learning outcomes for a certain thing."@en ;
-                    rdfs:label "hasLearningOutcome"@en ,
-                               "tieneComoObjetivoDeAprendizaje"@es .
+                    rdfs:label "has learning outcome"@en ,
+                               "tiene como objetivo de aprendizaje"@es .
 
 
-###  http://www.semanticweb.org/lsarni/ontologies/competences#partiallyDevelops
+###  https://w3id.org/ontocis/competences#partiallyDevelops
 :partiallyDevelops rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf :contributesTo ;
                    rdfs:comment "Indica que la asignatura contribuye de alguna manera al desarrollo de la competencia, pero no esta no es evaluada."@es ,
                                 "It states that the course contributes to the development of the competency but it is not assessed."@en ;
-                   rdfs:label "desarrollaParcialmente"@es ,
-                              "partiallyDevelops"@en .
+                   rdfs:label "desarrolla parcialmente"@es ,
+                              "partially develops"@en .
+
+
+###  https://w3id.org/ontocis/composition#partOf
+<https://w3id.org/ontocis/composition#partOf> rdf:type owl:ObjectProperty .
 
 
 #################################################################
 #    Classes
 #################################################################
 
-###  http://www.semanticweb.org/lsarni/ontologies/competences#Category
+###  https://w3id.org/ontocis/competences#Category
 :Category rdf:type owl:Class ;
           rdfs:comment "Categories under which the competences are organized"@en ,
                        "Categorías bajo las cuales se organizan las competencias"@es ;
@@ -70,10 +71,10 @@
                      "Categoría"@es .
 
 
-###  http://www.semanticweb.org/lsarni/ontologies/competences#Competence
+###  https://w3id.org/ontocis/competences#Competence
 :Competence rdf:type owl:Class ;
             owl:equivalentClass [ rdf:type owl:Restriction ;
-                                  owl:onProperty <http://www.semanticweb.org/lsarni/ontologies#partOf> ;
+                                  owl:onProperty <https://w3id.org/ontocis/composition#partOf> ;
                                   owl:someValuesFrom :Category
                                 ] ;
             rdfs:comment "A general statement detailing the desired knowledge and skills of student graduating from our course or program."@en ,
@@ -82,10 +83,10 @@
                        "Competency"@en .
 
 
-###  http://www.semanticweb.org/lsarni/ontologies/competences#Learning_Outcome
+###  https://w3id.org/ontocis/competences#Learning_Outcome
 :Learning_Outcome rdf:type owl:Class ;
                   owl:equivalentClass [ rdf:type owl:Restriction ;
-                                        owl:onProperty <http://www.semanticweb.org/lsarni/ontologies#partOf> ;
+                                        owl:onProperty <https://w3id.org/ontocis/composition#partOf> ;
                                         owl:someValuesFrom :Competence
                                       ] ;
                   rdfs:comment "A very specific statement that describes exactly what a student will be able to do in some measurable way"@en ,

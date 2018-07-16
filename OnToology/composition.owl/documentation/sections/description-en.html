@@ -1,0 +1,25 @@
+<h2 id="desc" class="list">OntoCIS Composition: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+The object property defined in this module is based in the relations presented in [1] and is transitive.
+It’s used in two of the other modules of OntoCIS: the courses module and the competences module.
+
+In the courses module ([OntoCIS Courses](../../courses.owl/documentation/index-en.html)), it’s used to describe the knowledge body organization and the typical distribution of courses as it can be seen int the image below.
+
+![Use of partOf in the courses module](resources/image1.png)
+
+This allows us to define that:
+*	A knowledge group is part of a curricula
+  *	A knowledge area is part of a temathic group
+    * A course is part of a knowledge area
+*	A year is part of a curricula
+  * A term is part of a year
+    * A course is part of a term
+
+While, in the competences module ([OntoCIS Competences](../../competences.owl/documentation/index-en.html)), it’s used to stablish the relation between categories, competences and learning outcomes as shown in the image below.
+
+![Use of partOf in the competences module](resources/image2.png)
+
+This allows us to define that:
+*	A competence is part of a category
+  * A learning outcome is part of a competence
+</span>

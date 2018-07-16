@@ -1,7 +1,0 @@
-digraph ar2dtool_diagram { 
-rankdir=LR;
-size="1000"
-node [shape = rectangle, color="black"]; "degrees:Degree" "degrees:Bachelor_Degree" ; /*classes style*/
-	"degrees:Bachelor_Degree" -> "degrees:Degree" [ label = "rdfs:subClassOf" ];
-
-}

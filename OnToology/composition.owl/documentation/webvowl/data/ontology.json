@@ -1,0 +1,91 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.2-SNAPSHOT), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "es" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://w3id.org/ontocis/composition", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema" ],
+    "iri" : "https://w3id.org/ontocis/composition",
+    "labels" : {
+      "en" : "OntoCIS Composition",
+      "es" : "OntoCIS Composición"
+    },
+    "title": {
+      "en": "OntoCIS Composition",
+      "es": "OntoCIS Composición"
+    },
+    "comments" : {
+      "en" : "It contains properties that help define simple composition relationships (part-whole).",
+      "es" : "Contiene propiedades que ayudan a definir relaciones de composición (parte-todo)."
+    },
+    "author": [
+      "Lucía Sarni"
+    ],
+    "description": {
+      "en": "It contains properties that help define simple composition relationships (part-whole).",
+      "es": "Contiene propiedades que ayudan a definir relaciones de composición (parte-todo)."
+    },
+    "other": {
+      "creator": [
+        {
+          "identifier": "creator",
+          "language": "en",
+          "value": "Lucía Sarni",
+          "type": "label"
+        }
+      ],
+      "title": [
+        {
+          "identifier": "title",
+          "language": "en",
+          "value": "OntoCIS Composition",
+          "type": "label"
+        },
+        {
+          "identifier": "title",
+          "language": "es",
+          "value": "OntoCIS Composición",
+          "type": "label"
+        }
+      ]
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 0,
+    "objectPropertyCount" : 1,
+    "datatypePropertyCount" : 0,
+    "individualCount" : 0
+  },
+  "class" : [ {
+    "id" : "1",
+    "type" : "owl:Thing"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "1",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  } ],
+  "property" : [ {
+    "id" : "2",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/ontocis/composition#partOf",
+    "baseIri" : "https://w3id.org/ontocis/composition",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "partOf",
+      "en" : "part of",
+      "es" : "parte de"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "It states part-whole relations",
+      "es" : "Indica la composicón entre individuos"
+    },
+    "attributes" : [ "object", "transitive" ],
+    "id" : "2"
+  } ]
+}

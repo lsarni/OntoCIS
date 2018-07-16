@@ -1,0 +1,212 @@
+<h2  id="crossreference" class="list">T&eacute;rminos de OntoCIS Competencias para clases, propiedades y propiedades de datos <span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h2>
+Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad definida por OntoCIS Competencias.
+<div id="classes">
+   <h3 id="classes-headline" class="list">Clases</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#Category"
+            title="https://w3id.org/ontocis/competences#Category">Categoría</a>
+      </li>
+      <li>
+         <a href="#Competence"
+            title="https://w3id.org/ontocis/competences#Competence">Competencia</a>
+      </li>
+      <li>
+         <a href="#Learning_Outcome"
+            title="https://w3id.org/ontocis/competences#Learning_Outcome">Objetivo de Aprendizaje</a>
+      </li>
+   </ul>
+   <div class="entity" id="Category">
+      <h3>Categoría<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/competences#Category</p>
+      <div class="comment">
+         <span class="markdown">Categorías bajo las cuales se organizan las competencias</span>
+      </div>
+   </div>
+   <div class="entity" id="Competence">
+      <h3>Competencia<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/competences#Competence</p>
+      <div class="comment">
+         <span class="markdown">Una frase que describe de manera general el conocimiento y capacidades que debe adquirir un estudiante.</span>
+      </div>
+      <dl class="description">
+         <dt>equivalente a</dt>
+         <dd>
+            <a href="../../composition.owl/documentation/index-es.html#partOf"
+               title="https://w3id.org/ontocis/composition#partOf">parte de</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            <span class="logic">some</span>
+            <a href="#Category"
+               title="https://w3id.org/ontocis/competences#Category">Categoría</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>en rango de</dt>
+         <dd>
+            <a href="#contributesTo"
+               title="https://w3id.org/ontocis/competences#contributesTo">contribuye a</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Learning_Outcome">
+      <h3>Objetivo de Aprendizaje<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/competences#Learning_Outcome</p>
+      <div class="comment">
+         <span class="markdown">Una frase que describe exactamente lo que un estudiante podrá hacer de manera mensurable/evaluable.</span>
+      </div>
+      <dl class="description">
+         <dt>equivalente a</dt>
+         <dd>
+            <a href="../../composition.owl/documentation/index-es.html#partOf"
+               title="https://w3id.org/ontocis/composition#partOf">parte de</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            <span class="logic">some</span>
+            <a href="#Competence"
+               title="https://w3id.org/ontocis/competences#Competence">Competencia</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>en rango de</dt>
+         <dd>
+            <a href="#hasLearningOutcome"
+               title="https://w3id.org/ontocis/competences#hasLearningOutcome">tiene como objetivo de aprendizaje</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h2>Propiedades entre objetos</h2>
+   <ul class="hlist">
+      <li>
+         <a href="#contributesTo"
+            title="https://w3id.org/ontocis/competences#contributesTo">contribuye a</a>
+      </li>
+      <li>
+         <a href="#develops"
+            title="https://w3id.org/ontocis/competences#develops">desarrolla</a>
+      </li>
+      <li>
+         <a href="#partiallyDevelops"
+            title="https://w3id.org/ontocis/competences#partiallyDevelops">desarrolla parcialmente</a>
+      </li>
+      <li>
+         <a href="#hasLearningOutcome"
+            title="https://w3id.org/ontocis/competences#hasLearningOutcome">tiene como objetivo de aprendizaje</a>
+      </li>
+   </ul>
+   <div class="entity" id="contributesTo">
+      <h3>contribuye a<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/competences#contributesTo</p>
+      <div class="comment">
+         <span class="markdown">Indica el grado de contribución al desarrollo de una competencia</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>tiene subpropiedades</dt>
+            <dd>
+               <a href="#develops"
+                  title="https://w3id.org/ontocis/competences#develops">desarrolla</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#partiallyDevelops"
+                  title="https://w3id.org/ontocis/competences#partiallyDevelops">desarrolla parcialmente</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#Competence"
+                  title="https://w3id.org/ontocis/competences#Competence">Competencia</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="develops">
+      <h3>desarrolla<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/competences#develops</p>
+      <div class="comment">
+         <span class="markdown">Indica que la competencia es total o parcialmente desarrollada a lo largo de una asignatura, es evaluada en la asignatura y se cuenta con evidencia de la evaluación.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>tiene superpropiedades</dt>
+            <dd>
+               <a href="#contributesTo"
+                  title="https://w3id.org/ontocis/competences#contributesTo">contribuye a</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="partiallyDevelops">
+      <h3>desarrolla parcialmente<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/competences#partiallyDevelops</p>
+      <div class="comment">
+         <span class="markdown">Indica que la asignatura contribuye de alguna manera al desarrollo de la competencia, pero no esta no es evaluada.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>tiene superpropiedades</dt>
+            <dd>
+               <a href="#contributesTo"
+                  title="https://w3id.org/ontocis/competences#contributesTo">contribuye a</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasLearningOutcome">
+      <h3>tiene como objetivo de aprendizaje<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/competences#hasLearningOutcome</p>
+      <div class="comment">
+         <span class="markdown">Indica que objetivos de aprendizaje tiene una cosa.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>tiene superpropiedades</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">owl:topDataProperty</span>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#Learning_Outcome"
+                  title="https://w3id.org/ontocis/competences#Learning_Outcome">Objetivo de Aprendizaje</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Leyenda <span class="backlink"> volver a <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Clases">c</sup>: Clases <br/>
+<sup class="type-op" title="Propiedades de objeto">op</sup>: Propiedades de objeto <br/>
+<sup class="type-dp" title="Propiedades de datos">dp</sup>: Propiedades de datos <br/>
+<sup class="type-ni" title="Individuos">ni</sup>: Individuos
+</div>
+</div>

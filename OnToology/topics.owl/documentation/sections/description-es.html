@@ -1,0 +1,25 @@
+<h2 id="desc" class="list">OntoCIS Temas: Descripci&oacute;n <span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h2>
+<span class="markdown">
+El siguiente diagrama UML muestra las clases y propiedades definidas en este módulo.
+
+![Diagrama UML](resources/image2.png)
+
+La instanciación de este módulo fue construida en base a los conceptos listados en la ontología que sirve como sistema de clasificación en el área de la computación para la biblioteca digital de la ACM [1]. Esto implico que se realizara un proceso de reingeniería para convertir las relaciones definidas en este sistema (modelado utilizando SKOS [2]) y las definidas en este módulo.
+
+Para ello se realizaron los siguientes pasos:
+
+1. Cada *skos:Concept* se transforma en un *topics:Topic*
+2. Las relaciones establecidas con *skos:related* se representan utilizando *topics:relatedTo*.
+3. Las relaciones establecidas con *skos:broader* se transforman en *topics:subtopicOf*
+4. Las etiquetas preferenciales se convierten en *rdfs:label* y las alternativas en *topics:altLabel*
+
+De esta forma podemos modelar los temas de las asignaturas y establecer las relaciones necesarias para indicar en que asignatura se enseña cada uno. Por ejemplo, para Fundamentos de la Computación:
+
+![Temas para Fundamentos de la Computación](resources/image3.png)
+
+Una de las ventajas de reutilizar esta ontología es que podemos navegar entre las asignaturas a través de las relaciones dadas por los temas. Esto nos permite validar o crear nuevas previas y reválidas para las asignaturas. Por ejemplo, podemos ver que asignaturas también enseñan los temas identificados para Fundamentos de la Computación:
+
+![Relación entre asignaturas según el contenido temático](resources/image4.png)
+
+Puntualmente, Estructura de datos y algoritmos 1 tiene como previa las otras dos asignaturas que figuran en el grafo presentado arriba, dado que comparten contenido temático podemos afirmar que esto tiene sentido.
+</span>

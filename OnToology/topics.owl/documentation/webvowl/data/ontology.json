@@ -1,0 +1,162 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.2-SNAPSHOT), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "es" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "https://w3id.org/ontocis/topics", "http://www.w3.org/2004/02/skos/core" ],
+    "iri" : "https://w3id.org/ontocis/topics",
+    "title":{
+       "en":"OntoCIS Topics",
+       "es":"OntoCIS Temas"
+    },
+    "labels" : {
+      "en" : "OntoCIS Topics",
+      "es" : "OntoCIS Temas"
+    },
+    "comments" : {
+      "en" : "Provides information about topics taught during a degree.",
+      "es" : "Brinda información sobre los temas que son dictados durante una carrera universitaria."
+    }
+  },
+  "author":[
+     "Lucía Sarni"
+  ],
+  "description":{
+     "en":"Provides information about topics taught during a degree.",
+     "es":"Brinda información sobre los temas que son dictados durante una carrera universitaria."
+  },
+  "other":{
+     "creator":[
+        {
+           "identifier":"creator",
+           "language":"en",
+           "value":"Lucía Sarni",
+           "type":"label"
+        }
+     ],
+     "title":[
+        {
+           "identifier":"title",
+           "language":"en",
+           "value":"OntoCIS Topics",
+           "type":"label"
+        },
+        {
+           "identifier":"title",
+           "language":"es",
+           "value":"OntoCIS Temas",
+           "type":"label"
+        }
+     ]
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 2,
+    "objectPropertyCount" : 6,
+    "datatypePropertyCount" : 1,
+    "individualCount" : 0
+  },
+  "class" : [ {
+      "id" : "1",
+      "type" : "owl:equivalentClass"
+    }, {
+      "id" : "7",
+      "type" : "owl:Thing"
+    }, {
+      "id" : "5",
+      "type" : "owl:equivalentClass"
+    } ],
+    "classAttribute" : [ {
+      "iri" : "https://w3id.org/ontocis/topics#Topic",
+      "equivalent" : [ "5" ],
+      "baseIri" : "https://w3id.org/ontocis/topics",
+      "instances" : 0,
+      "label" : {
+        "IRI-based" : "Topic",
+        "en" : "Topic",
+        "es" : "Tema"
+      },
+      "comment" : {
+        "en" : "A matter dealt with in a text, discourse, conversation, etc.",
+        "es" : "Asunto o materia sobre la que se trata en una conversación, un discurso, un escrito, etc."
+      },
+      "attributes" : [ "equivalent" ],
+      "id" : "1"
+    }, {
+      "iri" : "http://www.w3.org/2002/07/owl#Thing",
+      "baseIri" : "http://owl2vowl.de",
+      "id" : "7",
+      "label" : {
+        "undefined" : "Thing"
+      }
+    }, {
+      "iri" : "http://www.w3.org/2004/02/skos/core#Concept",
+      "baseIri" : "http://www.w3.org/2004/02/skos/core",
+      "instances" : 0,
+      "label" : {
+        "IRI-based" : "Concept"
+      },
+      "attributes" : [ "equivalent", "external" ],
+      "id" : "5"
+    } ],
+    "property" : [ {
+      "id" : "0",
+      "type" : "owl:objectProperty"
+    }, {
+      "id" : "3",
+      "type" : "owl:objectProperty"
+    }, {
+      "id" : "8",
+      "type" : "owl:objectProperty"
+    } ],
+    "propertyAttribute" : [ {
+      "iri" : "https://w3id.org/ontocis/topics#relatedTo",
+      "baseIri" : "https://w3id.org/ontocis/topics",
+      "range" : "1",
+      "label" : {
+        "IRI-based" : "relatedTo",
+        "en" : "related to",
+        "es" : "relacionado con"
+      },
+      "domain" : "1",
+      "subproperty" : [ "3" ],
+      "comment" : {
+        "en" : "It states that a topic is related to another topic",
+        "es" : "Indica que un tema esta relacionado con otro tema"
+      },
+      "attributes" : [ "symmetric", "object" ],
+      "id" : "0"
+    }, {
+      "iri" : "https://w3id.org/ontocis/topics#subtopicOf",
+      "baseIri" : "https://w3id.org/ontocis/topics",
+      "range" : "1",
+      "label" : {
+        "IRI-based" : "subtopicOf",
+        "en" : "subtopic of",
+        "es" : "subtema de"
+      },
+      "superproperty" : [ "0" ],
+      "domain" : "1",
+      "comment" : {
+        "en" : "It states that a topic is part of a broader or more general topic",
+        "es" : "Indica que un tema es parte de otro tema más general"
+      },
+      "attributes" : [ "transitive", "object" ],
+      "id" : "3"
+    }, {
+      "iri" : "https://w3id.org/ontocis/topics#taughtIn",
+      "baseIri" : "https://w3id.org/ontocis/topics",
+      "label" : {
+        "IRI-based" : "taughtIn",
+        "en" : "taught in",
+        "es" : "enseñado en"
+      },
+      "domain" : "1",
+      "range" : "7",
+      "comment" : {
+        "en" : "It states that a topic is taught during a course",
+        "es" : "Indica que un tema se eseña o dicta durante una asignatura"
+      },
+      "attributes" : [ "object" ],
+      "id" : "8"
+    }]
+  }

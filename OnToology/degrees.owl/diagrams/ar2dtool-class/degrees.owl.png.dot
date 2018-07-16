@@ -1,7 +1,0 @@
-digraph ar2dtool_diagram { 
-rankdir=LR;
-size="1501"
-node [shape = rectangle, color="orange"]; "degrees:Degree" ; /*classes style*/
-	"owl:Thing" -> "degrees:Degree" [ label = "degrees:requiredFor" ];
-
-}

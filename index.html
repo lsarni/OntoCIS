@@ -3,17 +3,19 @@
   <head>
     <meta charset="UTF-8">
     <title>OntoCIS</title>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link rel="stylesheet" href="vocab/themes/blue/style.css" type="text/css" media="print, projection, screen" />
     <script src="vocab/js/jquery-1.11.0.js"></script>
     <script type="text/javascript" src="vocab/js/bootstrap.js"></script>
+    <script type="text/javascript" src="vocab/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" id="js">
-	    $(document).ready(function() 
-		    { 
-		    	$("#tablesorter-demo").tablesorter(); 
-		    	$("#tablesorter-demo").stickyTableHeaders(); 
-		    	$('[data-toggle="tooltip"]').tooltip(); 
-		    } 
-	    ); 
+	    $(document).ready(function()
+		    {
+		    	$("#tablesorter-demo").tablesorter();
+		    	$("#tablesorter-demo").stickyTableHeaders();
+		    	$('[data-toggle="tooltip"]').tooltip();
+		    }
+	    );
     </script>
 
     <!-- Le styles -->
@@ -24,7 +26,7 @@
         padding-bottom: 40px;
       }
     </style>
-    
+
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="vocab/js/html5shiv.js"></script>
@@ -48,7 +50,6 @@
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Vocabularies</a></li>
-        <li><a href="report.html">Vocabulary report</a></li>
       </ul>
     </div><!--/.nav-collapse -->
   </div>
@@ -57,11 +58,12 @@
 
       <!-- Jumbotron -->
       <div class="jumbotron">
-        <h1>OntoCIS landing page</h1>
-        <p class="lead">Here you can find the list of vocabularies that have been found on OntoCIS.</p>
+        <h1>OntoCIS</h1>
+        <p class="lead">Here you can find all the ontologies that make part of OntoCIS.</p>
+        <img src="diagram.png" alt="Diagram of the ontology" style="width:80%;"/>
       </div>
       <hr>
-<div class="row"> 
+<div class="row">
 </div>
 <br>
 <table id="tablesorter-demo" class="tablesorter table table-hover table-responsive">
@@ -69,67 +71,89 @@
 <tr>
 <th class="col-md-2">Ontology</th>
 <th class="col-md-1">Serialization</th>
-<th class="col-md-2">License</th>
-<th class="col-md-1">Language</th>
-<th class="col-md-6">Description</th>
+<th class="col-md-1">License</th>
+<th class="col-md-1">Languages</th>
+<th class="col-md-7">Description</th>
 </tr>
 </thead>
 <tbody>
+<tr id="tr0">
+  <td><a href = "OnToology/curricula.owl/documentation/index-en.html" target="_blank">OntoCIS</a></td><td>
+  <a href="ontologies/curricula.owl"><span class="label label-primary">RDF/XML</span></a>
+  </td>
+  <td><a href="https://opensource.org/licenses/MIT" target="_blank"><a href="https://opensource.org/licenses/MIT" target="_blank"><span class="label label-default">MIT</span></a></a></td>
+  <td><a href="http://lexvo.org/id/iso639-3/spa" target="_blank"> <span class="label label-primary">es</span></a> <a href="http://lexvo.org/id/iso639-3/eng" target="_blank"> <span class="label label-primary">en</span></a> </td>
+  <td>
+  An ontology that describes the curricula of the degree in Software Engineering at Universidad ORT Uruguay.
+  </td>
+</tr>
 <tr id="tr1">
-<td><a href = "/home/ahmad/repos/prevclone-4JOX/ontologies.owl" target="_blank">Undefined</a> </td><td>
-<a href="ontologies/ontologies.owl"><span class="label label-primary">RDF/XML</span></a>
+<td><a href = "OnToology/composition.owl/documentation/index-en.html" target="_blank">OntoCIS Composition</a></td><td>
+<a href="ontologies/composition.owl"><span class="label label-primary">RDF/XML</span></a>
 </td>
-<td><span class="label label-default">Undefined</span></td>
+<td><a href="https://opensource.org/licenses/MIT" target="_blank"><span class="label label-default">MIT</span></a></td>
 <td><a href="http://lexvo.org/id/iso639-3/spa" target="_blank"> <span class="label label-primary">es</span></a> <a href="http://lexvo.org/id/iso639-3/eng" target="_blank"> <span class="label label-primary">en</span></a> </td>
 <td>
+It contains properties that help define simple composition relationships (part-whole).
 </td>
 </tr><tr id="tr2">
-<td><a href = "/home/ahmad/repos/prevclone-4JOX/topics.owl" target="_blank">Undefined</a> </td><td>
-<a href="ontologies/topics.owl"><span class="label label-primary">RDF/XML</span></a>
-</td>
-<td><span class="label label-default">Undefined</span></td>
-<td><a href="http://lexvo.org/id/iso639-3/spa" target="_blank"> <span class="label label-primary">es</span></a> <a href="http://lexvo.org/id/iso639-3/eng" target="_blank"> <span class="label label-primary">en</span></a> </td>
-<td>
-</td>
+  <td><a href = "OnToology/topics.owl/documentation/index-en.html" target="_blank">OntoCIS Topics</a></td><td>
+  <a href="ontologies/topics.owl"><span class="label label-primary">RDF/XML</span></a>
+  </td>
+  <td><a href="https://opensource.org/licenses/MIT" target="_blank"><span class="label label-default">MIT</span></a></td>
+  <td><a href="http://lexvo.org/id/iso639-3/spa" target="_blank"> <span class="label label-primary">es</span></a> <a href="http://lexvo.org/id/iso639-3/eng" target="_blank"> <span class="label label-primary">en</span></a> </td>
+  <td>
+  Provides information about topics taught during a degree.
+  </td>
 </tr><tr id="tr3">
-<td><a href = "/home/ahmad/repos/prevclone-4JOX/competences.owl" target="_blank">Undefined</a> </td><td>
-<a href="ontologies/competences.owl"><span class="label label-primary">RDF/XML</span></a>
-</td>
-<td><span class="label label-default">Undefined</span></td>
-<td><a href="http://lexvo.org/id/iso639-3/eng" target="_blank"> <span class="label label-primary">en</span></a> <a href="http://lexvo.org/id/iso639-3/spa" target="_blank"> <span class="label label-primary">es</span></a> </td>
-<td>
-</td>
+  <td><a href = "OnToology/competences.owl/documentation/index-en.html" target="_blank">OntoCIS Competences</a></td><td>
+  <a href="ontologies/competences.owl"><span class="label label-primary">RDF/XML</span></a>
+  </td>
+  <td><a href="https://opensource.org/licenses/MIT" target="_blank"><span class="label label-default">MIT</span></a></td>
+  <td><a href="http://lexvo.org/id/iso639-3/spa" target="_blank"> <span class="label label-primary">es</span></a> <a href="http://lexvo.org/id/iso639-3/eng" target="_blank"> <span class="label label-primary">en</span></a> </td>
+  <td>
+  Describes a set of competences, general statements detailing the desired knowledge and skills of student graduating from a course or program should acquire, and categories under which organize them.
+  </td>
 </tr><tr id="tr4">
-<td><a href = "/home/ahmad/repos/prevclone-4JOX/degrees.owl" target="_blank">Undefined</a> </td><td>
-<a href="ontologies/degrees.owl"><span class="label label-primary">RDF/XML</span></a>
-</td>
-<td><span class="label label-default">Undefined</span></td>
-<td><a href="http://lexvo.org/id/iso639-3/eng" target="_blank"> <span class="label label-primary">en</span></a> <a href="http://lexvo.org/id/iso639-3/spa" target="_blank"> <span class="label label-primary">es</span></a> </td>
-<td>
-</td>
+  <td><a href = "OnToology/degrees.owl/documentation/index-en.html" target="_blank">OntoCIS Degrees</a></td><td>
+  <a href="ontologies/degrees.owl"><span class="label label-primary">RDF/XML</span></a>
+  </td>
+  <td><a href="https://opensource.org/licenses/MIT" target="_blank"><span class="label label-default">MIT</span></a></td>
+  <td><a href="http://lexvo.org/id/iso639-3/spa" target="_blank"> <span class="label label-primary">es</span></a> <a href="http://lexvo.org/id/iso639-3/eng" target="_blank"> <span class="label label-primary">en</span></a> </td>
+  <td>
+  Provides information about the degrees that can be awarded after completing a curricula at an university or faculty.
+  </td>
 </tr><tr id="tr5">
-<td><a href = "/home/ahmad/repos/prevclone-4JOX/professors.owl" target="_blank">Undefined</a> </td><td>
-<a href="ontologies/professors.owl"><span class="label label-primary">RDF/XML</span></a>
-</td>
-<td><span class="label label-default">Undefined</span></td>
-<td><a href="http://lexvo.org/id/iso639-3/eng" target="_blank"> <span class="label label-primary">en</span></a> <a href="http://lexvo.org/id/iso639-3/spa" target="_blank"> <span class="label label-primary">es</span></a> </td>
-<td>
-</td>
-</tr><tr id="tr6">
-<td><a href = "/home/ahmad/repos/prevclone-4JOX/curricula.owl" target="_blank">Undefined</a> </td><td>
-<a href="ontologies/curricula.owl"><span class="label label-primary">RDF/XML</span></a>
-</td>
-<td><span class="label label-default">Undefined</span></td>
-<td><a href="http://lexvo.org/id/iso639-3/eng" target="_blank"> <span class="label label-primary">en</span></a> <a href="http://lexvo.org/id/iso639-3/spa" target="_blank"> <span class="label label-primary">es</span></a> </td>
-<td>
-</td>
-</tr></tbody></table>
+  <td><a href = "OnToology/professors.owl/documentation/index-en.html" target="_blank">OntoCIS Professors</a></td><td>
+  <a href="ontologies/professors.owl"><span class="label label-primary">RDF/XML</span></a>
+  </td>
+  <td><a href="https://opensource.org/licenses/MIT" target="_blank"><span class="label label-default">MIT</span></a></td>
+  <td><a href="http://lexvo.org/id/iso639-3/spa" target="_blank"> <span class="label label-primary">es</span></a> <a href="http://lexvo.org/id/iso639-3/eng" target="_blank"> <span class="label label-primary">en</span></a> </td>
+  <td>
+  Provides basic information about the professors of an university or faculty.
+  </td>
+</tr>
+<tr id="tr6">
+  <td><a href = "OnToology/courses.owl/documentation/index-en.html" target="_blank">OntoCIS Courses</a></td><td>
+  <a href="ontologies/courses.owl"><span class="label label-primary">RDF/XML</span></a>
+  </td>
+  <td><a href="https://opensource.org/licenses/MIT" target="_blank"><span class="label label-default">MIT</span></a></td>
+  <td><a href="http://lexvo.org/id/iso639-3/spa" target="_blank"> <span class="label label-primary">es</span></a> <a href="http://lexvo.org/id/iso639-3/eng" target="_blank"> <span class="label label-primary">en</span></a> </td>
+  <td>
+  Describes the different kind of courses, the structure of the knowledge body and of the typical courses distribution.
+  </td>
+</tr>
+</tbody></table>
+<hr>
+<div class="jumbotron">
+  <p class="lead">This ontology was developed as part of a final project for the degree in <a href='https://fi.ort.edu.uy/ingenieria-en-sistemas'>Systems Engineering (Ingeniería en Sistemas)</a> at <a href='https://www.ort.edu.uy/'>Universidad ORT Uruguay</a>.</p>
+</div>
 <hr>
       <footer class="footer">
            <footer class="footer">
             <div class="row">
     	<div class="col-md-10">
-    		Page created with  <a href = "https://github.com/dgarijo/vocabLite" target="_blank">VocabLite</a> (<a href="http://oeg-upm.net/">Ontology Engineering Group</a>)
+    		Page created with  <a href = "https://github.com/dgarijo/vocabLite" target="_blank">VocabLite</a> (<a href="http://www.oeg-upm.net/">Ontology Engineering Group</a>)
 	        <br>
     	Built with <a target="_blank" href="http://getbootstrap.com/">Bootstrap</a>
  	        <br>

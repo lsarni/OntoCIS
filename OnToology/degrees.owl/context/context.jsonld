@@ -7,14 +7,14 @@
       "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
     },
     "requiredFor" : {
-      "@id" : "http://www.semanticweb.org/lsarni/ontologies/degrees#requiredFor",
+      "@id" : "https://w3id.org/ontocis/degrees#requiredFor",
       "@type" : "@id"
     },
     "Degree" : {
-      "@id" : "http://www.semanticweb.org/lsarni/ontologies/degrees#Degree"
+      "@id" : "https://w3id.org/ontocis/degrees#Degree"
     },
     "Bachelor_Degree" : {
-      "@id" : "http://www.semanticweb.org/lsarni/ontologies/degrees#Bachelor_Degree"
+      "@id" : "https://w3id.org/ontocis/degrees#Bachelor_Degree"
     }
   }
 }

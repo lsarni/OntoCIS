@@ -1,0 +1,27 @@
+<h2 id="desc" class="list">OntoCIS Composición: Descripci&oacute;n <span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h2>
+<span class="markdown">
+La propiedad entre objetos definida en este módulo está basada en las relaciones presentadas en [1] y tiene la característica de ser transitiva.
+Se utiliza en dos de los otros módulos de OntoCIS: el módulo de las asignaturas y el módulo de las competencias.
+
+En el módulo [OntoCIS Asignaturas](../../courses.owl/documentation/index-es.html), es utilizada para describir el cuerpo de conocimiento y la distribución típica de asignaturas como puede verse en la siguiente imágen.
+
+![Uso de 'parte de' en el módulo de las asignaturas](resources/image1.png)
+
+Esto nos permite definir que:
+
+* Un grupo temático es parte de un currículo
+  * Un área temática es parte de un grupo temático
+    * Una asignatura es parte de un área temática
+* Un año es parte de un currículo
+  * Un semestre es parte de una año
+    * Una asignatura es parte de un período
+
+Mientras que, en el módulo de competencias ([OntoCIS Competencias](../../competences.owl/documentation/index-es.html)), se utiliza para establecer relaciones entre categorías, competencias y objetivos de aprendizaje como se muestra en la siguiente imágen.
+
+![Uso de 'parte de' en el módulo de competencias](resources/image2.png)
+
+Esto nos permite definir que:
+
+* Una competencia es parte de una categoría
+  * Un objetivo de aprendizaje es parte de una competencia
+</span>

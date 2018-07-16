@@ -1,0 +1,22 @@
+<h2 id="desc" class="list">OntoCIS Competencias: Descripci&oacute;n <span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h2>
+<span class="markdown">
+El módulo está conformado por tres clases, como se muestran en el siguiente diagrama UML, y cuatro propiedades entre objetos:
+
+![Diagrama UML](resources/image1.png)
+
+Como se puede ver en el diagrama, utilizamos la propiedad `partOf` de [OntoCIS Composición]( ../../composition.owl/documentation/index-es.html) para establecer que:
+* Una competencia es parte de una categoría.
+  * Un objetivo de aprendizaje es parte de una competencia.
+
+Tres de las cuatro propiedades entre objetos definidas en este módulo están basadas en la guía definida en [2]. De forma de poder representar el nivel de contribución, en lugar de utilizar un valor numérico (entre 0 y 2) se definen las siguientes propiedades:
+* **Desarrolla:** representa el valor 2.
+* **Desarrolla parcialmente:** representa el valor 1.
+
+Al transformar la matriz asignaturas-competencias creada como parte del proceso de autoevaluación llevado a cabo en  [2], utilizando las entidades definidas por este módulo, podemos establecer la relación entre las asignaturas y las competencias. De esa forma, podemos ver que competencias son desarrolladas en una asignatura, como se ve para Bases de Datos 1 en el siguiente grafo:
+
+![Competencias desarrolladas por Bases de Datos 1](resources/image2.png)
+
+Pero también Podemos ver que asignaturas contribuyen al desarrollo de una competencia, como se ve en el siguiente grafo para la competencia C8 (“Comprender lo que pueden y no pueden lograr las tecnologías actuales” [2]):
+
+![Asignaturas que contribuyen al desarrollo de C8](resources/image3.png)
+</span>

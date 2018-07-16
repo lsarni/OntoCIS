@@ -1,0 +1,527 @@
+<h2  id="crossreference" class="list">T&eacute;rminos de OntoCIS Docentes para clases, propiedades y propiedades de datos <span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h2>
+Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad definida por OntoCIS Docentes.
+<div id="classes">
+   <h3 id="classes-headline" class="list">Clases</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#Professor"
+            title="https://w3id.org/ontocis/professors#Professor">Docente</a>
+      </li>
+      <li>
+         <a href="#Nationality"
+            title="https://w3id.org/ontocis/professors#Nationality">Nacionalidad</a>
+      </li>
+      <li>
+         <a href="#Education_Level"
+            title="https://w3id.org/ontocis/professors#Education_Level">Nivel de formación</a>
+      </li>
+      <li>
+         <a href="#Person"
+            title="https://w3id.org/ontocis/professors#Person">Persona</a>
+      </li>
+   </ul>
+   <div class="entity" id="Professor">
+      <h3>Docente<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/professors#Professor</p>
+      <div class="comment">
+         <span class="markdown">Persona que dicta o está a cargo de una asignatura.</span>
+      </div>
+      <dl class="description">
+         <dt>tiene superclases</dt>
+         <dd>
+            <a href="#Person"
+               title="https://w3id.org/ontocis/professors#Person">Persona</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>en dominio de</dt>
+         <dd>
+            <a href="#isExperienced"
+               title="https://w3id.org/ontocis/professors#isExperienced">tiene experiencia</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Nationality">
+      <h3>Nacionalidad<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/professors#Nationality</p>
+      <div class="comment">
+         <span class="markdown">Condición que reconoce a una persona la pertenencia a un estado o nación.</span>
+      </div>
+      <dl class="description">
+         <dt>equivalente a</dt>
+         <dd>{ <a href="#Argentinian"
+               title="https://w3id.org/ontocis/professors#Argentinian">Argentina</a> , <a href="#Brazilian"
+               title="https://w3id.org/ontocis/professors#Brazilian">Brasileña</a> , <a href="#Chilean"
+               title="https://w3id.org/ontocis/professors#Chilean">Chilena</a> , <a href="#Russian"
+               title="https://w3id.org/ontocis/professors#Russian">Rusa</a> , <a href="#Spanish"
+               title="https://w3id.org/ontocis/professors#Spanish">Española</a> , <a href="#Uruguayan"
+               title="https://w3id.org/ontocis/professors#Uruguayan">Uruguaya</a> }</dd>
+         <dt>tiene superclases</dt>
+         <dd>
+           <a href="http://xmlns.com/foaf/spec/#term_Group"
+              title="http://xmlns.com/foaf/spec/#term_Group">foaf:Group</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>en rango de</dt>
+         <dd>
+            <a href="#hasNationality"
+               title="https://w3id.org/ontocis/professors#hasNationality">tiene nacionalidad</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Education_Level">
+      <h3>Nivel de formación<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/professors#Education_Level</p>
+      <div class="comment">
+         <span class="markdown">Títulos que pueden ser obtenidos por una persona.</span>
+      </div>
+      <dl class="description">
+         <dt>equivalente a</dt>
+         <dd>{ <a href="#Doctor"
+               title="https://w3id.org/ontocis/professors#Doctor">Doctorado</a> , <a href="#Master"
+               title="https://w3id.org/ontocis/professors#Master">Master</a> , <a href="#Specialization"
+               title="https://w3id.org/ontocis/professors#Specialization">Especialización</a> , <a href="#Technical"
+               title="https://w3id.org/ontocis/professors#Technical">Técnico</a> , <a href="#Tertiary"
+               title="https://w3id.org/ontocis/professors#Tertiary">Terciario</a> , <a href="#University"
+               title="https://w3id.org/ontocis/professors#University">Universitario</a> }</dd>
+         <dt>tiene superclases</dt>
+         <dd>
+           <a href="http://xmlns.com/foaf/spec/#term_Group"
+              title="http://xmlns.com/foaf/spec/#term_Group">foaf:Group</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>en rango de</dt>
+         <dd>
+            <a href="#hasEducationLevel"
+               title="https://w3id.org/ontocis/professors#hasEducationLevel">tiene nivel de formación</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Person">
+      <h3>Persona<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/professors#Person</p>
+      <div class="comment">
+         <span class="markdown">Un ser humano.</span>
+      </div>
+      <dl class="description">
+         <dt>equivalente a</dt>
+         <dd>
+            <a href="http://xmlns.com/foaf/spec/#term_Person"
+               title="http://xmlns.com/foaf/spec/#term_Person">foaf:Person</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>tiene subclases</dt>
+         <dd>
+            <a href="#Professor"
+               title="https://w3id.org/ontocis/professors#Professor">Docente</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>en dominio de</dt>
+         <dd>
+            <a href="#inChargeOf"
+               title="https://w3id.org/ontocis/professors#inChargeOf">a cargo de</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#surname"
+               title="https://w3id.org/ontocis/professors#surname">apellido</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#name"
+               title="https://w3id.org/ontocis/professors#name">nombre</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#hasNationality"
+               title="https://w3id.org/ontocis/professors#hasNationality">tiene nacionalidad</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#hasEducationLevel"
+               title="https://w3id.org/ontocis/professors#hasEducationLevel">tiene nivel de formación</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h2>Propiedades entre objetos</h2>
+   <ul class="hlist">
+      <li>
+         <a href="#inChargeOf"
+            title="https://w3id.org/ontocis/professors#inChargeOf">a cargo de</a>
+      </li>
+      <li>
+         <a href="#hasNationality"
+            title="https://w3id.org/ontocis/professors#hasNationality">tiene nacionalidad</a>
+      </li>
+      <li>
+         <a href="#hasEducationLevel"
+            title="https://w3id.org/ontocis/professors#hasEducationLevel">tiene nivel de formación</a>
+      </li>
+   </ul>
+   <div class="entity" id="inChargeOf">
+      <h3>a cargo de<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/professors#inChargeOf</p>
+      <div class="comment">
+         <span class="markdown">Indica que una persona esta a cargo de algo.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>tiene superpropiedades</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">owl:topDataProperty</span>
+            </dd>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Person"
+                  title="https://w3id.org/ontocis/professors#Person">Persona</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasNationality">
+      <h3>tiene nacionalidad<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/professors#hasNationality</p>
+      <div class="comment">
+         <span class="markdown">Indica la nacionalidad de una persona.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>tiene superpropiedades</dt>
+            <dd>
+               <span class="dotted" title="http://xmlns.com/foaf/0.1/member">member</span>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Person"
+                  title="https://w3id.org/ontocis/professors#Person">Persona</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#Nationality"
+                  title="https://w3id.org/ontocis/professors#Nationality">Nacionalidad</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasEducationLevel">
+      <h3>tiene nivel de formación<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/professors#hasEducationLevel</p>
+      <div class="comment">
+         <span class="markdown">Indica el nivel de formación más alto alcanzado por una persona.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>tiene superpropiedades</dt>
+            <dd>
+              <span class="dotted" title="http://xmlns.com/foaf/0.1/member">member</span>
+              <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Person"
+                  title="https://w3id.org/ontocis/professors#Person">Persona</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#Education_Level"
+                  title="https://w3id.org/ontocis/professors#Education_Level">Nivel de formación</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Propiedades de datos</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#surname"
+            title="https://w3id.org/ontocis/professors#surname">apellido</a>
+      </li>
+      <li>
+         <a href="#name"
+            title="https://w3id.org/ontocis/professors#name">nombre</a>
+      </li>
+      <li>
+         <a href="#isExperienced"
+            title="https://w3id.org/ontocis/professors#isExperienced">tiene experiencia</a>
+      </li>
+   </ul>
+   <div class="entity" id="surname">
+      <h3>apellido<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/professors#surname</p>
+      <div class="comment">
+         <span class="markdown">El apellido de una persona</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>tiene características:</strong> funcional</p>
+         <dl>
+            <dt>tiene superpropiedades</dt>
+            <dd>
+               <a href="http://xmlns.com/foaf/spec/#term_familyName"
+                  title="http://xmlns.com/foaf/spec/#term_familyName">foaf:familyName</a>
+               <sup class="type-dp" title="Propiedad de datos">dp</sup>
+            </dd>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Person"
+                  title="https://w3id.org/ontocis/professors#Person">Persona</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="name">
+      <h3>nombre<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/professors#name</p>
+      <div class="comment">
+         <span class="markdown">El nombre de pila de una persona</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>tiene características:</strong> funcional</p>
+         <dl>
+            <dt>tiene superpropiedades</dt>
+            <dd>
+               <a href="http://xmlns.com/foaf/spec/#term_givenName"
+                  title="http://xmlns.com/foaf/spec/#term_givenName">foaf:givenName</a>
+               <sup class="type-dp" title="Propiedad de datos">dp</sup>
+            </dd>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Person"
+                  title="https://w3id.org/ontocis/professors#Person">Persona</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isExperienced">
+      <h3>tiene experiencia<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/professors#isExperienced</p>
+      <div class="comment">
+         <span class="markdown">Tiene más de 5 años de experience dictando clases o investigando.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>tiene características:</strong> funcional</p>
+         <dl>
+            <dt>tiene superpropiedades</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">owl:topDataProperty</span>
+            </dd>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Professor"
+                  title="https://w3id.org/ontocis/professors#Professor">Docente</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="namedindividuals">
+   <h3 id="namedindividuals" class="list">Individuos</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#Argentinian"
+            title="https://w3id.org/ontocis/professors#Argentinian">Argentina</a>
+      </li>
+      <li>
+         <a href="#Brazilian"
+            title="https://w3id.org/ontocis/professors#Brazilian">Brasileña</a>
+      </li>
+      <li>
+         <a href="#Chilean"
+            title="https://w3id.org/ontocis/professors#Chilean">Chilena</a>
+      </li>
+      <li>
+         <a href="#Doctor"
+            title="https://w3id.org/ontocis/professors#Doctor">Doctorado</a>
+      </li>
+      <li>
+         <a href="#Spanish"
+            title="https://w3id.org/ontocis/professors#Spanish">Española</a>
+      </li>
+      <li>
+         <a href="#Specialization"
+            title="https://w3id.org/ontocis/professors#Specialization">Especialización</a>
+      </li>
+      <li>
+         <a href="#Master"
+            title="https://w3id.org/ontocis/professors#Master">Master</a>
+      </li>
+      <li>
+         <a href="#Russian"
+            title="https://w3id.org/ontocis/professors#Russian">Rusa</a>
+      </li>
+      <li>
+         <a href="#Tertiary"
+            title="https://w3id.org/ontocis/professors#Tertiary">Terciario</a>
+      </li>
+      <li>
+         <a href="#Technical"
+            title="https://w3id.org/ontocis/professors#Technical">Técnico</a>
+      </li>
+      <li>
+         <a href="#University"
+            title="https://w3id.org/ontocis/professors#University">Universitario</a>
+      </li>
+      <li>
+         <a href="#Uruguayan"
+            title="https://w3id.org/ontocis/professors#Uruguayan">Uruguaya</a>
+      </li>
+   </ul>
+   <div class="entity" id="Argentinian">
+      <h3>Argentina<sup class="type-ni" title="Individuo">ni</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#namedindividuals">Índice de individuos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/professors#Argentinian</p>
+   </div>
+   <div class="entity" id="Brazilian">
+      <h3>Brasileña<sup class="type-ni" title="Individuo">ni</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#namedindividuals">Índice de individuos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/professors#Brazilian</p>
+   </div>
+   <div class="entity" id="Chilean">
+      <h3>Chilena<sup class="type-ni" title="Individuo">ni</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#namedindividuals">Índice de individuos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/professors#Chilean</p>
+   </div>
+   <div class="entity" id="Doctor">
+      <h3>Doctorado<sup class="type-ni" title="Individuo">ni</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#namedindividuals">Índice de individuos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/professors#Doctor</p>
+   </div>
+   <div class="entity" id="Spanish">
+      <h3>Española<sup class="type-ni" title="Individuo">ni</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#namedindividuals">Índice de individuos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/professors#Spanish</p>
+   </div>
+   <div class="entity" id="Specialization">
+      <h3>Especialización<sup class="type-ni" title="Individuo">ni</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#namedindividuals">Índice de individuos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/professors#Specialization</p>
+   </div>
+   <div class="entity" id="Master">
+      <h3>Master<sup class="type-ni" title="Individuo">ni</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#namedindividuals">Índice de individuos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/professors#Master</p>
+   </div>
+   <div class="entity" id="Russian">
+      <h3>Rusa<sup class="type-ni" title="Individuo">ni</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#namedindividuals">Índice de individuos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/professors#Russian</p>
+   </div>
+   <div class="entity" id="Tertiary">
+      <h3>Terciario<sup class="type-ni" title="Individuo">ni</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#namedindividuals">Índice de individuos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/professors#Tertiary</p>
+   </div>
+   <div class="entity" id="Technical">
+      <h3>Técnico<sup class="type-ni" title="Individuo">ni</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#namedindividuals">Índice de individuos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/professors#Technical</p>
+   </div>
+   <div class="entity" id="University">
+      <h3>Universitario<sup class="type-ni" title="Individuo">ni</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#namedindividuals">Índice de individuos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/professors#University</p>
+   </div>
+   <div class="entity" id="Uruguayan">
+      <h3>Uruguaya<sup class="type-ni" title="Individuo">ni</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#namedindividuals">Índice de individuos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/professors#Uruguayan</p>
+   </div>
+</div><div id="legend">
+<h2>Leyenda <span class="backlink"> volver a <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Clases">c</sup>: Clases <br/>
+<sup class="type-op" title="Propiedades de objeto">op</sup>: Propiedades de objeto <br/>
+<sup class="type-dp" title="Propiedades de datos">dp</sup>: Propiedades de datos <br/>
+<sup class="type-ni" title="Individuos">ni</sup>: Individuos
+</div>
+</div>

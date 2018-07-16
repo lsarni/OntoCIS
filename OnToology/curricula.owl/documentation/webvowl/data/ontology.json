@@ -1,0 +1,1416 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.4), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "es" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "https://w3id.org/ontocis/competences", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/ontocis/professors", "https://w3id.org/ontocis/curricula", "https://w3id.org/ontocis/composition", "https://w3id.org/ontocis/topics", "http://xmlns.com/foaf/0.1", "https://w3id.org/ontocis/degrees", "http://www.w3.org/2004/02/skos/core" ],
+    "iri" : "https://w3id.org/ontocis/curricula",
+    "labels" : {
+      "en" : "OntoCIS",
+      "es" : "OntoCIS"
+    },
+    "comments" : {
+      "en" : "An ontology that describes the curricula of the degree in Software Engineering at Universidad ORT Uruguay.",
+      "es" : "Una ontología que describe el currículo de la carrera Ingeniería en Sistemas en la Universidad ORT Uruguay."
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 11,
+    "objectPropertyCount" : 15,
+    "datatypePropertyCount" : 6,
+    "individualCount" : 0
+  },
+  "class" : [ {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "9",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "63",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "6",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/ontocis/curricula#Knowledge_Group",
+    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Knowledge_Group",
+      "en" : "Knowledge Group",
+      "es" : "Grupo Temático"
+    },
+    "comment" : {
+      "en" : "Knowledge groups in which the knowledge body is divided.",
+      "es" : "Grupos temáticos en los que se divide el conocimiento abarcado por el currículo."
+    },
+    "id" : "4"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#Concept",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Concept"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://w3id.org/ontocis/curricula#Elective_Course",
+    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Elective_Course",
+      "en" : "Elective Course",
+      "es" : "Electiva"
+    },
+    "subClasses" : [ "17" ],
+    "comment" : {
+      "en" : "Course that the students can attend according their interests and preferences. To obtain a degree, a student must attend a set or certain amount of elective courses defined by each degree.",
+      "es" : "Asignatura que los estudiantes pueden cursar según sus intereses y preferencias. Para obtener un título, los estudiantes deben cursar un conjunto o una cantidad determinada de asignaturas electivas, definida para cada título."
+    },
+    "id" : "16",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/ontocis/curricula#Term",
+    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Term",
+      "en" : "Term",
+      "es" : "Periodo"
+    },
+    "comment" : {
+      "en" : "A portion of an academic year, the time during which an educational institution holds classes.",
+      "es" : "Parte de un año académico, el tiempo durante el cual una institución educativa imparte clases a los estudiantes que cursan una o mas asignaturas."
+    },
+    "id" : "31"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/ontocis/curricula#Knowledge_Area",
+    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Knowledge_Area",
+      "en" : "Knowledge Area",
+      "es" : "Área Temática"
+    },
+    "comment" : {
+      "en" : "Topical areas of study in which the knowledge groups are divided.",
+      "es" : "Áreas temáticas en las que se dividen los grupos temáticos."
+    },
+    "id" : "47"
+  }, {
+    "iri" : "https://w3id.org/ontocis/competences#Category",
+    "baseIri" : "https://w3id.org/ontocis/competences",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Category",
+      "en" : "Category",
+      "es" : "Categoría"
+    },
+    "comment" : {
+      "en" : "Categories under which the competences are organized",
+      "es" : "Categorías bajo las cuales se organizan las competencias"
+    },
+    "attributes" : [ "external" ],
+    "id" : "51"
+  }, {
+    "iri" : "https://w3id.org/ontocis/professors#Education_Level",
+    "baseIri" : "https://w3id.org/ontocis/professors",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Education_Level",
+      "en" : "Education Level",
+      "es" : "Nivel de formación"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ontocis/professors#Tertiary",
+      "baseIri" : "https://w3id.org/ontocis/professors",
+      "labels" : {
+        "IRI-based" : "Tertiary",
+        "en" : "Tertiary",
+        "es" : "Terciario"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontocis/professors#Doctor",
+      "baseIri" : "https://w3id.org/ontocis/professors",
+      "labels" : {
+        "IRI-based" : "Doctor",
+        "en" : "Doctor",
+        "es" : "Doctorado"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontocis/professors#Master",
+      "baseIri" : "https://w3id.org/ontocis/professors",
+      "labels" : {
+        "IRI-based" : "Master",
+        "en" : "Master",
+        "es" : "Master"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontocis/professors#Specialization",
+      "baseIri" : "https://w3id.org/ontocis/professors",
+      "labels" : {
+        "IRI-based" : "Specialization",
+        "en" : "Specialization",
+        "es" : "Especialización"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontocis/professors#University",
+      "baseIri" : "https://w3id.org/ontocis/professors",
+      "labels" : {
+        "IRI-based" : "University",
+        "en" : "University",
+        "es" : "Universitario"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontocis/professors#Technical",
+      "baseIri" : "https://w3id.org/ontocis/professors",
+      "labels" : {
+        "IRI-based" : "Technical",
+        "en" : "Technical",
+        "es" : "Técnico"
+      }
+    } ],
+    "comment" : {
+      "en" : "Degrees that can be obtained by a person.",
+      "es" : "Títulos que pueden ser obtenidos por una persona."
+    },
+    "attributes" : [ "external" ],
+    "id" : "14",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "https://w3id.org/ontocis/curricula#Course",
+    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Course",
+      "en" : "Course",
+      "es" : "Asignatura"
+    },
+    "union" : [ "16", "45" ],
+    "subClasses" : [ "16", "45" ],
+    "comment" : {
+      "en" : "Unit of teaching that typically lasts one academic term, is led by one or more instructors, and has a fixed roster of students.",
+      "es" : "Materia o unidad de enseñanza que generalmente dura un período académico, está dirigida por uno o más instructores y tiene una lista fija de estudiantes."
+    },
+    "attributes" : [ "union" ],
+    "id" : "1"
+  }, {
+    "iri" : "https://w3id.org/ontocis/topics#Topic",
+    "equivalent" : [ "8" ],
+    "baseIri" : "https://w3id.org/ontocis/topics",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Topic",
+      "en" : "Topic",
+      "es" : "Tema"
+    },
+    "comment" : {
+      "en" : "A matter dealt with in a text, discourse, conversation, etc.",
+      "es" : "Asunto o materia sobre la que se trata en una conversación, un discurso, un escrito, etc."
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://w3id.org/ontocis/curricula#Placeholder_Course",
+    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Placeholder_Course",
+      "en" : "Placeholder Course",
+      "es" : "Asignatura Placeholder"
+    },
+    "comment" : {
+      "en" : "Course used to state that the student must take a course but can choose among any elective course.",
+      "es" : "Asignatura utilizada para indicar que el estudiante debe tomar una asignatura electiva a su elección."
+    },
+    "id" : "17",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "58",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "50",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "59",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "60",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "19",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "61",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "62",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "56",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Person",
+    "equivalent" : [ "13" ],
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "6",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/ontocis/curricula#Core_Course",
+    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Core_Course",
+      "en" : "Core Course",
+      "es" : "Asignatura Obligatoria"
+    },
+    "comment" : {
+      "en" : "Course that the students must attend as part of the curricula to obtain a degree.",
+      "es" : "Asignatura que los estudiantes deben cursar como parte de la currícula para obtener un título."
+    },
+    "id" : "45",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "40",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/ontocis/professors#Nationality",
+    "baseIri" : "https://w3id.org/ontocis/professors",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Nationality",
+      "en" : "Nationality",
+      "es" : "Nacionalidad"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ontocis/professors#Brazilian",
+      "baseIri" : "https://w3id.org/ontocis/professors",
+      "labels" : {
+        "IRI-based" : "Brazilian",
+        "en" : "Brazilian",
+        "es" : "Brasileña"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontocis/professors#Spanish",
+      "baseIri" : "https://w3id.org/ontocis/professors",
+      "labels" : {
+        "IRI-based" : "Spanish",
+        "en" : "Spanish",
+        "es" : "Española"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontocis/professors#Russian",
+      "baseIri" : "https://w3id.org/ontocis/professors",
+      "labels" : {
+        "IRI-based" : "Russian",
+        "en" : "Russian",
+        "es" : "Rusa"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontocis/professors#Uruguayan",
+      "baseIri" : "https://w3id.org/ontocis/professors",
+      "labels" : {
+        "IRI-based" : "Uruguayan",
+        "en" : "Uruguayan",
+        "es" : "Uruguaya"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontocis/professors#Chilean",
+      "baseIri" : "https://w3id.org/ontocis/professors",
+      "labels" : {
+        "IRI-based" : "Chilean",
+        "en" : "Chilean",
+        "es" : "Chilena"
+      }
+    }, {
+      "iri" : "https://w3id.org/ontocis/professors#Argentinian",
+      "baseIri" : "https://w3id.org/ontocis/professors",
+      "labels" : {
+        "IRI-based" : "Argentinian",
+        "en" : "Argentinian",
+        "es" : "Argentina"
+      }
+    } ],
+    "comment" : {
+      "en" : "The status of belonging to a particular nation.",
+      "es" : "Condición que reconoce a una persona la pertenencia a un estado o nación."
+    },
+    "attributes" : [ "external" ],
+    "id" : "38",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "https://w3id.org/ontocis/competences#Learning_Outcome",
+    "baseIri" : "https://w3id.org/ontocis/competences",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Learning_Outcome",
+      "en" : "Learning Outcome",
+      "es" : "Objetivo de Aprendizaje"
+    },
+    "comment" : {
+      "en" : "A very specific statement that describes exactly what a student will be able to do in some measurable way",
+      "es" : "Una frase que describe exactamente lo que un estudiante podrá hacer de manera mensurable/evaluable."
+    },
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "https://w3id.org/ontocis/curricula#Year",
+    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Year",
+      "en" : "Year",
+      "es" : "Año"
+    },
+    "comment" : {
+      "en" : "Period of time in which students attend courses.",
+      "es" : "Período del año en que los estudiantes asisten a asignaturas."
+    },
+    "id" : "64"
+  }, {
+    "iri" : "https://w3id.org/ontocis/professors#Person",
+    "equivalent" : [ "63" ],
+    "baseIri" : "https://w3id.org/ontocis/professors",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person",
+      "en" : "Person",
+      "es" : "Persona"
+    },
+    "subClasses" : [ "33" ],
+    "comment" : {
+      "en" : "A human being.",
+      "es" : "Un ser humano."
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "13"
+  }, {
+    "iri" : "https://w3id.org/ontocis/degrees#Bachelor_Degree",
+    "baseIri" : "https://w3id.org/ontocis/degrees",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Bachelor_Degree",
+      "en" : "Bachelor Degree",
+      "es" : "Título de Grado"
+    },
+    "comment" : {
+      "en" : "Qualification awarded awarded by colleges and universities to students upon successful completion of set of courses.",
+      "es" : "Distinción otorgada por parte de una universidad a los estudiantes después de la terminación exitosa de un conjunto de asignaturas."
+    },
+    "attributes" : [ "external" ],
+    "id" : "29",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "73",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "https://w3id.org/ontocis/degrees#Degree",
+    "baseIri" : "https://w3id.org/ontocis/degrees",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Degree",
+      "en" : "Degree",
+      "es" : "Título"
+    },
+    "subClasses" : [ "29" ],
+    "comment" : {
+      "en" : "Qualification awarded to students upon successful completion of set of courses.",
+      "es" : "Distinción otorgada a los estudiantes después de la terminación exitosa de un conjunto de asignaturas."
+    },
+    "attributes" : [ "external" ],
+    "id" : "30"
+  }, {
+    "iri" : "https://w3id.org/ontocis/competences#Competence",
+    "baseIri" : "https://w3id.org/ontocis/competences",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Competence",
+      "en" : "Competency",
+      "es" : "Competencia"
+    },
+    "comment" : {
+      "en" : "A general statement detailing the desired knowledge and skills of student graduating from our course or program.",
+      "es" : "Una frase que describe de manera general el conocimiento y capacidades que debe adquirir un estudiante."
+    },
+    "attributes" : [ "external" ],
+    "id" : "21"
+  }, {
+    "iri" : "https://w3id.org/ontocis/professors#Professor",
+    "baseIri" : "https://w3id.org/ontocis/professors",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Professor",
+      "en" : "Professor",
+      "es" : "Docente"
+    },
+    "comment" : {
+      "en" : "Person that teaches or is in charge of a course.",
+      "es" : "Persona que dicta o está a cargo de una asignatura."
+    },
+    "attributes" : [ "external" ],
+    "id" : "33",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Group",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Group"
+    },
+    "subClasses" : [ "38", "14" ],
+    "attributes" : [ "external" ],
+    "id" : "35"
+  }, {
+    "iri" : "https://w3id.org/ontocis/curricula#Curricula",
+    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Curricula",
+      "en" : "Curricula",
+      "es" : "Curriculo"
+    },
+    "comment" : {
+      "en" : "Set of courses that need to be taken in order to obtain a certain degree.",
+      "es" : "Conjunto de enseñanzas y prácticas que, con determinada disposición, han de cursarse para cumplir un ciclo de estudios u obtener un título."
+    },
+    "id" : "70"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "49",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "48",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "67",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "68",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "69",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "71",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "72",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "81",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "82",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/ontocis/competences#hasLearningOutcome",
+    "baseIri" : "https://w3id.org/ontocis/competences",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasLearningOutcome",
+      "en" : "has learning outcome",
+      "es" : "tiene como objetivo de aprendizaje"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "1",
+    "comment" : {
+      "en" : "It states the learning outcomes for a certain thing.",
+      "es" : "Indica que objetivos de aprendizaje tiene una cosa."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "0"
+  },{
+    "iri" : "https://w3id.org/ontocis/topics#relatedTo",
+    "baseIri" : "https://w3id.org/ontocis/topics",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "relatedTo",
+      "en" : "related to",
+      "es" : "relacionado con"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "9",
+    "subproperty" : [ "48" ],
+    "comment" : {
+      "en" : "It states that a topic is related to another topic",
+      "es" : "Indica que un tema esta relacionado con otro tema"
+    },
+    "attributes" : [ "object", "external", "symmetric" ],
+    "id" : "5"
+  }, {
+    "iri" : "https://w3id.org/ontocis/curricula#totalCreditIsPrerequisiteToEnroll",
+    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "totalCreditIsPrerequisiteToEnroll",
+      "en" : "total credit is prerequisite to enroll",
+      "es" : "credito total es previa para inscribirse"
+    },
+    "superproperty" : [ "11" ],
+    "domain" : "1",
+    "comment" : {
+      "en" : "It states which courses a student must have the total credit for in order to enroll to another course.",
+      "es" : "Indica para que asignaturas el estudiante debe tener el crédito total antes de poder inscribirse a una asignatura."
+    },
+    "attributes" : [ "object" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://w3id.org/ontocis/professors#hasEducationLevel",
+    "baseIri" : "https://w3id.org/ontocis/professors",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "hasEducationLevel",
+      "en" : "has education level",
+      "es" : "tiene nivel de formación"
+    },
+    "superproperty" : [ "15" ],
+    "domain" : "13",
+    "comment" : {
+      "en" : "It states the highest degree aquired by a person.",
+      "es" : "Indica el nivel de formación más alto alcanzado por una persona."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "https://w3id.org/ontocis/curricula#minimumCreditsRequired",
+    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "minimumCreditsRequired",
+      "en" : "minimum credits required",
+      "es" : "minimo de créditos requeridos"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Minumum number of credits required in order to take a course",
+      "es" : "Cantidad mínima de créditos requeridos para poder cursar una asignatura."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "18"
+  }, {
+    "iri" : "https://w3id.org/ontocis/competences#partiallyDevelops",
+    "baseIri" : "https://w3id.org/ontocis/competences",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "partiallyDevelops",
+      "en" : "partially develops",
+      "es" : "desarrolla parcialmente"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "1",
+    "comment" : {
+      "en" : "It states that the course contributes to the development of the competency but it is not assessed.",
+      "es" : "Indica que la asignatura contribuye de alguna manera al desarrollo de la competencia, pero no esta no es evaluada."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "20"
+  }, {
+    "range" : "30",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "28"
+  }, {
+    "range" : "13",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "32"
+  }, {
+    "range" : "35",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "34"
+  }, {
+    "iri" : "https://w3id.org/ontocis/curricula#isPrerequisiteToEnroll",
+    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "isPrerequisiteToEnroll",
+      "en" : "is prerequisite to enroll",
+      "es" : "es previa para inscribirse"
+    },
+    "superproperty" : [ "24" ],
+    "domain" : "1",
+    "subproperty" : [ "36", "10" ],
+    "comment" : {
+      "en" : "It states which courses a student needs to take before hand in order to be allowed to enroll for a course.\nOnly if the student has obtained partial or total credit for these subjects will he be able to enroll in the course and eventually obtain partial credit for it.",
+      "es" : "Indica que asignaturas que deben haber cursado el estudiante para poder inscribirse a una asignatura. \nSolamente si el estudiante ha obtenido el crédito parcial o total de estas asignaturas, según corresponda, podrá inscribirse a la asignatura y eventualmente obtener el crédito parcial para el mismo."
+    },
+    "attributes" : [ "object" ],
+    "id" : "11"
+  }, {
+    "range" : "35",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "37"
+  }, {
+    "iri" : "https://w3id.org/ontocis/professors#inChargeOf",
+    "baseIri" : "https://w3id.org/ontocis/professors",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "inChargeOf",
+      "en" : "in charge of",
+      "es" : "a cargo de"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "13",
+    "comment" : {
+      "en" : "It states that a person is in charge of something.",
+      "es" : "Indica que una persona esta a cargo de algo."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "26"
+  }, {
+    "iri" : "https://w3id.org/ontocis/professors#surname",
+    "equivalent" : [ "41" ],
+    "baseIri" : "https://w3id.org/ontocis/professors",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "surname",
+      "en" : "surname",
+      "es" : "apellido"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "The family name of some person",
+      "es" : "El apellido de una persona"
+    },
+    "attributes" : [ "external", "datatype", "functional" ],
+    "id" : "39"
+  }, {
+    "range" : "16",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "42"
+  }, {
+    "range" : "1",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "44"
+  }, {
+    "range" : "1",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "46"
+  }, {
+    "iri" : "https://w3id.org/ontocis/curricula#credits",
+    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "credits",
+      "en" : "credits",
+      "es" : "créditos"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Amount of credits obtained when approving a course.",
+      "es" : "Cantidad de créditos que se obtienen al aprobar una asignatura."
+    },
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "49"
+  }, {
+    "iri" : "https://w3id.org/ontocis/curricula#totalCreditIsPrerequisiteToPass",
+    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "totalCreditIsPrerequisiteToPass",
+      "en" : "total credit is prerequisite to pass",
+      "es" : "credito total es previa para aprobar"
+    },
+    "superproperty" : [ "53" ],
+    "domain" : "1",
+    "comment" : {
+      "en" : "It states which courses a student must have the total credit for in order to pass (obtain total credits) another course.",
+      "es" : "Indica para que asignaturas el estudiante debe tener el crédito total antes de poder inscribirse a una asignatura."
+    },
+    "attributes" : [ "object" ],
+    "id" : "52"
+  }, {
+    "iri" : "https://w3id.org/ontocis/professors#hasNationality",
+    "baseIri" : "https://w3id.org/ontocis/professors",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "hasNationality",
+      "en" : "has nationality",
+      "es" : "tiene nacionalidad"
+    },
+    "superproperty" : [ "15" ],
+    "domain" : "13",
+    "comment" : {
+      "en" : "It states the nationality of a person.",
+      "es" : "Indica la nacionalidad de una persona."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "54"
+  }, {
+    "iri" : "https://w3id.org/ontocis/professors#name",
+    "equivalent" : [ "57" ],
+    "baseIri" : "https://w3id.org/ontocis/professors",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "name",
+      "en" : "name",
+      "es" : "nombre"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "The given name of some person",
+      "es" : "El nombre de pila de una persona"
+    },
+    "attributes" : [ "external", "datatype", "functional" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/givenName",
+    "equivalent" : [ "55" ],
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "givenName"
+    },
+    "domain" : "6",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "57"
+  }, {
+    "iri" : "https://w3id.org/ontocis/topics#taughtIn",
+    "baseIri" : "https://w3id.org/ontocis/topics",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "taughtIn",
+      "en" : "taught in",
+      "es" : "enseñado en"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "9",
+    "comment" : {
+      "en" : "It states that a topic is taught during a course",
+      "es" : "Indica que un tema se eseña o dicta durante una asignatura"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "25"
+  }, {
+    "range" : "16",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "65"
+  }, {
+    "iri" : "https://w3id.org/ontocis/topics#subtopicOf",
+    "baseIri" : "https://w3id.org/ontocis/topics",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "subtopicOf",
+      "en" : "subtopic of",
+      "es" : "subtema de"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "9",
+    "comment" : {
+      "en" : "It states that a topic is part of a broader or more general topic",
+      "es" : "Indica que un tema es parte de otro tema más general"
+    },
+    "attributes" : [ "object", "transitive", "external" ],
+    "id" : "48"
+  }, {
+    "iri" : "https://w3id.org/ontocis/composition#partOf",
+    "baseIri" : "https://w3id.org/ontocis/composition",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "partOf",
+      "en" : "part of",
+      "es" : "parte de"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "1",
+    "comment" : {
+      "en" : "It states part-whole relations",
+      "es" : "Indica la composición entre individuos"
+    },
+    "attributes" : [ "object", "someValues", "transitive", "external" ],
+    "id" : "66"
+  }, {
+    "iri" : "https://w3id.org/ontocis/composition#partOf",
+    "baseIri" : "https://w3id.org/ontocis/composition",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "partOf",
+      "en" : "part of",
+      "es" : "parte de"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "1",
+    "comment" : {
+      "en" : "It states part-whole relations",
+      "es" : "Indica la composición entre individuos"
+    },
+    "attributes" : [ "object", "someValues", "transitive", "external" ],
+    "id" : "67"
+  }, {
+    "iri" : "https://w3id.org/ontocis/composition#partOf",
+    "baseIri" : "https://w3id.org/ontocis/composition",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "partOf",
+      "en" : "part of",
+      "es" : "parte de"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "47",
+    "comment" : {
+      "en" : "It states part-whole relations",
+      "es" : "Indica la composición entre individuos"
+    },
+    "attributes" : [ "object", "someValues", "transitive", "external" ],
+    "id" : "68"
+  }, {
+    "iri" : "https://w3id.org/ontocis/composition#partOf",
+    "baseIri" : "https://w3id.org/ontocis/composition",
+    "range" : "70",
+    "label" : {
+      "IRI-based" : "partOf",
+      "en" : "part of",
+      "es" : "parte de"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "4",
+    "comment" : {
+      "en" : "It states part-whole relations",
+      "es" : "Indica la composición entre individuos"
+    },
+    "attributes" : [ "object", "someValues", "transitive", "external" ],
+    "id" : "69"
+  }, {
+    "iri" : "https://w3id.org/ontocis/composition#partOf",
+    "baseIri" : "https://w3id.org/ontocis/composition",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "partOf",
+      "en" : "part of",
+      "es" : "parte de"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "31",
+    "comment" : {
+      "en" : "It states part-whole relations",
+      "es" : "Indica la composición entre individuos"
+    },
+    "attributes" : [ "object", "someValues", "transitive", "external" ],
+    "id" : "71"
+  }, {
+    "iri" : "https://w3id.org/ontocis/composition#partOf",
+    "baseIri" : "https://w3id.org/ontocis/composition",
+    "range" : "70",
+    "label" : {
+      "IRI-based" : "partOf",
+      "en" : "part of",
+      "es" : "parte de"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "64",
+    "comment" : {
+      "en" : "It states part-whole relations",
+      "es" : "Indica la composición entre individuos"
+    },
+    "attributes" : [ "object", "someValues", "transitive", "external" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/familyName",
+    "equivalent" : [ "39" ],
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "60",
+    "label" : {
+      "IRI-based" : "familyName"
+    },
+    "domain" : "6",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "41"
+  }, {
+    "iri" : "https://w3id.org/ontocis/curricula#hours",
+    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "hours",
+      "en" : "hours",
+      "es" : "horas"
+    },
+    "domain" : "1",
+    "comment" : {
+      "es" : "Amount of hours taught for a course."
+    },
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "74"
+  }, {
+    "iri" : "https://w3id.org/ontocis/curricula#totalCreditScore",
+    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "totalCreditScore",
+      "en" : "total credit score",
+      "es" : "puntaje para crédito total"
+    },
+    "domain" : "1",
+    "comment" : {
+      "es" : "Puntaje mínimo requerido para aprobar una asignatura."
+    },
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "75"
+  }, {
+    "iri" : "https://w3id.org/ontocis/composition#partOf",
+    "baseIri" : "https://w3id.org/ontocis/composition",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "partOf",
+      "en" : "part of",
+      "es" : "parte de"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "21",
+    "comment" : {
+      "en" : "It states part-whole relations",
+      "es" : "Indica la composición entre individuos"
+    },
+    "attributes" : [ "object", "someValues", "transitive", "external" ],
+    "id" : "76"
+  }, {
+    "iri" : "https://w3id.org/ontocis/curricula#isPrerequisite",
+    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "isPrerequisite",
+      "en" : "is prerequiste",
+      "es" : "es previa"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "1",
+    "subproperty" : [ "53", "11" ],
+    "comment" : {
+      "en" : "It states which courses the student needs to take in order to be allowed to enroll or pass a course.",
+      "es" : "Indica que asignaturas debe haber cursado un estudiante para poder inscribirse o aprobar una asignatura."
+    },
+    "attributes" : [ "object", "transitive" ],
+    "id" : "24"
+  }, {
+    "iri" : "https://w3id.org/ontocis/composition#partOf",
+    "baseIri" : "https://w3id.org/ontocis/composition",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "partOf",
+      "en" : "part of",
+      "es" : "parte de"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "2",
+    "comment" : {
+      "en" : "It states part-whole relations",
+      "es" : "Indica la composición entre individuos"
+    },
+    "attributes" : [ "object", "someValues", "transitive", "external" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/member",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "label" : {
+      "IRI-based" : "member"
+    },
+    "subproperty" : [ "54", "12" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "15"
+  }, {
+    "iri" : "https://w3id.org/ontocis/curricula#isPrerequisiteToPass",
+    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "isPrerequisiteToPass",
+      "en" : "is prerequisite to pass",
+      "es" : "es previa para aprobar"
+    },
+    "superproperty" : [ "24" ],
+    "domain" : "1",
+    "subproperty" : [ "52", "78" ],
+    "comment" : {
+      "en" : "It states which courses the student needs to take before hand in order to be able to pass (get the total credits) a certain course.",
+      "es" : "Indica que asignaturas debe haber cursado previamente un estudiante para poder aprobar (obtener el crédito total) una asignatura."
+    },
+    "attributes" : [ "object" ],
+    "id" : "53"
+  }, {
+    "iri" : "https://w3id.org/ontocis/curricula#partialCreditIsPrerequisiteToEnroll",
+    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "partialCreditIsPrerequisiteToEnroll",
+      "en" : "partial credit is prerequisite to enroll",
+      "es" : "credito parcial es previa para inscribirse"
+    },
+    "superproperty" : [ "11" ],
+    "domain" : "1",
+    "comment" : {
+      "en" : "It states which courses a student must have the partial credit for in order to enroll to another course.",
+      "es" : "Indica para que asignaturas el estudiante debe tener el crédito parcial antes de poder inscribirse a una asignatura."
+    },
+    "attributes" : [ "object" ],
+    "id" : "36"
+  }, {
+    "iri" : "https://w3id.org/ontocis/competences#develops",
+    "baseIri" : "https://w3id.org/ontocis/competences",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "develops",
+      "en" : "develops",
+      "es" : "desarrolla"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "1",
+    "comment" : {
+      "en" : "It states that the competency is totally or partially developed in a course, it is assessed and there is evidence of the assessment.",
+      "es" : "Indica que la competencia es total o parcialmente desarrollada a lo largo de una asignatura, es evaluada en la asignatura y se cuenta con evidencia de la evaluación."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "79"
+  }, {
+    "iri" : "https://w3id.org/ontocis/degrees#requiredFor",
+    "baseIri" : "https://w3id.org/ontocis/degrees",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "requiredFor",
+      "en" : "required for",
+      "es" : "requerido para"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "It states what is required for the student in order to obtain a certain degree.",
+      "es" : "Indica que se requiere para que un estudiante obtenga un título."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "80"
+  }, {
+    "iri" : "https://w3id.org/ontocis/competences#contributesTo",
+    "baseIri" : "https://w3id.org/ontocis/competences",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "contributesTo",
+      "en" : "contributes to",
+      "es" : "contribuye a"
+    },
+    "domain" : "1",
+    "subproperty" : [ "20", "79" ],
+    "comment" : {
+      "en" : "It states the degree of contribution to the development of a competency",
+      "es" : "Indica el grado de contribución al desarrollo de una competencia"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "22"
+  }, {
+    "iri" : "https://w3id.org/ontocis/curricula#partialCreditScore",
+    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "partialCreditScore",
+      "en" : "partial credit score",
+      "es" : "puntaje para crédito parcial"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Minimum score required to obtain the partial credit for a course and have be allowed to sit an exam.",
+      "es" : "Puntaje mínimo que debe alcanzarse para obtener el crédito parcial de una asignatura, y tener derecho a dar examen."
+    },
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "82"
+  }, {
+    "iri" : "https://w3id.org/ontocis/curricula#partialCreditIsPrerequisiteToPass",
+    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "partialCreditIsPrerequisiteToPass",
+      "en" : "partial credit is prerequisite to pass",
+      "es" : "credito parcial es previa para aprobar"
+    },
+    "superproperty" : [ "53" ],
+    "domain" : "1",
+    "comment" : {
+      "en" : "It states which courses a student must have the partial credit for in order to pass (obtain total credits) another course.",
+      "es" : "Indica para que asignaturas el estudiante debe tener el crédito parcial antes de poder inscribirse a una asignatura."
+    },
+    "attributes" : [ "object" ],
+    "id" : "78"
+  }, {
+    "iri" : "https://w3id.org/ontocis/professors#isExperienced",
+    "baseIri" : "https://w3id.org/ontocis/professors",
+    "range" : "73",
+    "label" : {
+      "IRI-based" : "isExperienced",
+      "en" : "is experienced",
+      "es" : "tiene experiencia"
+    },
+    "domain" : "33",
+    "comment" : {
+      "en" : "Has more than 5 years of experience teaching or researching.",
+      "es" : "Tiene más de 5 años de experience dictando clases o investigando."
+    },
+    "attributes" : [ "external", "datatype", "functional" ],
+    "id" : "83"
+  } ]
+}

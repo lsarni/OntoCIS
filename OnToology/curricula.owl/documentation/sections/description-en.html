@@ -1,3 +1,26 @@
 <h2 id="desc" class="list">OntoCIS: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.</span>
+![UML diagram](resources/image1.png)
+
+The UML shows the complete ontology structure, displaying in red the relations stablished in this module by the following assertions:
+* ** topics:taughtIn:** has Course as its range.  Therefore, a course can be taught in a course.
+* **competences:contributesTo:** has course as its domain. Therefore, a course contributes to a competence.
+* **competences:hasLearningOutcome:** has Course as its domain. Therefore, a course has a learning outcome.
+* **degrees:requiredFor:** has Course as its domain. Therefore, a course is required for a degree.
+* **professors:inChargeOf:** has Course as its range. Therefore, a professor is in charge of a course.
+
+Given that the courses are the central concept in the ontology it isn’t unexpected that the class used to represent it helps connect all the modules.
+
+OntoCIS also imports all the modules to facilitate the instantiation of a curricula on a single file. All that is needed is to import this module, and the rest of the classes and properties Will be included.
+
+![Classes and properties](resources/image2.png)
+
+In total this module contains:
+* 30 classes
+* 21 object properties
+* 11 data properties
+
+![Course instantiation](resources/image3.png)
+
+The instantiation of this modules allows us to access all the information included in the curricula. For instance, we can create a course graph, as shown above, with all the information defined in each of the modules.
+</span>

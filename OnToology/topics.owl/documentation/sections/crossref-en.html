@@ -1,11 +1,11 @@
 <h2  id="crossreference" class="list">Cross reference for OntoCIS Topics classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-This section provides details for each class and property defined by OntoCIS Topics.
+This section provides details for each class and property defined by OntoCIS Temas.
 <div id="classes">
-   <h3 id="classes" class="list">Classes</h3>
+   <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
          <a href="#Topic"
-            title="http://www.semanticweb.org/lsarni/ontologies/topics#Topic">Topic</a>
+            title="https://w3id.org/ontocis/topics#Topic">Topic</a>
       </li>
    </ul>
    <div class="entity" id="Topic">
@@ -14,30 +14,31 @@ This section provides details for each class and property defined by OntoCIS Top
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/lsarni/ontologies/topics#Topic</p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/topics#Topic</p>
       <div class="comment">
          <span class="markdown">A matter dealt with in a text, discourse, conversation, etc.</span>
       </div>
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
-            <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+            <a href="https://www.w3.org/2009/08/skos-reference/skos.html#Concept"
+               title="https://www.w3.org/2009/08/skos-reference/skos.html#Concept">skos:Concept</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
          <dd>
             <a href="#relatedTo"
-               title="http://www.semanticweb.org/lsarni/ontologies/topics#relatedTo">relatedTo</a>
+               title="https://w3id.org/ontocis/topics#relatedTo">related to</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#subtopicOf"
-               title="http://www.semanticweb.org/lsarni/ontologies/topics#subtopicOf">subtopicOf</a>
+               title="https://w3id.org/ontocis/topics#subtopicOf">subtopic of</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
             <a href="#relatedTo"
-               title="http://www.semanticweb.org/lsarni/ontologies/topics#relatedTo">relatedTo</a>
+               title="https://w3id.org/ontocis/topics#relatedTo">related to</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#subtopicOf"
-               title="http://www.semanticweb.org/lsarni/ontologies/topics#subtopicOf">subtopicOf</a>
+               title="https://w3id.org/ontocis/topics#subtopicOf">subtopic of</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -47,38 +48,24 @@ This section provides details for each class and property defined by OntoCIS Top
    <ul class="hlist">
       <li>
          <a href="#relatedTo"
-            title="http://www.semanticweb.org/lsarni/ontologies/topics#relatedTo">relatedTo</a>
-      </li>
-      <li>
-         <a href="#skos:broader"
-            title="http://www.semanticweb.org/lsarni/ontologies/topics#skos:broader">
-            <span>skos:broader</span>
-         </a>
-      </li>
-      <li>
-         <a href="#skos:narrower"
-            title="http://www.semanticweb.org/lsarni/ontologies/topics#skos:narrower">
-            <span>skos:narrower</span>
-         </a>
-      </li>
-      <li>
-         <a href="#skos:related"
-            title="http://www.semanticweb.org/lsarni/ontologies/topics#skos:related">
-            <span>skos:related</span>
-         </a>
+            title="https://w3id.org/ontocis/topics#relatedTo">related to</a>
       </li>
       <li>
          <a href="#subtopicOf"
-            title="http://www.semanticweb.org/lsarni/ontologies/topics#subtopicOf">subtopicOf</a>
+            title="https://w3id.org/ontocis/topics#subtopicOf">subtopic of</a>
+      </li>
+      <li>
+         <a href="#taughtIn"
+            title="https://w3id.org/ontocis/topics#taughtIn">taught in</a>
       </li>
    </ul>
    <div class="entity" id="relatedTo">
-      <h3>relatedTo<sup class="type-op" title="object property">op</sup>
+      <h3>related to<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/lsarni/ontologies/topics#relatedTo</p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/topics#relatedTo</p>
       <div class="comment">
          <span class="markdown">It states that a topic is related to another topic</span>
       </div>
@@ -86,104 +73,38 @@ This section provides details for each class and property defined by OntoCIS Top
          <p>
             <strong>has characteristics:</strong> symmetric</p>
          <dl>
-            <dt>has equivalent properties</dt>
-            <dd>
-               <a href="#skos:related"
-                  title="http://www.semanticweb.org/lsarni/ontologies/topics#skos:related">skos:related</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">owl:topObjectProperty</span>
             </dd>
             <dt>has sub-properties</dt>
             <dd>
                <a href="#subtopicOf"
-                  title="http://www.semanticweb.org/lsarni/ontologies/topics#subtopicOf">subtopicOf</a>
+                  title="https://w3id.org/ontocis/topics#subtopicOf">subtopic of</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
             <dd>
                <a href="#Topic"
-                  title="http://www.semanticweb.org/lsarni/ontologies/topics#Topic">Topic</a>
+                  title="https://w3id.org/ontocis/topics#Topic">Topic</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
                <a href="#Topic"
-                  title="http://www.semanticweb.org/lsarni/ontologies/topics#Topic">Topic</a>
+                  title="https://w3id.org/ontocis/topics#Topic">Topic</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="skos:broader">
-      <h3>skos:broader<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/lsarni/ontologies/topics#skos:broader</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="skos:narrower">
-      <h3>skos:narrower<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/lsarni/ontologies/topics#skos:narrower</p>
-      <div class="description">
-         <dl>
-            <dt>has equivalent properties</dt>
-            <dd>
-               <a href="#subtopicOf"
-                  title="http://www.semanticweb.org/lsarni/ontologies/topics#subtopicOf">subtopicOf</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>has super-properties</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="skos:related">
-      <h3>skos:related<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/lsarni/ontologies/topics#skos:related</p>
-      <div class="description">
-         <dl>
-            <dt>has equivalent properties</dt>
-            <dd>
-               <a href="#relatedTo"
-                  title="http://www.semanticweb.org/lsarni/ontologies/topics#relatedTo">relatedTo</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>has super-properties</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="subtopicOf">
-      <h3>subtopicOf<sup class="type-op" title="object property">op</sup>
+      <h3>subtopic of<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/lsarni/ontologies/topics#subtopicOf</p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/topics#subtopicOf</p>
       <div class="comment">
          <span class="markdown">It states that a topic is part of a broader or more general topic</span>
       </div>
@@ -191,28 +112,47 @@ This section provides details for each class and property defined by OntoCIS Top
          <p>
             <strong>has characteristics:</strong> transitive</p>
          <dl>
-            <dt>has equivalent properties</dt>
-            <dd>
-               <a href="#skos:narrower"
-                  title="http://www.semanticweb.org/lsarni/ontologies/topics#skos:narrower">skos:narrower</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
             <dt>has super-properties</dt>
             <dd>
                <a href="#relatedTo"
-                  title="http://www.semanticweb.org/lsarni/ontologies/topics#relatedTo">relatedTo</a>
+                  title="https://w3id.org/ontocis/topics#relatedTo">related to</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
             <dd>
                <a href="#Topic"
-                  title="http://www.semanticweb.org/lsarni/ontologies/topics#Topic">Topic</a>
+                  title="https://w3id.org/ontocis/topics#Topic">Topic</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
                <a href="#Topic"
-                  title="http://www.semanticweb.org/lsarni/ontologies/topics#Topic">Topic</a>
+                  title="https://w3id.org/ontocis/topics#Topic">Topic</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="taughtIn">
+      <h3>taught in<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/topics#taughtIn</p>
+      <div class="comment">
+         <span class="markdown">It states that a topic is taught during a course</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Topic"
+                  title="https://w3id.org/ontocis/topics#Topic">Topic</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>

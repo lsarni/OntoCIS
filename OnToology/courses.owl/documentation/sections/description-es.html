@@ -1,0 +1,24 @@
+<h2 id="desc" class="list">OntoCIS Asignaturas: Descripci&oacute;n <span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h2>
+<span class="markdown">
+![Diagrama UML OntoCIS Asignaturas](resources/image1.png)
+
+En el diagrama UML se puede ver que se definen cinco clases correspondientes a los diferentes niveles de la jerarquía y una clase para representar las asignaturas, de la cual se desprenden varias clases hijas abarcando los diferentes tipos de asignaturas. Para establecer la composición entre los diferentes niveles se utiliza la propiedad entre objetos definida en el módulo [OntoCIS Composición](../../composition.owl/documentation/index-es.html).
+
+![Electivas en la distribución típica de asignaturas](resources/image2.png)
+
+Durante el desarrollo de este módulo se identificó un problema. La distribución típica de asignaturas indicaba en que momento es recomendable que el estudiante curse una asignatura electiva. Para ello utiliza los términos “Electiva 1”, “Electiva 2”, etc. Estos términos no representan asignaturas en sí mismas, cada estudiante cursara una asignatura diferente según sean sus intereses, sino que sirven como un marcador de posición (placeholder).
+
+![Instanciación para “Electiva 1”](resources/image3.png)
+
+Los marcadores contienen información importante, para el estudiante y para validar que se cumplen con algunos requisitos definidos en el decreto que regula el plan de estudio. Para poder incluir esta información se decide crear una la clase Placeholder_Course, hija de Elective_Course, cuyas instancias puedan utilizarse a modo de marcadores conteniendo la carga horaria y los créditos otorgados al aprobar la asignatura.
+
+![Grafo para asignatura](resources/image4.png)
+
+Para cada asignatura se instancia
+* Semestre y/o año
+* Área temática y grupo temático
+* Cantidad de horas
+* Créditos
+* Puntajes para obtener el crédito parcial y total
+* Previas
+</span>

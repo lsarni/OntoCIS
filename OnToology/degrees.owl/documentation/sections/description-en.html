@@ -1,3 +1,14 @@
 <h2 id="desc" class="list">OntoCIS Degrees: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.</span>
+The module is made of two classes, as shows in the UML below:
+
+![Module UML](resources/image1.png)
+
+This classes allow us to categorize the 3 different degrees that can be awarded by [Universidad ORT Uruguay](https://www.ort.edu.uy/) during the curricula for [Systems Engineering](https://fi.ort.edu.uy/ingenieria-en-sistemas/plan-de-estudios). The following graph shows this instantiation:
+
+![Degrees](resources/image2.png)
+
+It also includes a relation "required for" that can be used to state which degrees are pre-requisite of a degree or which courses a student is required to take to obtain a degree. This last use case is the main use case in OntoCIS, since we want to be able to know how the courses relate to each one of the degrees. For instance, as it can be seen on the image below, we can list all the courses required for a degree:
+
+![Courses required for a degree](resources/image3.png)
+</span>

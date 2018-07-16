@@ -1,0 +1,135 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.2-SNAPSHOT), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "es" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "https://w3id.org/ontocis/degrees" ],
+    "iri" : "https://w3id.org/ontocis/degrees",
+    "title": {
+      "en": "OntoCIS Degrees",
+      "es": "OntoCIS Títulos"
+    },
+    "author": [
+      "Lucía Sarni"
+    ],
+    "description": {
+      "en": "Provides information about the degrees that can be awarded after completing a curricula at an university or faculty.",
+      "es": "Brinda información sobre los títulos que pueden obtenerse al cursar una carrera de una facultad o universidad."
+    },
+    "other": {
+      "creator": [
+        {
+          "identifier": "creator",
+          "language": "en",
+          "value": "Lucía Sarni",
+          "type": "label"
+        }
+      ],
+      "title": [
+        {
+          "identifier": "title",
+          "language": "en",
+          "value": "OntoCIS Degrees",
+          "type": "label"
+        },
+        {
+          "identifier": "title",
+          "language": "es",
+          "value": "OntoCIS Títulos",
+          "type": "label"
+        }
+      ]
+    },
+    "labels" : {
+      "en" : "OntoCIS Degrees",
+      "es" : "OntoCIS Títulos"
+    },
+    "comments" : {
+      "en" : "Provides information about the degrees that can be awarded after completing a curricula at an university or faculty.",
+      "es" : "Brinda información sobre los títulos que pueden obtenerse al cursar una carrera de una facultad o universidad."
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 2,
+    "objectPropertyCount" : 1,
+    "datatypePropertyCount" : 0,
+    "individualCount" : 0
+  },
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/ontocis/degrees#Degree",
+    "baseIri" : "https://w3id.org/ontocis/degrees",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Degree",
+      "en" : "Degree",
+      "es" : "Título"
+    },
+    "subClasses" : [ "1" ],
+    "comment" : {
+      "en" : "Qualification awarded to students upon successful completion of set of courses.",
+      "es" : "Distinción otorgada a los estudiantes después de la terminación exitosa de un conjunto de asignaturas."
+    },
+    "id" : "0"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "2",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/ontocis/degrees#Bachelor_Degree",
+    "baseIri" : "https://w3id.org/ontocis/degrees",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Bachelor_Degree",
+      "en" : "Bachelor Degree",
+      "es" : "Título de Grado"
+    },
+    "comment" : {
+      "en" : "Qualification awarded awarded by colleges and universities to students upon successful completion of set of courses.",
+      "es" : "Distinción otorgada por parte de una universidad a los estudiantes después de la terminación exitosa de un conjunto de asignaturas."
+    },
+    "id" : "1",
+    "superClasses" : [ "0" ]
+  } ],
+  "property" : [ {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "4",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "0",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://w3id.org/ontocis/degrees#requiredFor",
+    "baseIri" : "https://w3id.org/ontocis/degrees",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "requiredFor",
+      "en" : "required for",
+      "es" : "requerido para"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "It states what is required for the student in order to obtain a certain degree.",
+      "es" : "Indica que se requiere para que un estudiante obtenga un título."
+    },
+    "attributes" : [ "object" ],
+    "id" : "4"
+  } ]
+}

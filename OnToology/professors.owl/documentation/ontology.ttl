@@ -1,51 +1,52 @@
-@prefix : <http://www.semanticweb.org/lsarni/ontologies/professors#> .
+@prefix : <https://w3id.org/ontocis/professors#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/lsarni/ontologies/professors> .
+@base <https://w3id.org/ontocis/professors> .
 
-<http://www.semanticweb.org/lsarni/ontologies/professors> rdf:type owl:Ontology ;
-                                                           rdfs:comment "Brinda información básica sobre los profesores de una facultad o universidad."@es ,
+<https://w3id.org/ontocis/professors> rdf:type owl:Ontology ;
+                                                           <http://purl.org/dc/terms/#license> <https://opensource.org/licenses/MIT> ;
+                                                           rdfs:comment "Brinda información básica sobre los docentes de una facultad o universidad."@es ,
                                                                         "Provides basic information about the professors of an university or faculty."@en ;
-                                                           rdfs:label "OntoCIS Profesores"@es ,
+                                                           rdfs:label "OntoCIS Docentes"@es ,
                                                                       "OntoCIS Professors"@en .
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/lsarni/ontologies/professors#hasEducationLevel
+###  https://w3id.org/ontocis/professors#hasEducationLevel
 :hasEducationLevel rdf:type owl:ObjectProperty ;
-                   rdfs:subPropertyOf owl:topObjectProperty ;
+                   rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/member> ;
                    rdfs:domain :Person ;
                    rdfs:range :Education_Level ;
                    rdfs:comment "Indica el nivel de formación más alto alcanzado por una persona."@es ,
                                 "It states the highest degree aquired by a person."@en ;
-                   rdfs:label "hasEducationLevel"@en ,
-                              "tieneNivelDeFormación"@es .
+                   rdfs:label "has education level"@en ,
+                              "tiene nivel de formación"@es .
 
 
-###  http://www.semanticweb.org/lsarni/ontologies/professors#hasNationality
+###  https://w3id.org/ontocis/professors#hasNationality
 :hasNationality rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/member> ;
                 rdfs:domain :Person ;
                 rdfs:range :Nationality ;
                 rdfs:comment "Indica la nacionalidad de una persona."@es ,
                              "It states the nationality of a person."@en ;
-                rdfs:label "hasNationality"@en ,
-                           "tieneNacionalidad"@es .
+                rdfs:label "has nationality"@en ,
+                           "tiene nacionalidad"@es .
 
 
-###  http://www.semanticweb.org/lsarni/ontologies/professors#inChargeOf
+###  https://w3id.org/ontocis/professors#inChargeOf
 :inChargeOf rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf owl:topObjectProperty ;
             rdfs:domain :Person ;
             rdfs:comment "Indica que una persona esta a cargo de algo."@es ,
                          "It states that a person is in charge of something."@en ;
-            rdfs:label "aCargoDe"@es ,
-                       "inChargeOf"@en .
+            rdfs:label "a cargo de"@es ,
+                       "in charge of"@en .
 
 
 ###  http://xmlns.com/foaf/0.1/member
@@ -56,7 +57,7 @@
 #    Data properties
 #################################################################
 
-###  http://www.semanticweb.org/lsarni/ontologies/professors#isExperienced
+###  https://w3id.org/ontocis/professors#isExperienced
 :isExperienced rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf owl:topDataProperty ;
                rdf:type owl:FunctionalProperty ;
@@ -64,49 +65,49 @@
                rdfs:range xsd:boolean ;
                rdfs:comment "Has more than 5 years of experience teaching or researching."@en ,
                             "Tiene más de 5 años de experience dictando clases o investigando."@es ;
-               rdfs:label "isExperienced"@en ,
-                          "tieneExperiencia"@es .
+               rdfs:label "is experienced"@en ,
+                          "tiene experiencia"@es .
 
 
-###  http://www.semanticweb.org/lsarni/ontologies/professors#name
+###  https://w3id.org/ontocis/professors#name
 :name rdf:type owl:DatatypeProperty ;
-      rdfs:subPropertyOf :givenName ;
+      owl:equivalentProperty <http://xmlns.com/foaf/0.1/givenName> ;
+      rdfs:subPropertyOf owl:topDataProperty ;
       rdf:type owl:FunctionalProperty ;
       rdfs:domain :Person ;
       rdfs:range xsd:string ;
-      rdfs:comment "El nombre de pila de una persona"@en ,
-                   "The given name of some person"@es ;
+      rdfs:comment "El nombre de pila de una persona"@es ,
+                   "The given name of some person"@en ;
       rdfs:label "name"@en ,
                  "nombre"@es .
 
 
-###  http://www.semanticweb.org/lsarni/ontologies/professors#surname
+###  https://w3id.org/ontocis/professors#surname
 :surname rdf:type owl:DatatypeProperty ;
-         rdfs:subPropertyOf :familyName ;
+         owl:equivalentProperty <http://xmlns.com/foaf/0.1/familyName> ;
+         rdfs:subPropertyOf owl:topDataProperty ;
          rdf:type owl:FunctionalProperty ;
          rdfs:domain :Person ;
          rdfs:range xsd:string ;
-         rdfs:comment "El apellido de una persona"@en ,
-                      "The family name of some person"@es ;
+         rdfs:comment "El apellido de una persona"@es ,
+                      "The family name of some person"@en ;
          rdfs:label "apellido"@es ,
                     "surname"@en .
 
 
-###  http://www.semanticweb.org/lsarni/ontologies/professors#foaf:familyName
-:familyName rdf:type owl:DatatypeProperty ;
-            rdfs:subPropertyOf owl:topDataProperty .
+###  http://xmlns.com/foaf/0.1/familyName
+<http://xmlns.com/foaf/0.1/familyName> rdf:type owl:DatatypeProperty .
 
 
-###  http://www.semanticweb.org/lsarni/ontologies/professors#foaf:givenName
-:givenName rdf:type owl:DatatypeProperty ;
-           rdfs:subPropertyOf owl:topDataProperty .
+###  http://xmlns.com/foaf/0.1/givenName
+<http://xmlns.com/foaf/0.1/givenName> rdf:type owl:DatatypeProperty .
 
 
 #################################################################
 #    Classes
 #################################################################
 
-###  http://www.semanticweb.org/lsarni/ontologies/professors#Education_Level
+###  https://w3id.org/ontocis/professors#Education_Level
 :Education_Level rdf:type owl:Class ;
                  owl:equivalentClass [ rdf:type owl:Class ;
                                        owl:oneOf ( :Doctor
@@ -117,13 +118,14 @@
                                                    :University
                                                  )
                                      ] ;
+                 rdfs:subClassOf <http://xmlns.com/foaf/0.1/Group> ;
                  rdfs:comment "Degrees that can be obtained by a person."@en ,
                               "Títulos que pueden ser obtenidos por una persona."@es ;
                  rdfs:label "Education Level"@en ,
                             "Nivel de formación"@es .
 
 
-###  http://www.semanticweb.org/lsarni/ontologies/professors#Nationality
+###  https://w3id.org/ontocis/professors#Nationality
 :Nationality rdf:type owl:Class ;
              owl:equivalentClass [ rdf:type owl:Class ;
                                    owl:oneOf ( :Argentinian
@@ -141,7 +143,7 @@
                         "Nationality"@en .
 
 
-###  http://www.semanticweb.org/lsarni/ontologies/professors#Person
+###  https://w3id.org/ontocis/professors#Person
 :Person rdf:type owl:Class ;
         owl:equivalentClass <http://xmlns.com/foaf/0.1/Person> ;
         rdfs:comment "A human being."@en ,
@@ -150,7 +152,7 @@
                    "Persona"@es .
 
 
-###  http://www.semanticweb.org/lsarni/ontologies/professors#Professor
+###  https://w3id.org/ontocis/professors#Professor
 :Professor rdf:type owl:Class ;
            rdfs:subClassOf :Person ;
            rdfs:comment "Person that teaches or is in charge of a course."@en ,
@@ -171,73 +173,73 @@
 #    Individuals
 #################################################################
 
-###  http://www.semanticweb.org/lsarni/ontologies/professors#Argentinian
+###  https://w3id.org/ontocis/professors#Argentinian
 :Argentinian rdf:type owl:NamedIndividual ;
              rdfs:label "Argentina"@es ,
                         "Argentinian"@en .
 
 
-###  http://www.semanticweb.org/lsarni/ontologies/professors#Brazilian
+###  https://w3id.org/ontocis/professors#Brazilian
 :Brazilian rdf:type owl:NamedIndividual ;
            rdfs:label "Brasileña"@es ,
                       "Brazilian"@en .
 
 
-###  http://www.semanticweb.org/lsarni/ontologies/professors#Chilean
+###  https://w3id.org/ontocis/professors#Chilean
 :Chilean rdf:type owl:NamedIndividual ;
          rdfs:label "Chilean"@en ,
                     "Chilena"@es .
 
 
-###  http://www.semanticweb.org/lsarni/ontologies/professors#Doctor
+###  https://w3id.org/ontocis/professors#Doctor
 :Doctor rdf:type owl:NamedIndividual ;
         rdfs:label "Doctor"@en ,
                    "Doctorado"@es .
 
 
-###  http://www.semanticweb.org/lsarni/ontologies/professors#Master
+###  https://w3id.org/ontocis/professors#Master
 :Master rdf:type owl:NamedIndividual ;
         rdfs:label "Master"@en ,
                    "Master"@es .
 
 
-###  http://www.semanticweb.org/lsarni/ontologies/professors#Russian
+###  https://w3id.org/ontocis/professors#Russian
 :Russian rdf:type owl:NamedIndividual ;
          rdfs:label "Rusa"@es ,
                     "Russian"@en .
 
 
-###  http://www.semanticweb.org/lsarni/ontologies/professors#Spanish
+###  https://w3id.org/ontocis/professors#Spanish
 :Spanish rdf:type owl:NamedIndividual ;
          rdfs:label "Española"@es ,
                     "Spanish"@en .
 
 
-###  http://www.semanticweb.org/lsarni/ontologies/professors#Specialization
+###  https://w3id.org/ontocis/professors#Specialization
 :Specialization rdf:type owl:NamedIndividual ;
                 rdfs:label "Especialización"@es ,
                            "Specialization"@en .
 
 
-###  http://www.semanticweb.org/lsarni/ontologies/professors#Technical
+###  https://w3id.org/ontocis/professors#Technical
 :Technical rdf:type owl:NamedIndividual ;
            rdfs:label "Technical"@en ,
                       "Técnico"@es .
 
 
-###  http://www.semanticweb.org/lsarni/ontologies/professors#Tertiary
+###  https://w3id.org/ontocis/professors#Tertiary
 :Tertiary rdf:type owl:NamedIndividual ;
           rdfs:label "Terciario"@es ,
                      "Tertiary"@en .
 
 
-###  http://www.semanticweb.org/lsarni/ontologies/professors#University
+###  https://w3id.org/ontocis/professors#University
 :University rdf:type owl:NamedIndividual ;
             rdfs:label "Universitario"@es ,
                        "University"@en .
 
 
-###  http://www.semanticweb.org/lsarni/ontologies/professors#Uruguayan
+###  https://w3id.org/ontocis/professors#Uruguayan
 :Uruguayan rdf:type owl:NamedIndividual ;
            rdfs:label "Uruguaya"@es ,
                       "Uruguayan"@en .

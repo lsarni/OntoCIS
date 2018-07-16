@@ -1,0 +1,619 @@
+<h2  id="crossreference" class="list">T&eacute;rminos de OntoCIS Asignaturas para clases, propiedades y propiedades de datos <span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h2>
+Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad definida por OntoCIS.
+<div id="classes">
+   <h3 id="classes-headline" class="list">Clases</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#Course"
+            title="https://w3id.org/ontocis/courses#Course">Asignatura</a>
+      </li>
+      <li>
+         <a href="#Core_Course"
+            title="https://w3id.org/ontocis/courses#Core_Course">Asignatura Obligatoria</a>
+      </li>
+      <li>
+         <a href="#Placeholder_Course"
+            title="https://w3id.org/ontocis/courses#Placeholder_Course">Asignatura Placeholder</a>
+      </li>
+      <li>
+         <a href="#Year"
+            title="https://w3id.org/ontocis/courses#Year">Año</a>
+      </li>
+      <li>
+         <a href="#Curricula"
+            title="https://w3id.org/ontocis/courses#Curricula">Curriculo</a>
+      </li>
+      <li>
+         <a href="#Elective_Course"
+            title="https://w3id.org/ontocis/courses#Elective_Course">Electiva</a>
+      </li>
+      <li>
+         <a href="#Knowledge_Group"
+            title="https://w3id.org/ontocis/courses#Knowledge_Group">Grupo Temático</a>
+      </li>
+      <li>
+         <a href="#Term"
+            title="https://w3id.org/ontocis/courses#Term">Periodo</a>
+      </li>
+      <li>
+         <a href="#Knowledge_Area"
+            title="https://w3id.org/ontocis/courses#Knowledge_Area">Área Temática</a>
+      </li>
+   </ul>
+   <div class="entity" id="Course">
+      <h3>Asignatura<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/courses#Course</p>
+      <div class="comment">
+         <span class="markdown">Materia o unidad de enseñanza que generalmente dura un período académico, está dirigida por uno o más instructores y tiene una lista fija de estudiantes.</span>
+      </div>
+      <dl class="description">
+         <dt>equivalente a</dt>
+         <dd>
+            <a href="#Core_Course"
+               title="https://w3id.org/ontocis/courses#Core_Course">Asignatura Obligatoria</a>
+            <sup class="type-c" title="clase">c</sup>
+            <span class="logic">or</span>
+            <a href="#Elective_Course"
+               title="https://w3id.org/ontocis/courses#Elective_Course">Electiva</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>tiene subclases</dt>
+         <dd>
+            <a href="#Core_Course"
+               title="https://w3id.org/ontocis/courses#Core_Course">Asignatura Obligatoria</a>
+            <sup class="type-c" title="clase">c</sup>, <a href="#Elective_Course"
+               title="https://w3id.org/ontocis/courses#Elective_Course">Electiva</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>en dominio de</dt>
+         <dd>
+            <a href="#credits"
+               title="https://w3id.org/ontocis/courses#credits">créditos</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#isPrerequisite"
+               title="https://w3id.org/ontocis/courses#isPrerequisite">es previa</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#hours"
+               title="https://w3id.org/ontocis/courses#hours">horas</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#minimumCreditsRequired"
+               title="https://w3id.org/ontocis/courses#minimumCreditsRequired">minimo de creditos requeridos</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#partialCreditScore"
+               title="https://w3id.org/ontocis/courses#partialCreditScore">puntaje para crédito parcial</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#totalCreditScore"
+               title="https://w3id.org/ontocis/courses#totalCreditScore">puntaje para crédito total</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>
+         </dd>
+         <dt>en rango de</dt>
+         <dd>
+            <a href="#isPrerequisite"
+               title="https://w3id.org/ontocis/courses#isPrerequisite">es previa</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#https://w3id.org/ontocis/professors#inChargeOf"
+               title="https://w3id.org/ontocis/professors#inChargeOf">a cargo de</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Core_Course">
+      <h3>Asignatura Obligatoria<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/courses#Core_Course</p>
+      <div class="comment">
+         <span class="markdown">Asignatura que los estudiantes deben cursar como parte de la currícula para obtener un título.</span>
+      </div>
+      <dl class="description">
+         <dt>tiene superclases</dt>
+         <dd>
+            <a href="#Course"
+               title="https://w3id.org/ontocis/courses#Course">Asignatura</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>disjunto a</dt>
+         <dd>
+            <a href="#Elective_Course"
+               title="https://w3id.org/ontocis/courses#Elective_Course">Electiva</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Placeholder_Course">
+      <h3>Asignatura Placeholder<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/courses#Placeholder_Course</p>
+      <div class="comment">
+         <span class="markdown">Asignatura utilizada para indicar que el estudiante debe tomar una asignatura electiva a su elección.</span>
+      </div>
+      <dl class="description">
+         <dt>tiene superclases</dt>
+         <dd>
+            <a href="#Elective_Course"
+               title="https://w3id.org/ontocis/courses#Elective_Course">Electiva</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Year">
+      <h3>Año<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/courses#Year</p>
+      <div class="comment">
+         <span class="markdown">Período del año en que los estudiantes asisten a asignaturas.</span>
+      </div>
+   </div>
+   <div class="entity" id="Curricula">
+      <h3>Curriculo<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/courses#Curricula</p>
+      <div class="comment">
+         <span class="markdown">Conjunto de enseñanzas y prácticas que, con determinada disposición, han de cursarse para cumplir un ciclo de estudios u obtener un título.</span>
+      </div>
+   </div>
+   <div class="entity" id="Elective_Course">
+      <h3>Electiva<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/courses#Elective_Course</p>
+      <div class="comment">
+         <span class="markdown">Asignatura que los estudiantes pueden cursar según sus intereses y preferencias. Para obtener un título, los estudiantes deben cursar un conjunto o una cantidad determinada de asignaturas electivas, definida para cada título.</span>
+      </div>
+      <dl class="description">
+         <dt>tiene superclases</dt>
+         <dd>
+            <a href="#Course"
+               title="https://w3id.org/ontocis/courses#Course">Asignatura</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>tiene subclases</dt>
+         <dd>
+            <a href="#Placeholder_Course"
+               title="https://w3id.org/ontocis/courses#Placeholder_Course">Asignatura Placeholder</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>disjunto a</dt>
+         <dd>
+            <a href="#Core_Course"
+               title="https://w3id.org/ontocis/courses#Core_Course">Asignatura Obligatoria</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Knowledge_Group">
+      <h3>Grupo Temático<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/courses#Knowledge_Group</p>
+      <div class="comment">
+         <span class="markdown">Grupos temáticos en los que se divide el conocimiento abarcado por el currículo.</span>
+      </div>
+   </div>
+   <div class="entity" id="Term">
+      <h3>Periodo<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/courses#Term</p>
+      <div class="comment">
+         <span class="markdown">Parte de un año académico, el tiempo durante el cual una institución educativa imparte clases a los estudiantes que cursan una o mas asignaturas.</span>
+      </div>
+   </div>
+   <div class="entity" id="Knowledge_Area">
+      <h3>Área Temática<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/courses#Knowledge_Area</p>
+      <div class="comment">
+         <span class="markdown">Áreas temáticas en las que se dividen los grupos temáticos.</span>
+      </div>
+   </div>
+</div><div id="objectproperties">
+   <h2>Propiedades entre objetos</h2>
+   <ul class="hlist">
+      <li>
+         <a href="#partialCreditIsPrerequisiteToPass"
+            title="https://w3id.org/ontocis/courses#partialCreditIsPrerequisiteToPass">credito parcial es previa para aprobar</a>
+      </li>
+      <li>
+         <a href="#partialCreditIsPrerequisiteToEnroll"
+            title="https://w3id.org/ontocis/courses#partialCreditIsPrerequisiteToEnroll">credito parcial es previa para inscribirse</a>
+      </li>
+      <li>
+         <a href="#totalCreditIsPrerequisiteToPass"
+            title="https://w3id.org/ontocis/courses#totalCreditIsPrerequisiteToPass">credito total es previa para aprobar</a>
+      </li>
+      <li>
+         <a href="#totalCreditIsPrerequisiteToEnroll"
+            title="https://w3id.org/ontocis/courses#totalCreditIsPrerequisiteToEnroll">credito total es previa para inscribirse</a>
+      </li>
+      <li>
+         <a href="#isPrerequisite"
+            title="https://w3id.org/ontocis/courses#isPrerequisite">es previa</a>
+      </li>
+      <li>
+         <a href="#isPrerequisiteToPass"
+            title="https://w3id.org/ontocis/courses#isPrerequisiteToPass">es previa para aprobar</a>
+      </li>
+      <li>
+         <a href="#isPrerequisiteToEnroll"
+            title="https://w3id.org/ontocis/courses#isPrerequisiteToEnroll">es previa para inscribirse</a>
+      </li>
+   </ul>
+   <div class="entity" id="partialCreditIsPrerequisiteToPass">
+      <h3>credito parcial es previa para aprobar<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/courses#partialCreditIsPrerequisiteToPass</p>
+      <div class="comment">
+         <span class="markdown">Indica para que asignaturas el estudiante debe tener el crédito parcial para poder aprobar (obtener el crédito total) una asignatura.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>tiene superpropiedades</dt>
+            <dd>
+               <a href="#isPrerequisiteToPass"
+                  title="https://w3id.org/ontocis/courses#isPrerequisiteToPass">es previa para aprobar</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="partialCreditIsPrerequisiteToEnroll">
+      <h3>credito parcial es previa para inscribirse<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/courses#partialCreditIsPrerequisiteToEnroll</p>
+      <div class="comment">
+         <span class="markdown">Indica para que asignaturas el estudiante debe tener el crédito parcial antes de poder inscribirse a una asignatura.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>tiene superpropiedades</dt>
+            <dd>
+               <a href="#isPrerequisiteToEnroll"
+                  title="https://w3id.org/ontocis/courses#isPrerequisiteToEnroll">es previa para inscribirse</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="totalCreditIsPrerequisiteToPass">
+      <h3>credito total es previa para aprobar<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/courses#totalCreditIsPrerequisiteToPass</p>
+      <div class="comment">
+         <span class="markdown">Indica para que asignaturas el estudiante debe tener el crédito total para poder aprobar (obtener el crédito total) una asignatura.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>tiene superpropiedades</dt>
+            <dd>
+               <a href="#isPrerequisiteToPass"
+                  title="https://w3id.org/ontocis/courses#isPrerequisiteToPass">es previa para aprobar</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="totalCreditIsPrerequisiteToEnroll">
+      <h3>credito total es previa para inscribirse<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/courses#totalCreditIsPrerequisiteToEnroll</p>
+      <div class="comment">
+         <span class="markdown">Indica para que asignaturas el estudiante debe tener el crédito total antes de poder inscribirse a una asignatura.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>tiene superpropiedades</dt>
+            <dd>
+               <a href="#isPrerequisiteToEnroll"
+                  title="https://w3id.org/ontocis/courses#isPrerequisiteToEnroll">es previa para inscribirse</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isPrerequisite">
+      <h3>es previa<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/courses#isPrerequisite</p>
+      <div class="comment">
+         <span class="markdown">Indica que asignaturas debe haber cursado un estudiante para poder inscribirse o aprobar una asignatura.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>tiene características:</strong> transitiva</p>
+         <dl>
+            <dt>tiene superpropiedades</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+            </dd>
+            <dt>tiene subpropiedades</dt>
+            <dd>
+               <a href="#isPrerequisiteToPass"
+                  title="https://w3id.org/ontocis/courses#isPrerequisiteToPass">es previa para aprobar</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#isPrerequisiteToEnroll"
+                  title="https://w3id.org/ontocis/courses#isPrerequisiteToEnroll">es previa para inscribirse</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Course"
+                  title="https://w3id.org/ontocis/courses#Course">Asignatura</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#Course"
+                  title="https://w3id.org/ontocis/courses#Course">Asignatura</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isPrerequisiteToPass">
+      <h3>es previa para aprobar<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/courses#isPrerequisiteToPass</p>
+      <div class="comment">
+         <span class="markdown">Indica que asignaturas debe haber cursado previamente un estudiante para poder aprobar (obtener el crédito total) una asignatura.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>tiene superpropiedades</dt>
+            <dd>
+               <a href="#isPrerequisite"
+                  title="https://w3id.org/ontocis/courses#isPrerequisite">es previa</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+            <dt>tiene subpropiedades</dt>
+            <dd>
+               <a href="#partialCreditIsPrerequisiteToPass"
+                  title="https://w3id.org/ontocis/courses#partialCreditIsPrerequisiteToPass">credito parcial es previa para aprobar</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#totalCreditIsPrerequisiteToPass"
+                  title="https://w3id.org/ontocis/courses#totalCreditIsPrerequisiteToPass">credito total es previa para aprobar</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isPrerequisiteToEnroll">
+      <h3>es previa para inscribirse<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/courses#isPrerequisiteToEnroll</p>
+      <div class="comment">
+         <span class="markdown">Indica que asignaturas que deben haber cursado el estudiante para poder inscribirse a una asignatura.
+Solamente si el estudiante ha obtenido el crédito parcial o total de estas asignaturas, según corresponda, podrá inscribirse a la asignatura y eventualmente obtener el crédito parcial para el mismo.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>tiene superpropiedades</dt>
+            <dd>
+               <a href="#isPrerequisite"
+                  title="https://w3id.org/ontocis/courses#isPrerequisite">es previa</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+            <dt>tiene subpropiedades</dt>
+            <dd>
+               <a href="#partialCreditIsPrerequisiteToEnroll"
+                  title="https://w3id.org/ontocis/courses#partialCreditIsPrerequisiteToEnroll">credito parcial es previa para inscribirse</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#totalCreditIsPrerequisiteToEnroll"
+                  title="https://w3id.org/ontocis/courses#totalCreditIsPrerequisiteToEnroll">credito total es previa para inscribirse</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Propiedades de datos</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#credits"
+            title="https://w3id.org/ontocis/courses#credits">créditos</a>
+      </li>
+      <li>
+         <a href="#hours"
+            title="https://w3id.org/ontocis/courses#hours">horas</a>
+      </li>
+      <li>
+         <a href="#minimumCreditsRequired"
+            title="https://w3id.org/ontocis/courses#minimumCreditsRequired">minimo de creditos requeridos</a>
+      </li>
+      <li>
+         <a href="#partialCreditScore"
+            title="https://w3id.org/ontocis/courses#partialCreditScore">puntaje para crédito parcial</a>
+      </li>
+      <li>
+         <a href="#totalCreditScore"
+            title="https://w3id.org/ontocis/courses#totalCreditScore">puntaje para crédito total</a>
+      </li>
+   </ul>
+   <div class="entity" id="credits">
+      <h3>créditos<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/courses#credits</p>
+      <div class="comment">
+         <span class="markdown">Cantidad de créditos que se obtienen al aprobar una asignatura.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>tiene características:</strong> funcional</p>
+         <dl>
+            <dt>tiene superpropiedades</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Course"
+                  title="https://w3id.org/ontocis/courses#Course">Asignatura</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd/>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hours">
+      <h3>horas<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/courses#hours</p>
+      <div class="comment">
+         <span class="markdown">Amount of hours taught for a course.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>tiene características:</strong> funcional</p>
+         <dl>
+            <dt>tiene superpropiedades</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Course"
+                  title="https://w3id.org/ontocis/courses#Course">Asignatura</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd/>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="minimumCreditsRequired">
+      <h3>minimo de creditos requeridos<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/courses#minimumCreditsRequired</p>
+      <div class="comment">
+         <span class="markdown">Cantidad mínima de créditos requeridos para poder cursar una asignatura.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>tiene superpropiedades</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Course"
+                  title="https://w3id.org/ontocis/courses#Course">Asignatura</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd/>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="partialCreditScore">
+      <h3>puntaje para crédito parcial<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/courses#partialCreditScore</p>
+      <div class="comment">
+         <span class="markdown">Puntaje mínimo que debe alcanzarse para obtener el crédito parcial de una asignatura, y tener derecho a dar examen.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>tiene características:</strong> funcional</p>
+         <dl>
+            <dt>tiene superpropiedades</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Course"
+                  title="https://w3id.org/ontocis/courses#Course">Asignatura</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd/>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="totalCreditScore">
+      <h3>puntaje para crédito total<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ontocis/courses#totalCreditScore</p>
+      <div class="comment">
+         <span class="markdown">Minimum score requiered to approve a course.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>tiene características:</strong> funcional</p>
+         <dl>
+            <dt>tiene superpropiedades</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Course"
+                  title="https://w3id.org/ontocis/courses#Course">Asignatura</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd/>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Leyenda <span class="backlink"> volver a <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Clases">c</sup>: Clases <br/>
+<sup class="type-op" title="Propiedades de objeto">op</sup>: Propiedades de objeto <br/>
+<sup class="type-dp" title="Propiedades de datos">dp</sup>: Propiedades de datos <br/>
+<sup class="type-ni" title="Individuos">ni</sup>: Individuos
+</div>
+</div>

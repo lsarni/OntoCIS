@@ -1,3 +1,23 @@
 <h2 id="desc" class="list">OntoCIS Topics: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.</span>
+The following UML diagram shows the classes and properties defined in this module:
+
+![UML diagram](resources/image2.png)
+
+The instantiation of this module was based on the “2012 ACM Computing Classification System” [1]. To reuse this ontology a set of steps where defined to transform the SKOS concepts [2] used for this ontology into the classes and relations defined by this module:
+
+1. Each *skos:Concept* becomes a *topics:Topic*
+2. The relations stablished using *skos:related* become *topics:relatedTo*.
+3. The relations stablished using *skos:broader* become *topics:subtopicOf*
+4. The preferred labels become *rdfs:label* and the alternative labels become *topics:altLabel*
+
+Following this process, we can transform the concepts defined in the ACM system and then use them to establish which topics are taught in the different courses. For instance, the following graph shows the topics taught in the course Foundations of Computing:
+
+![Topics for Foundations of Computing](resources/image3.png)
+
+One of the advantages of using this ontology is that we can navigate the through the courses by moving thourhg the relations stablished between the topics. This will allow us to créate or validate the prerequisites for courses and courses revalidations. For instance, we can see in which other courses teach the same topics that Foundations of Computing:
+
+![Related courses](resources/image4.png)
+
+Actually, Algorithms and Data Structures 1 has both other courses as prerequisites, which makes sense given the shared thematic content.
+</span>

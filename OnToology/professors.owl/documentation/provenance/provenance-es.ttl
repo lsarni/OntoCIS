@@ -1,0 +1,10 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+<https://w3id.org/ontocis/professors> a prov:Entity;
+	 dc:title "OntoCIS Docentes";
+	 prov:wasAttributedTo <https://github.com/lsarni>;
+	 dc:creator <https://github.com/lsarni>;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:wasGeneratedAt "22 Agosto 2018";
+.
