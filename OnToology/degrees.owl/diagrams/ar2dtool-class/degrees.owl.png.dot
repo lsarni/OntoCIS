@@ -1,0 +1,8 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "degrees:Degree" ; /*classes style*/
+	"https://w3id.org/ontocis/degrees" -> "https://opensource.org/licenses/MIT" [ label = "dcterms:license" ];
+	"owl:Thing" -> "degrees:Degree" [ label = "degrees:requiredFor" ];
+
+}

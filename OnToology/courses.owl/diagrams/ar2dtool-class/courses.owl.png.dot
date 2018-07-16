@@ -1,0 +1,48 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "courses:Elective_Course" "courses:Course" "246b01a:164a4c95418:-7fe9" "courses:Core_Course" ; /*classes style*/
+	"courses:totalCreditIsPrerequisiteToPass" -> "courses:isPrerequisiteToPass" [ label = "rdfs:subPropertyOf" ];
+	"courses:Core_Course" -> "courses:Elective_Course" [ label = "owl:disjointWith" ];
+	"courses:credits" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"courses:totalCreditScore" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"https://w3id.org/ontocis/courses" -> "https://w3id.org/ontocis/composition" [ label = "owl:imports" ];
+	"https://w3id.org/ontocis/courses" -> "https://opensource.org/licenses/MIT" [ label = "dcterms:license" ];
+	"courses:partialCreditIsPrerequisiteToPass" -> "courses:isPrerequisiteToPass" [ label = "rdfs:subPropertyOf" ];
+	"courses:isPrerequisiteToEnroll" -> "courses:isPrerequisite" [ label = "rdfs:subPropertyOf" ];
+	"courses:minimumCreditsRequired" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"courses:isPrerequisiteToPass" -> "courses:isPrerequisite" [ label = "rdfs:subPropertyOf" ];
+	"courses:partialCreditScore" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"courses:totalCreditIsPrerequisiteToEnroll" -> "courses:isPrerequisiteToEnroll" [ label = "rdfs:subPropertyOf" ];
+	"courses:isPrerequisite" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	"courses:hours" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"NULL" -> "246b01a:164a4c95418:-7feb" [ label = "rdf:rest" ];
+	"NULL" -> "246b01a:164a4c95418:-7ff4" [ label = "rdf:first" ];
+	"NULL" -> "courses:Core_Course" [ label = "rdf:first" ];
+	"NULL" -> "246b01a:164a4c95418:-7fe7" [ label = "rdf:rest" ];
+	"NULL" -> "246b01a:164a4c95418:-7ff2" [ label = "owl:withRestrictions" ];
+	"NULL" -> "246b01a:164a4c95418:-7ffb" [ label = "owl:withRestrictions" ];
+	"NULL" -> "xsd:integer" [ label = "owl:onDatatype" ];
+	"NULL" -> "246b01a:164a4c95418:-7ff0" [ label = "rdf:rest" ];
+	"NULL" -> "246b01a:164a4c95418:-7ff5" [ label = "owl:withRestrictions" ];
+	"NULL" -> "246b01a:164a4c95418:-7fec" [ label = "rdf:first" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "246b01a:164a4c95418:-7ff7" [ label = "rdf:first" ];
+	"NULL" -> "246b01a:164a4c95418:-7ff1" [ label = "rdf:first" ];
+	"NULL" -> "246b01a:164a4c95418:-7ffa" [ label = "rdf:first" ];
+	"NULL" -> "246b01a:164a4c95418:-7ff8" [ label = "owl:withRestrictions" ];
+	"NULL" -> "246b01a:164a4c95418:-7fed" [ label = "owl:withRestrictions" ];
+	"NULL" -> "courses:Elective_Course" [ label = "rdf:first" ];
+	"NULL" -> "246b01a:164a4c95418:-7fe8" [ label = "owl:unionOf" ];
+	"NULL" -> "246b01a:164a4c95418:-7fea" [ label = "rdf:first" ];
+	"NULL" -> "246b01a:164a4c95418:-7fef" [ label = "rdf:first" ];
+	"courses:Course" -> "246b01a:164a4c95418:-7fe9" [ label = "owl:equivalentClass" ];
+	"courses:partialCreditIsPrerequisiteToEnroll" -> "courses:isPrerequisiteToEnroll" [ label = "rdfs:subPropertyOf" ];
+	"courses:Course" -> "246b01a:164a4c95418:-7ff3" [ label = "courses:partialCreditScore" ];
+	"courses:Course" -> "246b01a:164a4c95418:-7ffc" [ label = "courses:credits" ];
+	"courses:Course" -> "246b01a:164a4c95418:-7ff9" [ label = "courses:hours" ];
+	"courses:Course" -> "courses:Course" [ label = "courses:isPrerequisite" ];
+	"courses:Course" -> "246b01a:164a4c95418:-7fee" [ label = "courses:totalCreditScore" ];
+	"courses:Course" -> "246b01a:164a4c95418:-7ff6" [ label = "courses:minimumCreditsRequired" ];
+
+}
