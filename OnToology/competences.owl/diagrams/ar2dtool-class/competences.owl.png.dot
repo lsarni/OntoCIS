@@ -1,0 +1,16 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "competences:Learning_Outcome" "competences:Competence" "competences:Category" ; /*classes style*/
+	"competences:partiallyDevelops" -> "competences:contributesTo" [ label = "rdfs:subPropertyOf" ];
+	"https://w3id.org/ontocis/competences" -> "https://opensource.org/licenses/MIT" [ label = "dcterms:license" ];
+	"https://w3id.org/ontocis/competences" -> "https://w3id.org/ontocis/composition" [ label = "owl:imports" ];
+	"competences:develops" -> "competences:contributesTo" [ label = "rdfs:subPropertyOf" ];
+	"competences:hasLearningOutcome" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	"NULL" -> "competences:Category" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "competences:Competence" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "composition:partOf" [ label = "owl:onProperty" ];
+	"owl:Thing" -> "competences:Competence" [ label = "competences:contributesTo" ];
+	"owl:Thing" -> "competences:Learning_Outcome" [ label = "competences:hasLearningOutcome" ];
+
+}

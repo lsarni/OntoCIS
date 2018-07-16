@@ -1,0 +1,23 @@
+{
+  "@context" : {
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/#license"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "requiredFor" : {
+      "@id" : "https://w3id.org/ontocis/degrees#requiredFor",
+      "@type" : "@id"
+    },
+    "Bachelor_Degree" : {
+      "@id" : "https://w3id.org/ontocis/degrees#Bachelor_Degree"
+    },
+    "Degree" : {
+      "@id" : "https://w3id.org/ontocis/degrees#Degree"
+    }
+  }
+}

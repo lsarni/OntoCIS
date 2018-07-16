@@ -1,0 +1,36 @@
+{
+  "@context" : {
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/#license"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "hasLearningOutcome" : {
+      "@id" : "https://w3id.org/ontocis/competences#hasLearningOutcome",
+      "@type" : "@id"
+    },
+    "taughtIn" : {
+      "@id" : "https://w3id.org/ontocis/topics#taughtIn",
+      "@type" : "@id"
+    },
+    "requiredFor" : {
+      "@id" : "https://w3id.org/ontocis/degrees#requiredFor",
+      "@type" : "@id"
+    },
+    "contributesTo" : {
+      "@id" : "https://w3id.org/ontocis/competences#contributesTo",
+      "@type" : "@id"
+    },
+    "inChargeOf" : {
+      "@id" : "https://w3id.org/ontocis/professors#inChargeOf",
+      "@type" : "@id"
+    },
+    "Course" : {
+      "@id" : "https://w3id.org/ontocis/courses#Course"
+    }
+  }
+}
