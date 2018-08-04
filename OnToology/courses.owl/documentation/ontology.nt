@@ -14,15 +14,6 @@
 # #################################################################
 # 
 # 
-# https://w3id.org/ontocis/composition#partOf
-<https://w3id.org/ontocis/composition#partOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/ontocis/composition#partOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://w3id.org/ontocis/composition#partOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
-<https://w3id.org/ontocis/composition#partOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la composici\u00F3n entre individuos"@es .
-<https://w3id.org/ontocis/composition#partOf> <http://www.w3.org/2000/01/rdf-schema#comment> "It states part-whole relations"@en .
-<https://w3id.org/ontocis/composition#partOf> <http://www.w3.org/2000/01/rdf-schema#label> "part of"@en .
-<https://w3id.org/ontocis/composition#partOf> <http://www.w3.org/2000/01/rdf-schema#label> "parte de"@es .
-# 
 # https://w3id.org/ontocis/courses#isPrerequisite
 <https://w3id.org/ontocis/courses#isPrerequisite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ontocis/courses#isPrerequisite> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
@@ -202,7 +193,7 @@ _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <https://w3id.org/ontocis/courses#Core_Course> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ontocis/courses#Course> .
 <https://w3id.org/ontocis/courses#Core_Course> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/ontocis/courses#Elective_Course> .
 <https://w3id.org/ontocis/courses#Core_Course> <http://www.w3.org/2000/01/rdf-schema#comment> "Asignatura que los estudiantes deben cursar como parte de la curr\u00EDcula para obtener un t\u00EDtulo."@es .
-<https://w3id.org/ontocis/courses#Core_Course> <http://www.w3.org/2000/01/rdf-schema#comment> "Course that the students must attend as part of the curricula to obtain a degree."@en .
+<https://w3id.org/ontocis/courses#Core_Course> <http://www.w3.org/2000/01/rdf-schema#comment> "Course that the students must attend as part of the curriculum to obtain a degree."@en .
 <https://w3id.org/ontocis/courses#Core_Course> <http://www.w3.org/2000/01/rdf-schema#label> "Asignatura Obligatoria"@es .
 <https://w3id.org/ontocis/courses#Core_Course> <http://www.w3.org/2000/01/rdf-schema#label> "Core Course"@en .
 # 
@@ -222,12 +213,12 @@ _:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <https://w3id.org/ontocis/courses#Course> <http://www.w3.org/2000/01/rdf-schema#label> "Asignatura"@es .
 <https://w3id.org/ontocis/courses#Course> <http://www.w3.org/2000/01/rdf-schema#label> "Course"@en .
 # 
-# https://w3id.org/ontocis/courses#Curricula
-<https://w3id.org/ontocis/courses#Curricula> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/ontocis/courses#Curricula> <http://www.w3.org/2000/01/rdf-schema#comment> "Conjunto de ense\u00F1anzas y pr\u00E1cticas que, con determinada disposici\u00F3n, han de cursarse para cumplir un ciclo de estudios u obtener un t\u00EDtulo."@es .
-<https://w3id.org/ontocis/courses#Curricula> <http://www.w3.org/2000/01/rdf-schema#comment> "Set of courses that need to be taken in order to obtain a certain degree."@en .
-<https://w3id.org/ontocis/courses#Curricula> <http://www.w3.org/2000/01/rdf-schema#label> "Curricula"@en .
-<https://w3id.org/ontocis/courses#Curricula> <http://www.w3.org/2000/01/rdf-schema#label> "Curriculo"@es .
+# https://w3id.org/ontocis/courses#Curriculum
+<https://w3id.org/ontocis/courses#Curriculum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ontocis/courses#Curriculum> <http://www.w3.org/2000/01/rdf-schema#comment> "Conjunto de ense\u00F1anzas y pr\u00E1cticas que, con determinada disposici\u00F3n, han de cursarse para cumplir un ciclo de estudios u obtener un t\u00EDtulo."@es .
+<https://w3id.org/ontocis/courses#Curriculum> <http://www.w3.org/2000/01/rdf-schema#comment> "Set of courses that need to be taken in order to obtain a certain degree."@en .
+<https://w3id.org/ontocis/courses#Curriculum> <http://www.w3.org/2000/01/rdf-schema#label> "Curriculo"@es .
+<https://w3id.org/ontocis/courses#Curriculum> <http://www.w3.org/2000/01/rdf-schema#label> "Curriculum"@en .
 # 
 # https://w3id.org/ontocis/courses#Elective_Course
 <https://w3id.org/ontocis/courses#Elective_Course> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -256,14 +247,14 @@ _:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <https://w3id.org/ontocis/courses#Placeholder_Course> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ontocis/courses#Elective_Course> .
 <https://w3id.org/ontocis/courses#Placeholder_Course> <http://www.w3.org/2000/01/rdf-schema#comment> "Asignatura utilizada para indicar que el estudiante debe tomar una asignatura electiva a su elecci\u00F3n."@es .
 <https://w3id.org/ontocis/courses#Placeholder_Course> <http://www.w3.org/2000/01/rdf-schema#comment> "Course used to state that the student must take a course but can choose among any elective course."@en .
-<https://w3id.org/ontocis/courses#Placeholder_Course> <http://www.w3.org/2000/01/rdf-schema#label> "Asignatura Placeholder"@es .
+<https://w3id.org/ontocis/courses#Placeholder_Course> <http://www.w3.org/2000/01/rdf-schema#label> "Asignatura Nominal"@es .
 <https://w3id.org/ontocis/courses#Placeholder_Course> <http://www.w3.org/2000/01/rdf-schema#label> "Placeholder Course"@en .
 # 
 # https://w3id.org/ontocis/courses#Term
 <https://w3id.org/ontocis/courses#Term> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ontocis/courses#Term> <http://www.w3.org/2000/01/rdf-schema#comment> "A portion of an academic year, the time during which an educational institution holds classes."@en .
 <https://w3id.org/ontocis/courses#Term> <http://www.w3.org/2000/01/rdf-schema#comment> "Parte de un a\u00F1o acad\u00E9mico, el tiempo durante el cual una instituci\u00F3n educativa imparte clases a los estudiantes que cursan una o mas asignaturas."@es .
-<https://w3id.org/ontocis/courses#Term> <http://www.w3.org/2000/01/rdf-schema#label> "Periodo"@es .
+<https://w3id.org/ontocis/courses#Term> <http://www.w3.org/2000/01/rdf-schema#label> "Per\u00EDodo Acad\u00E9mico"@es .
 <https://w3id.org/ontocis/courses#Term> <http://www.w3.org/2000/01/rdf-schema#label> "Term"@en .
 # 
 # https://w3id.org/ontocis/courses#Year

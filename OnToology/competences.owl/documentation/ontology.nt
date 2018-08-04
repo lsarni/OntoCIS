@@ -5,15 +5,15 @@
 <https://w3id.org/ontocis/competences> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes a set of competences, general statementes detailing the desired knowledge and skills of student graduating from a course or program should adquire, and categories under which organize them."@en .
 <https://w3id.org/ontocis/competences> <http://www.w3.org/2000/01/rdf-schema#label> "OntoCIS Competences"@en .
 <https://w3id.org/ontocis/competences> <http://www.w3.org/2000/01/rdf-schema#label> "OntoCIS Competencias"@es .
-#
-#
+# 
+# 
 # #################################################################
 # #
 # #    Object Properties
 # #
 # #################################################################
-#
-#
+# 
+# 
 # https://w3id.org/ontocis/competences#contributesTo
 <https://w3id.org/ontocis/competences#contributesTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ontocis/competences#contributesTo> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ontocis/competences#Competence> .
@@ -21,7 +21,7 @@
 <https://w3id.org/ontocis/competences#contributesTo> <http://www.w3.org/2000/01/rdf-schema#comment> "It states the degree of contribution to the development of a competency"@en .
 <https://w3id.org/ontocis/competences#contributesTo> <http://www.w3.org/2000/01/rdf-schema#label> "contributes to"@en .
 <https://w3id.org/ontocis/competences#contributesTo> <http://www.w3.org/2000/01/rdf-schema#label> "contribuye a"@es .
-#
+# 
 # https://w3id.org/ontocis/competences#develops
 <https://w3id.org/ontocis/competences#develops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ontocis/competences#develops> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/ontocis/competences#contributesTo> .
@@ -29,7 +29,7 @@
 <https://w3id.org/ontocis/competences#develops> <http://www.w3.org/2000/01/rdf-schema#comment> "It states that the competency is totally or partially developed in a course, it is assessed and there is evidence of the assessment."@en .
 <https://w3id.org/ontocis/competences#develops> <http://www.w3.org/2000/01/rdf-schema#label> "desarrolla"@es .
 <https://w3id.org/ontocis/competences#develops> <http://www.w3.org/2000/01/rdf-schema#label> "develops"@en .
-#
+# 
 # https://w3id.org/ontocis/competences#hasLearningOutcome
 <https://w3id.org/ontocis/competences#hasLearningOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ontocis/competences#hasLearningOutcome> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
@@ -38,7 +38,7 @@
 <https://w3id.org/ontocis/competences#hasLearningOutcome> <http://www.w3.org/2000/01/rdf-schema#comment> "It states the learning outcomes for a certain thing."@en .
 <https://w3id.org/ontocis/competences#hasLearningOutcome> <http://www.w3.org/2000/01/rdf-schema#label> "has learning outcome"@en .
 <https://w3id.org/ontocis/competences#hasLearningOutcome> <http://www.w3.org/2000/01/rdf-schema#label> "tiene como objetivo de aprendizaje"@es .
-#
+# 
 # https://w3id.org/ontocis/competences#partiallyDevelops
 <https://w3id.org/ontocis/competences#partiallyDevelops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ontocis/competences#partiallyDevelops> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/ontocis/competences#contributesTo> .
@@ -46,26 +46,23 @@
 <https://w3id.org/ontocis/competences#partiallyDevelops> <http://www.w3.org/2000/01/rdf-schema#comment> "It states that the course contributes to the development of the competency but it is not assessed."@en .
 <https://w3id.org/ontocis/competences#partiallyDevelops> <http://www.w3.org/2000/01/rdf-schema#label> "desarrolla parcialmente"@es .
 <https://w3id.org/ontocis/competences#partiallyDevelops> <http://www.w3.org/2000/01/rdf-schema#label> "partially develops"@en .
-#
-# https://w3id.org/ontocis/composition#partOf
-<https://w3id.org/ontocis/composition#partOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-#
-#
-#
+# 
+# 
+# 
 # #################################################################
 # #
 # #    Classes
 # #
 # #################################################################
-#
-#
+# 
+# 
 # https://w3id.org/ontocis/competences#Category
 <https://w3id.org/ontocis/competences#Category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ontocis/competences#Category> <http://www.w3.org/2000/01/rdf-schema#comment> "Categories under which the competences are organized"@en .
 <https://w3id.org/ontocis/competences#Category> <http://www.w3.org/2000/01/rdf-schema#comment> "Categor\u00EDas bajo las cuales se organizan las competencias"@es .
 <https://w3id.org/ontocis/competences#Category> <http://www.w3.org/2000/01/rdf-schema#label> "Category"@en .
 <https://w3id.org/ontocis/competences#Category> <http://www.w3.org/2000/01/rdf-schema#label> "Categor\u00EDa"@es .
-#
+# 
 # https://w3id.org/ontocis/competences#Competence
 <https://w3id.org/ontocis/competences#Competence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ontocis/competences#Competence> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid1 .
@@ -76,7 +73,7 @@ _:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/ontoci
 <https://w3id.org/ontocis/competences#Competence> <http://www.w3.org/2000/01/rdf-schema#comment> "Una frase que describe de manera general el conocimiento y capacidades que debe adquirir un estudiante."@es .
 <https://w3id.org/ontocis/competences#Competence> <http://www.w3.org/2000/01/rdf-schema#label> "Competencia"@es .
 <https://w3id.org/ontocis/competences#Competence> <http://www.w3.org/2000/01/rdf-schema#label> "Competency"@en .
-#
+# 
 # https://w3id.org/ontocis/competences#Learning_Outcome
 <https://w3id.org/ontocis/competences#Learning_Outcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ontocis/competences#Learning_Outcome> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid2 .
@@ -87,5 +84,5 @@ _:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/ontoci
 <https://w3id.org/ontocis/competences#Learning_Outcome> <http://www.w3.org/2000/01/rdf-schema#comment> "Una frase que describe exactamente lo que un estudiante podr\u00E1 hacer de manera mensurable/evaluable."@es .
 <https://w3id.org/ontocis/competences#Learning_Outcome> <http://www.w3.org/2000/01/rdf-schema#label> "Learning Outcome"@en .
 <https://w3id.org/ontocis/competences#Learning_Outcome> <http://www.w3.org/2000/01/rdf-schema#label> "Objetivo de Aprendizaje"@es .
-#
+# 
 # Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

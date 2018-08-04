@@ -7,12 +7,12 @@
 @base <https://w3id.org/ontocis/competences> .
 
 <https://w3id.org/ontocis/competences> rdf:type owl:Ontology ;
-                                                            owl:imports <https://w3id.org/ontocis/composition> ;
-                                                            <http://purl.org/dc/terms/#license> <https://opensource.org/licenses/MIT> ;
-                                                            rdfs:comment "Describe un conjunto de competencias, frases que describen de manera general el conocimiento y capacidades que debe adquirir un estudiante durante una asignatura o programa, y categorias bajo las cuales organizarlas."@es ,
-                                                                         "Describes a set of competences, general statementes detailing the desired knowledge and skills of student graduating from a course or program should adquire, and categories under which organize them."@en ;
-                                                            rdfs:label "OntoCIS Competences"@en ,
-                                                                       "OntoCIS Competencias"@es .
+                                        owl:imports <https://w3id.org/ontocis/composition> ;
+                                        <http://purl.org/dc/terms/#license> <https://opensource.org/licenses/MIT> ;
+                                        rdfs:comment "Describe un conjunto de competencias, frases que describen de manera general el conocimiento y capacidades que debe adquirir un estudiante durante una asignatura o programa, y categorias bajo las cuales organizarlas."@es ,
+                                                     "Describes a set of competences, general statementes detailing the desired knowledge and skills of student graduating from a course or program should adquire, and categories under which organize them."@en ;
+                                        rdfs:label "OntoCIS Competences"@en ,
+                                                   "OntoCIS Competencias"@es .
 
 #################################################################
 #    Object Properties
@@ -53,10 +53,6 @@
                                 "It states that the course contributes to the development of the competency but it is not assessed."@en ;
                    rdfs:label "desarrolla parcialmente"@es ,
                               "partially develops"@en .
-
-
-###  https://w3id.org/ontocis/composition#partOf
-<https://w3id.org/ontocis/composition#partOf> rdf:type owl:ObjectProperty .
 
 
 #################################################################

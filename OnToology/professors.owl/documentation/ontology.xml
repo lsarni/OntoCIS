@@ -3,21 +3,21 @@
      xml:base="https://w3id.org/ontocis/professors"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:terms="http://purl.org/dc/terms/#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:dcterms="http://purl.org/dc/terms/#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="https://w3id.org/ontocis/professors">
-        <dcterms:license rdf:resource="https://opensource.org/licenses/MIT"/>
+        <terms:license rdf:resource="https://opensource.org/licenses/MIT"/>
         <rdfs:comment xml:lang="es">Brinda información básica sobre los docentes de una facultad o universidad.</rdfs:comment>
         <rdfs:comment xml:lang="en">Provides basic information about the professors of an university or faculty.</rdfs:comment>
         <rdfs:label xml:lang="es">OntoCIS Docentes</rdfs:label>
         <rdfs:label xml:lang="en">OntoCIS Professors</rdfs:label>
     </owl:Ontology>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -26,7 +26,14 @@
      -->
 
 
+    
 
+
+    <!-- http://xmlns.com/foaf/0.1/member -->
+
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/member"/>
+    
 
 
     <!-- https://w3id.org/ontocis/professors#hasEducationLevel -->
@@ -41,7 +48,7 @@
         <rdfs:label xml:lang="en">has education level</rdfs:label>
         <rdfs:label xml:lang="es">tiene nivel de formación</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/ontocis/professors#hasNationality -->
@@ -56,7 +63,7 @@
         <rdfs:label xml:lang="en">has nationality</rdfs:label>
         <rdfs:label xml:lang="es">tiene nacionalidad</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/ontocis/professors#inChargeOf -->
@@ -70,17 +77,10 @@
         <rdfs:label xml:lang="es">a cargo de</rdfs:label>
         <rdfs:label xml:lang="en">in charge of</rdfs:label>
     </owl:ObjectProperty>
+    
 
 
-
-    <!-- http://xmlns.com/foaf/0.1/member -->
-
-
-    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/member"/>
-
-
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Data properties
@@ -89,7 +89,25 @@
      -->
 
 
+    
 
+
+    <!-- http://xmlns.com/foaf/0.1/familyName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/familyName">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/ontocis/professors#surname"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/givenName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/givenName">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/ontocis/professors#name"/>
+    </owl:DatatypeProperty>
+    
 
 
     <!-- https://w3id.org/ontocis/professors#isExperienced -->
@@ -105,14 +123,13 @@
         <rdfs:label xml:lang="en">is experienced</rdfs:label>
         <rdfs:label xml:lang="es">tiene experiencia</rdfs:label>
     </owl:DatatypeProperty>
-
+    
 
 
     <!-- https://w3id.org/ontocis/professors#name -->
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/ontocis/professors#name">
-        <owl:equivalentProperty rdf:resource="http://xmlns.com/foaf/0.1/givenName"/>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/ontocis/professors#Person"/>
@@ -122,14 +139,13 @@
         <rdfs:label xml:lang="en">name</rdfs:label>
         <rdfs:label xml:lang="es">nombre</rdfs:label>
     </owl:DatatypeProperty>
-
+    
 
 
     <!-- https://w3id.org/ontocis/professors#surname -->
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/ontocis/professors#surname">
-        <owl:equivalentProperty rdf:resource="http://xmlns.com/foaf/0.1/familyName"/>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/ontocis/professors#Person"/>
@@ -139,24 +155,10 @@
         <rdfs:label xml:lang="es">apellido</rdfs:label>
         <rdfs:label xml:lang="en">surname</rdfs:label>
     </owl:DatatypeProperty>
+    
 
 
-
-    <!-- http://xmlns.com/foaf/0.1/familyName -->
-
-
-    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/familyName"/>
-
-
-
-    <!-- http://xmlns.com/foaf/0.1/givenName -->
-
-
-    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/givenName"/>
-
-
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -165,7 +167,23 @@
      -->
 
 
+    
 
+
+    <!-- http://xmlns.com/foaf/0.1/Group -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Group"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <owl:equivalentClass rdf:resource="https://w3id.org/ontocis/professors#Person"/>
+    </owl:Class>
+    
 
 
     <!-- https://w3id.org/ontocis/professors#Education_Level -->
@@ -190,7 +208,7 @@
         <rdfs:label xml:lang="en">Education Level</rdfs:label>
         <rdfs:label xml:lang="es">Nivel de formación</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/ontocis/professors#Nationality -->
@@ -215,20 +233,19 @@
         <rdfs:label xml:lang="es">Nacionalidad</rdfs:label>
         <rdfs:label xml:lang="en">Nationality</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/ontocis/professors#Person -->
 
 
     <owl:Class rdf:about="https://w3id.org/ontocis/professors#Person">
-        <owl:equivalentClass rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <rdfs:comment xml:lang="en">A human being.</rdfs:comment>
         <rdfs:comment xml:lang="es">Un ser humano.</rdfs:comment>
         <rdfs:label xml:lang="en">Person</rdfs:label>
         <rdfs:label xml:lang="es">Persona</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/ontocis/professors#Professor -->
@@ -241,24 +258,10 @@
         <rdfs:label xml:lang="es">Docente</rdfs:label>
         <rdfs:label xml:lang="en">Professor</rdfs:label>
     </owl:Class>
+    
 
 
-
-    <!-- http://xmlns.com/foaf/0.1/Group -->
-
-
-    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Group"/>
-
-
-
-    <!-- http://xmlns.com/foaf/0.1/Person -->
-
-
-    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
-
-
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Individuals
@@ -267,7 +270,7 @@
      -->
 
 
-
+    
 
 
     <!-- https://w3id.org/ontocis/professors#Argentinian -->
@@ -277,7 +280,7 @@
         <rdfs:label xml:lang="es">Argentina</rdfs:label>
         <rdfs:label xml:lang="en">Argentinian</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- https://w3id.org/ontocis/professors#Brazilian -->
@@ -287,7 +290,7 @@
         <rdfs:label xml:lang="es">Brasileña</rdfs:label>
         <rdfs:label xml:lang="en">Brazilian</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- https://w3id.org/ontocis/professors#Chilean -->
@@ -297,7 +300,7 @@
         <rdfs:label xml:lang="en">Chilean</rdfs:label>
         <rdfs:label xml:lang="es">Chilena</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- https://w3id.org/ontocis/professors#Doctor -->
@@ -307,7 +310,7 @@
         <rdfs:label xml:lang="en">Doctor</rdfs:label>
         <rdfs:label xml:lang="es">Doctorado</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- https://w3id.org/ontocis/professors#Master -->
@@ -317,7 +320,7 @@
         <rdfs:label xml:lang="en">Master</rdfs:label>
         <rdfs:label xml:lang="es">Master</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- https://w3id.org/ontocis/professors#Russian -->
@@ -327,7 +330,7 @@
         <rdfs:label xml:lang="es">Rusa</rdfs:label>
         <rdfs:label xml:lang="en">Russian</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- https://w3id.org/ontocis/professors#Spanish -->
@@ -337,7 +340,7 @@
         <rdfs:label xml:lang="es">Española</rdfs:label>
         <rdfs:label xml:lang="en">Spanish</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- https://w3id.org/ontocis/professors#Specialization -->
@@ -347,7 +350,7 @@
         <rdfs:label xml:lang="es">Especialización</rdfs:label>
         <rdfs:label xml:lang="en">Specialization</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- https://w3id.org/ontocis/professors#Technical -->
@@ -357,7 +360,7 @@
         <rdfs:label xml:lang="en">Technical</rdfs:label>
         <rdfs:label xml:lang="es">Técnico</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- https://w3id.org/ontocis/professors#Tertiary -->
@@ -367,7 +370,7 @@
         <rdfs:label xml:lang="es">Terciario</rdfs:label>
         <rdfs:label xml:lang="en">Tertiary</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- https://w3id.org/ontocis/professors#University -->
@@ -377,7 +380,7 @@
         <rdfs:label xml:lang="es">Universitario</rdfs:label>
         <rdfs:label xml:lang="en">University</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- https://w3id.org/ontocis/professors#Uruguayan -->
@@ -392,3 +395,5 @@
 
 
 <!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+
+

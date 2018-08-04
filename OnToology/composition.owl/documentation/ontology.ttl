@@ -7,11 +7,11 @@
 @base <https://w3id.org/ontocis/composition> .
 
 <https://w3id.org/ontocis/composition> rdf:type owl:Ontology ;
-                                                            <http://purl.org/dc/terms/#license> <https://opensource.org/licenses/MIT> ;
-                                                            rdfs:comment "Contiene propiedades que ayudan a definir relaciones de composición (parte-todo)."@es ,
-                                                                         "It contains properties that help define simple composition relationships (part-whole)."@en ;
-                                                            rdfs:label "OntoCIS Composición"@es ,
-                                                                       "OntoCIS Composition"@en .
+                                        <http://purl.org/dc/terms/#license> <https://opensource.org/licenses/MIT> ;
+                                        rdfs:comment "Contiene propiedades que ayudan a definir relaciones de composición (parte-todo)."@es ,
+                                                     "It contains properties that help define simple composition relationships (part-whole)."@en ;
+                                        rdfs:label "OntoCIS Composición"@es ,
+                                                   "OntoCIS Composition"@en .
 
 #################################################################
 #    Object Properties

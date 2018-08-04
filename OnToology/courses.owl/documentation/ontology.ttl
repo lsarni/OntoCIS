@@ -18,16 +18,6 @@
 #    Object Properties
 #################################################################
 
-###  https://w3id.org/ontocis/composition#partOf
-<https://w3id.org/ontocis/composition#partOf> rdf:type owl:ObjectProperty ;
-                                              rdfs:subPropertyOf owl:topObjectProperty ;
-                                              rdf:type owl:TransitiveProperty ;
-                                              rdfs:comment "Indica la composición entre individuos"@es ,
-                                                           "It states part-whole relations"@en ;
-                                              rdfs:label "part of"@en ,
-                                                         "parte de"@es .
-
-
 ###  https://w3id.org/ontocis/courses#isPrerequisite
 :isPrerequisite rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf owl:topObjectProperty ;
@@ -197,7 +187,7 @@ Only if the student has obtained partial or total credit for these subjects will
              rdfs:subClassOf :Course ;
              owl:disjointWith :Elective_Course ;
              rdfs:comment "Asignatura que los estudiantes deben cursar como parte de la currícula para obtener un título."@es ,
-                          "Course that the students must attend as part of the curricula to obtain a degree."@en ;
+                          "Course that the students must attend as part of the curriculum to obtain a degree."@en ;
              rdfs:label "Asignatura Obligatoria"@es ,
                         "Core Course"@en .
 
@@ -215,12 +205,12 @@ Only if the student has obtained partial or total credit for these subjects will
                    "Course"@en .
 
 
-###  https://w3id.org/ontocis/courses#Curricula
-:Curricula rdf:type owl:Class ;
-           rdfs:comment "Conjunto de enseñanzas y prácticas que, con determinada disposición, han de cursarse para cumplir un ciclo de estudios u obtener un título."@es ,
-                        "Set of courses that need to be taken in order to obtain a certain degree."@en ;
-           rdfs:label "Curricula"@en ,
-                      "Curriculo"@es .
+###  https://w3id.org/ontocis/courses#Curriculum
+:Curriculum rdf:type owl:Class ;
+            rdfs:comment "Conjunto de enseñanzas y prácticas que, con determinada disposición, han de cursarse para cumplir un ciclo de estudios u obtener un título."@es ,
+                         "Set of courses that need to be taken in order to obtain a certain degree."@en ;
+            rdfs:label "Curriculo"@es ,
+                       "Curriculum"@en .
 
 
 ###  https://w3id.org/ontocis/courses#Elective_Course
@@ -253,7 +243,7 @@ Only if the student has obtained partial or total credit for these subjects will
                     rdfs:subClassOf :Elective_Course ;
                     rdfs:comment "Asignatura utilizada para indicar que el estudiante debe tomar una asignatura electiva a su elección."@es ,
                                  "Course used to state that the student must take a course but can choose among any elective course."@en ;
-                    rdfs:label "Asignatura Placeholder"@es ,
+                    rdfs:label "Asignatura Nominal"@es ,
                                "Placeholder Course"@en .
 
 
@@ -261,7 +251,7 @@ Only if the student has obtained partial or total credit for these subjects will
 :Term rdf:type owl:Class ;
       rdfs:comment "A portion of an academic year, the time during which an educational institution holds classes."@en ,
                    "Parte de un año académico, el tiempo durante el cual una institución educativa imparte clases a los estudiantes que cursan una o mas asignaturas."@es ;
-      rdfs:label "Periodo"@es ,
+      rdfs:label "Período Académico"@es ,
                  "Term"@en .
 
 

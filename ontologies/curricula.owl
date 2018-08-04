@@ -26,7 +26,7 @@
         <rdfs:label xml:lang="es">OntoCIS</rdfs:label>
         <rdfs:label xml:lang="en">OntoCIS</rdfs:label>
         <rdfs:comment xml:lang="es">Una ontología que describe el currículo de la carrera Ingeniería en Sistemas en la Universidad ORT Uruguay.</rdfs:comment>
-        <rdfs:comment xml:lang="en">An ontology that describes the curricula of the degree in Software Engineering at Universidad ORT Uruguay.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An ontology that describes the curriculum of the degree in Software Engineering at Universidad ORT Uruguay.</rdfs:comment>
     </owl:Ontology>
 
 

@@ -4,15 +4,18 @@
 <https://w3id.org/ontocis/professors> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides basic information about the professors of an university or faculty."@en .
 <https://w3id.org/ontocis/professors> <http://www.w3.org/2000/01/rdf-schema#label> "OntoCIS Docentes"@es .
 <https://w3id.org/ontocis/professors> <http://www.w3.org/2000/01/rdf-schema#label> "OntoCIS Professors"@en .
-#
-#
+# 
+# 
 # #################################################################
 # #
 # #    Object Properties
 # #
 # #################################################################
-#
-#
+# 
+# 
+# http://xmlns.com/foaf/0.1/member
+<http://xmlns.com/foaf/0.1/member> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
 # https://w3id.org/ontocis/professors#hasEducationLevel
 <https://w3id.org/ontocis/professors#hasEducationLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ontocis/professors#hasEducationLevel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://xmlns.com/foaf/0.1/member> .
@@ -22,7 +25,7 @@
 <https://w3id.org/ontocis/professors#hasEducationLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "It states the highest degree aquired by a person."@en .
 <https://w3id.org/ontocis/professors#hasEducationLevel> <http://www.w3.org/2000/01/rdf-schema#label> "has education level"@en .
 <https://w3id.org/ontocis/professors#hasEducationLevel> <http://www.w3.org/2000/01/rdf-schema#label> "tiene nivel de formaci\u00F3n"@es .
-#
+# 
 # https://w3id.org/ontocis/professors#hasNationality
 <https://w3id.org/ontocis/professors#hasNationality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ontocis/professors#hasNationality> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://xmlns.com/foaf/0.1/member> .
@@ -32,7 +35,7 @@
 <https://w3id.org/ontocis/professors#hasNationality> <http://www.w3.org/2000/01/rdf-schema#comment> "It states the nationality of a person."@en .
 <https://w3id.org/ontocis/professors#hasNationality> <http://www.w3.org/2000/01/rdf-schema#label> "has nationality"@en .
 <https://w3id.org/ontocis/professors#hasNationality> <http://www.w3.org/2000/01/rdf-schema#label> "tiene nacionalidad"@es .
-#
+# 
 # https://w3id.org/ontocis/professors#inChargeOf
 <https://w3id.org/ontocis/professors#inChargeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ontocis/professors#inChargeOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
@@ -41,19 +44,24 @@
 <https://w3id.org/ontocis/professors#inChargeOf> <http://www.w3.org/2000/01/rdf-schema#comment> "It states that a person is in charge of something."@en .
 <https://w3id.org/ontocis/professors#inChargeOf> <http://www.w3.org/2000/01/rdf-schema#label> "a cargo de"@es .
 <https://w3id.org/ontocis/professors#inChargeOf> <http://www.w3.org/2000/01/rdf-schema#label> "in charge of"@en .
-#
-# http://xmlns.com/foaf/0.1/member
-<http://xmlns.com/foaf/0.1/member> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-#
-#
-#
+# 
+# 
+# 
 # #################################################################
 # #
 # #    Data properties
 # #
 # #################################################################
-#
-#
+# 
+# 
+# http://xmlns.com/foaf/0.1/familyName
+<http://xmlns.com/foaf/0.1/familyName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://xmlns.com/foaf/0.1/familyName> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/ontocis/professors#surname> .
+# 
+# http://xmlns.com/foaf/0.1/givenName
+<http://xmlns.com/foaf/0.1/givenName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://xmlns.com/foaf/0.1/givenName> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/ontocis/professors#name> .
+# 
 # https://w3id.org/ontocis/professors#isExperienced
 <https://w3id.org/ontocis/professors#isExperienced> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/ontocis/professors#isExperienced> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
@@ -64,10 +72,9 @@
 <https://w3id.org/ontocis/professors#isExperienced> <http://www.w3.org/2000/01/rdf-schema#comment> "Tiene m\u00E1s de 5 a\u00F1os de experience dictando clases o investigando."@es .
 <https://w3id.org/ontocis/professors#isExperienced> <http://www.w3.org/2000/01/rdf-schema#label> "is experienced"@en .
 <https://w3id.org/ontocis/professors#isExperienced> <http://www.w3.org/2000/01/rdf-schema#label> "tiene experiencia"@es .
-#
+# 
 # https://w3id.org/ontocis/professors#name
 <https://w3id.org/ontocis/professors#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/ontocis/professors#name> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://xmlns.com/foaf/0.1/givenName> .
 <https://w3id.org/ontocis/professors#name> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 <https://w3id.org/ontocis/professors#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <https://w3id.org/ontocis/professors#name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ontocis/professors#Person> .
@@ -76,10 +83,9 @@
 <https://w3id.org/ontocis/professors#name> <http://www.w3.org/2000/01/rdf-schema#comment> "The given name of some person"@en .
 <https://w3id.org/ontocis/professors#name> <http://www.w3.org/2000/01/rdf-schema#label> "name"@en .
 <https://w3id.org/ontocis/professors#name> <http://www.w3.org/2000/01/rdf-schema#label> "nombre"@es .
-#
+# 
 # https://w3id.org/ontocis/professors#surname
 <https://w3id.org/ontocis/professors#surname> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/ontocis/professors#surname> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://xmlns.com/foaf/0.1/familyName> .
 <https://w3id.org/ontocis/professors#surname> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 <https://w3id.org/ontocis/professors#surname> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <https://w3id.org/ontocis/professors#surname> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ontocis/professors#Person> .
@@ -88,22 +94,23 @@
 <https://w3id.org/ontocis/professors#surname> <http://www.w3.org/2000/01/rdf-schema#comment> "The family name of some person"@en .
 <https://w3id.org/ontocis/professors#surname> <http://www.w3.org/2000/01/rdf-schema#label> "apellido"@es .
 <https://w3id.org/ontocis/professors#surname> <http://www.w3.org/2000/01/rdf-schema#label> "surname"@en .
-#
-# http://xmlns.com/foaf/0.1/familyName
-<http://xmlns.com/foaf/0.1/familyName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-#
-# http://xmlns.com/foaf/0.1/givenName
-<http://xmlns.com/foaf/0.1/givenName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-#
-#
-#
+# 
+# 
+# 
 # #################################################################
 # #
 # #    Classes
 # #
 # #################################################################
-#
-#
+# 
+# 
+# http://xmlns.com/foaf/0.1/Group
+<http://xmlns.com/foaf/0.1/Group> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/ontocis/professors#Person> .
+# 
 # https://w3id.org/ontocis/professors#Education_Level
 <https://w3id.org/ontocis/professors#Education_Level> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ontocis/professors#Education_Level> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid1 .
@@ -132,7 +139,7 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/ontocis/professors#Education_Level> <http://www.w3.org/2000/01/rdf-schema#comment> "T\u00EDtulos que pueden ser obtenidos por una persona."@es .
 <https://w3id.org/ontocis/professors#Education_Level> <http://www.w3.org/2000/01/rdf-schema#label> "Education Level"@en .
 <https://w3id.org/ontocis/professors#Education_Level> <http://www.w3.org/2000/01/rdf-schema#label> "Nivel de formaci\u00F3n"@es .
-#
+# 
 # https://w3id.org/ontocis/professors#Nationality
 <https://w3id.org/ontocis/professors#Nationality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ontocis/professors#Nationality> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid8 .
@@ -161,15 +168,14 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/ontocis/professors#Nationality> <http://www.w3.org/2000/01/rdf-schema#comment> "The status of belonging to a particular nation."@en .
 <https://w3id.org/ontocis/professors#Nationality> <http://www.w3.org/2000/01/rdf-schema#label> "Nacionalidad"@es .
 <https://w3id.org/ontocis/professors#Nationality> <http://www.w3.org/2000/01/rdf-schema#label> "Nationality"@en .
-#
+# 
 # https://w3id.org/ontocis/professors#Person
 <https://w3id.org/ontocis/professors#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/ontocis/professors#Person> <http://www.w3.org/2002/07/owl#equivalentClass> <http://xmlns.com/foaf/0.1/Person> .
 <https://w3id.org/ontocis/professors#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "A human being."@en .
 <https://w3id.org/ontocis/professors#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "Un ser humano."@es .
 <https://w3id.org/ontocis/professors#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
 <https://w3id.org/ontocis/professors#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Persona"@es .
-#
+# 
 # https://w3id.org/ontocis/professors#Professor
 <https://w3id.org/ontocis/professors#Professor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ontocis/professors#Professor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ontocis/professors#Person> .
@@ -177,80 +183,74 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/ontocis/professors#Professor> <http://www.w3.org/2000/01/rdf-schema#comment> "Persona que dicta o est\u00E1 a cargo de una asignatura."@es .
 <https://w3id.org/ontocis/professors#Professor> <http://www.w3.org/2000/01/rdf-schema#label> "Docente"@es .
 <https://w3id.org/ontocis/professors#Professor> <http://www.w3.org/2000/01/rdf-schema#label> "Professor"@en .
-#
-# http://xmlns.com/foaf/0.1/Group
-<http://xmlns.com/foaf/0.1/Group> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-#
-# http://xmlns.com/foaf/0.1/Person
-<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-#
-#
-#
+# 
+# 
+# 
 # #################################################################
 # #
 # #    Individuals
 # #
 # #################################################################
-#
-#
+# 
+# 
 # https://w3id.org/ontocis/professors#Argentinian
 <https://w3id.org/ontocis/professors#Argentinian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ontocis/professors#Argentinian> <http://www.w3.org/2000/01/rdf-schema#label> "Argentina"@es .
 <https://w3id.org/ontocis/professors#Argentinian> <http://www.w3.org/2000/01/rdf-schema#label> "Argentinian"@en .
-#
+# 
 # https://w3id.org/ontocis/professors#Brazilian
 <https://w3id.org/ontocis/professors#Brazilian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ontocis/professors#Brazilian> <http://www.w3.org/2000/01/rdf-schema#label> "Brasile\u00F1a"@es .
 <https://w3id.org/ontocis/professors#Brazilian> <http://www.w3.org/2000/01/rdf-schema#label> "Brazilian"@en .
-#
+# 
 # https://w3id.org/ontocis/professors#Chilean
 <https://w3id.org/ontocis/professors#Chilean> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ontocis/professors#Chilean> <http://www.w3.org/2000/01/rdf-schema#label> "Chilean"@en .
 <https://w3id.org/ontocis/professors#Chilean> <http://www.w3.org/2000/01/rdf-schema#label> "Chilena"@es .
-#
+# 
 # https://w3id.org/ontocis/professors#Doctor
 <https://w3id.org/ontocis/professors#Doctor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ontocis/professors#Doctor> <http://www.w3.org/2000/01/rdf-schema#label> "Doctor"@en .
 <https://w3id.org/ontocis/professors#Doctor> <http://www.w3.org/2000/01/rdf-schema#label> "Doctorado"@es .
-#
+# 
 # https://w3id.org/ontocis/professors#Master
 <https://w3id.org/ontocis/professors#Master> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ontocis/professors#Master> <http://www.w3.org/2000/01/rdf-schema#label> "Master"@en .
 <https://w3id.org/ontocis/professors#Master> <http://www.w3.org/2000/01/rdf-schema#label> "Master"@es .
-#
+# 
 # https://w3id.org/ontocis/professors#Russian
 <https://w3id.org/ontocis/professors#Russian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ontocis/professors#Russian> <http://www.w3.org/2000/01/rdf-schema#label> "Rusa"@es .
 <https://w3id.org/ontocis/professors#Russian> <http://www.w3.org/2000/01/rdf-schema#label> "Russian"@en .
-#
+# 
 # https://w3id.org/ontocis/professors#Spanish
 <https://w3id.org/ontocis/professors#Spanish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ontocis/professors#Spanish> <http://www.w3.org/2000/01/rdf-schema#label> "Espa\u00F1ola"@es .
 <https://w3id.org/ontocis/professors#Spanish> <http://www.w3.org/2000/01/rdf-schema#label> "Spanish"@en .
-#
+# 
 # https://w3id.org/ontocis/professors#Specialization
 <https://w3id.org/ontocis/professors#Specialization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ontocis/professors#Specialization> <http://www.w3.org/2000/01/rdf-schema#label> "Especializaci\u00F3n"@es .
 <https://w3id.org/ontocis/professors#Specialization> <http://www.w3.org/2000/01/rdf-schema#label> "Specialization"@en .
-#
+# 
 # https://w3id.org/ontocis/professors#Technical
 <https://w3id.org/ontocis/professors#Technical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ontocis/professors#Technical> <http://www.w3.org/2000/01/rdf-schema#label> "Technical"@en .
 <https://w3id.org/ontocis/professors#Technical> <http://www.w3.org/2000/01/rdf-schema#label> "T\u00E9cnico"@es .
-#
+# 
 # https://w3id.org/ontocis/professors#Tertiary
 <https://w3id.org/ontocis/professors#Tertiary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ontocis/professors#Tertiary> <http://www.w3.org/2000/01/rdf-schema#label> "Terciario"@es .
 <https://w3id.org/ontocis/professors#Tertiary> <http://www.w3.org/2000/01/rdf-schema#label> "Tertiary"@en .
-#
+# 
 # https://w3id.org/ontocis/professors#University
 <https://w3id.org/ontocis/professors#University> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ontocis/professors#University> <http://www.w3.org/2000/01/rdf-schema#label> "Universitario"@es .
 <https://w3id.org/ontocis/professors#University> <http://www.w3.org/2000/01/rdf-schema#label> "University"@en .
-#
+# 
 # https://w3id.org/ontocis/professors#Uruguayan
 <https://w3id.org/ontocis/professors#Uruguayan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/ontocis/professors#Uruguayan> <http://www.w3.org/2000/01/rdf-schema#label> "Uruguaya"@es .
 <https://w3id.org/ontocis/professors#Uruguayan> <http://www.w3.org/2000/01/rdf-schema#label> "Uruguayan"@en .
-#
+# 
 # Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

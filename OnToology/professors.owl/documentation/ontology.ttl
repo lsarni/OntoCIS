@@ -7,15 +7,19 @@
 @base <https://w3id.org/ontocis/professors> .
 
 <https://w3id.org/ontocis/professors> rdf:type owl:Ontology ;
-                                                           <http://purl.org/dc/terms/#license> <https://opensource.org/licenses/MIT> ;
-                                                           rdfs:comment "Brinda información básica sobre los docentes de una facultad o universidad."@es ,
-                                                                        "Provides basic information about the professors of an university or faculty."@en ;
-                                                           rdfs:label "OntoCIS Docentes"@es ,
-                                                                      "OntoCIS Professors"@en .
+                                       <http://purl.org/dc/terms/#license> <https://opensource.org/licenses/MIT> ;
+                                       rdfs:comment "Brinda información básica sobre los docentes de una facultad o universidad."@es ,
+                                                    "Provides basic information about the professors of an university or faculty."@en ;
+                                       rdfs:label "OntoCIS Docentes"@es ,
+                                                  "OntoCIS Professors"@en .
 
 #################################################################
 #    Object Properties
 #################################################################
+
+###  http://xmlns.com/foaf/0.1/member
+<http://xmlns.com/foaf/0.1/member> rdf:type owl:ObjectProperty .
+
 
 ###  https://w3id.org/ontocis/professors#hasEducationLevel
 :hasEducationLevel rdf:type owl:ObjectProperty ;
@@ -49,13 +53,19 @@
                        "in charge of"@en .
 
 
-###  http://xmlns.com/foaf/0.1/member
-<http://xmlns.com/foaf/0.1/member> rdf:type owl:ObjectProperty .
-
-
 #################################################################
 #    Data properties
 #################################################################
+
+###  http://xmlns.com/foaf/0.1/familyName
+<http://xmlns.com/foaf/0.1/familyName> rdf:type owl:DatatypeProperty ;
+                                       owl:equivalentProperty :surname .
+
+
+###  http://xmlns.com/foaf/0.1/givenName
+<http://xmlns.com/foaf/0.1/givenName> rdf:type owl:DatatypeProperty ;
+                                      owl:equivalentProperty :name .
+
 
 ###  https://w3id.org/ontocis/professors#isExperienced
 :isExperienced rdf:type owl:DatatypeProperty ;
@@ -71,7 +81,6 @@
 
 ###  https://w3id.org/ontocis/professors#name
 :name rdf:type owl:DatatypeProperty ;
-      owl:equivalentProperty <http://xmlns.com/foaf/0.1/givenName> ;
       rdfs:subPropertyOf owl:topDataProperty ;
       rdf:type owl:FunctionalProperty ;
       rdfs:domain :Person ;
@@ -84,7 +93,6 @@
 
 ###  https://w3id.org/ontocis/professors#surname
 :surname rdf:type owl:DatatypeProperty ;
-         owl:equivalentProperty <http://xmlns.com/foaf/0.1/familyName> ;
          rdfs:subPropertyOf owl:topDataProperty ;
          rdf:type owl:FunctionalProperty ;
          rdfs:domain :Person ;
@@ -95,17 +103,18 @@
                     "surname"@en .
 
 
-###  http://xmlns.com/foaf/0.1/familyName
-<http://xmlns.com/foaf/0.1/familyName> rdf:type owl:DatatypeProperty .
-
-
-###  http://xmlns.com/foaf/0.1/givenName
-<http://xmlns.com/foaf/0.1/givenName> rdf:type owl:DatatypeProperty .
-
-
 #################################################################
 #    Classes
 #################################################################
+
+###  http://xmlns.com/foaf/0.1/Group
+<http://xmlns.com/foaf/0.1/Group> rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class ;
+                                   owl:equivalentClass :Person .
+
 
 ###  https://w3id.org/ontocis/professors#Education_Level
 :Education_Level rdf:type owl:Class ;
@@ -145,7 +154,6 @@
 
 ###  https://w3id.org/ontocis/professors#Person
 :Person rdf:type owl:Class ;
-        owl:equivalentClass <http://xmlns.com/foaf/0.1/Person> ;
         rdfs:comment "A human being."@en ,
                      "Un ser humano."@es ;
         rdfs:label "Person"@en ,
@@ -159,14 +167,6 @@
                         "Persona que dicta o está a cargo de una asignatura."@es ;
            rdfs:label "Docente"@es ,
                       "Professor"@en .
-
-
-###  http://xmlns.com/foaf/0.1/Group
-<http://xmlns.com/foaf/0.1/Group> rdf:type owl:Class .
-
-
-###  http://xmlns.com/foaf/0.1/Person
-<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class .
 
 
 #################################################################

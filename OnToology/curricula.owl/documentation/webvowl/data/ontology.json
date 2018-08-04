@@ -2,14 +2,14 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.4), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "en", "es" ],
-    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "https://w3id.org/ontocis/competences", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/ontocis/professors", "https://w3id.org/ontocis/curricula", "https://w3id.org/ontocis/composition", "https://w3id.org/ontocis/topics", "http://xmlns.com/foaf/0.1", "https://w3id.org/ontocis/degrees", "http://www.w3.org/2004/02/skos/core" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "https://w3id.org/ontocis/competences", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/ontocis/professors", "https://w3id.org/ontocis/curricula", "https://w3id.org/ontocis/courses", "https://w3id.org/ontocis/composition", "https://w3id.org/ontocis/topics", "http://xmlns.com/foaf/0.1", "https://w3id.org/ontocis/degrees", "http://www.w3.org/2004/02/skos/core" ],
     "iri" : "https://w3id.org/ontocis/curricula",
     "labels" : {
       "en" : "OntoCIS",
       "es" : "OntoCIS"
     },
     "comments" : {
-      "en" : "An ontology that describes the curricula of the degree in Software Engineering at Universidad ORT Uruguay.",
+      "en" : "An ontology that describes the curriculum of the degree in Software Engineering at Universidad ORT Uruguay.",
       "es" : "Una ontología que describe el currículo de la carrera Ingeniería en Sistemas en la Universidad ORT Uruguay."
     }
   },
@@ -124,8 +124,8 @@
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
-    "iri" : "https://w3id.org/ontocis/curricula#Knowledge_Group",
-    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "iri" : "https://w3id.org/ontocis/courses#Knowledge_Group",
+    "baseIri" : "https://w3id.org/ontocis/courses",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Knowledge_Group",
@@ -147,8 +147,8 @@
     "attributes" : [ "external", "equivalent" ],
     "id" : "8"
   }, {
-    "iri" : "https://w3id.org/ontocis/curricula#Elective_Course",
-    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "iri" : "https://w3id.org/ontocis/courses#Elective_Course",
+    "baseIri" : "https://w3id.org/ontocis/courses",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Elective_Course",
@@ -163,13 +163,13 @@
     "id" : "16",
     "superClasses" : [ "1" ]
   }, {
-    "iri" : "https://w3id.org/ontocis/curricula#Term",
-    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "iri" : "https://w3id.org/ontocis/courses#Term",
+    "baseIri" : "https://w3id.org/ontocis/courses",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Term",
       "en" : "Term",
-      "es" : "Periodo"
+      "es" : "Período Académico"
     },
     "comment" : {
       "en" : "A portion of an academic year, the time during which an educational institution holds classes.",
@@ -184,8 +184,8 @@
       "undefined" : "Literal"
     }
   }, {
-    "iri" : "https://w3id.org/ontocis/curricula#Knowledge_Area",
-    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "iri" : "https://w3id.org/ontocis/courses#Knowledge_Area",
+    "baseIri" : "https://w3id.org/ontocis/courses",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Knowledge_Area",
@@ -278,8 +278,8 @@
     "id" : "14",
     "superClasses" : [ "35" ]
   }, {
-    "iri" : "https://w3id.org/ontocis/curricula#Course",
-    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "iri" : "https://w3id.org/ontocis/courses#Course",
+    "baseIri" : "https://w3id.org/ontocis/courses",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Course",
@@ -311,13 +311,13 @@
     "attributes" : [ "external", "equivalent" ],
     "id" : "9"
   }, {
-    "iri" : "https://w3id.org/ontocis/curricula#Placeholder_Course",
-    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "iri" : "https://w3id.org/ontocis/courses#Placeholder_Course",
+    "baseIri" : "https://w3id.org/ontocis/courses",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Placeholder_Course",
       "en" : "Placeholder Course",
-      "es" : "Asignatura Placeholder"
+      "es" : "Asignatura Nominal"
     },
     "comment" : {
       "en" : "Course used to state that the student must take a course but can choose among any elective course.",
@@ -399,8 +399,8 @@
       "undefined" : "Thing"
     }
   }, {
-    "iri" : "https://w3id.org/ontocis/curricula#Core_Course",
-    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "iri" : "https://w3id.org/ontocis/courses#Core_Course",
+    "baseIri" : "https://w3id.org/ontocis/courses",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Core_Course",
@@ -408,7 +408,7 @@
       "es" : "Asignatura Obligatoria"
     },
     "comment" : {
-      "en" : "Course that the students must attend as part of the curricula to obtain a degree.",
+      "en" : "Course that the students must attend as part of the curriculum to obtain a degree.",
       "es" : "Asignatura que los estudiantes deben cursar como parte de la currícula para obtener un título."
     },
     "id" : "45",
@@ -501,8 +501,8 @@
     "attributes" : [ "external" ],
     "id" : "2"
   }, {
-    "iri" : "https://w3id.org/ontocis/curricula#Year",
-    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "iri" : "https://w3id.org/ontocis/courses#Year",
+    "baseIri" : "https://w3id.org/ontocis/courses",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Year",
@@ -612,12 +612,12 @@
     "attributes" : [ "external" ],
     "id" : "35"
   }, {
-    "iri" : "https://w3id.org/ontocis/curricula#Curricula",
-    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "iri" : "https://w3id.org/ontocis/courses#Curriculum",
+    "baseIri" : "https://w3id.org/ontocis/courses",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Curricula",
-      "en" : "Curricula",
+      "IRI-based" : "Curriculum",
+      "en" : "Curriculum",
       "es" : "Curriculo"
     },
     "comment" : {
@@ -804,8 +804,8 @@
     "attributes" : [ "object", "external", "symmetric" ],
     "id" : "5"
   }, {
-    "iri" : "https://w3id.org/ontocis/curricula#totalCreditIsPrerequisiteToEnroll",
-    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "iri" : "https://w3id.org/ontocis/courses#totalCreditIsPrerequisiteToEnroll",
+    "baseIri" : "https://w3id.org/ontocis/courses",
     "range" : "1",
     "label" : {
       "IRI-based" : "totalCreditIsPrerequisiteToEnroll",
@@ -838,8 +838,8 @@
     "attributes" : [ "object", "external" ],
     "id" : "12"
   }, {
-    "iri" : "https://w3id.org/ontocis/curricula#minimumCreditsRequired",
-    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "iri" : "https://w3id.org/ontocis/courses#minimumCreditsRequired",
+    "baseIri" : "https://w3id.org/ontocis/courses",
     "range" : "19",
     "label" : {
       "IRI-based" : "minimumCreditsRequired",
@@ -886,8 +886,8 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "34"
   }, {
-    "iri" : "https://w3id.org/ontocis/curricula#isPrerequisiteToEnroll",
-    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "iri" : "https://w3id.org/ontocis/courses#isPrerequisiteToEnroll",
+    "baseIri" : "https://w3id.org/ontocis/courses",
     "range" : "1",
     "label" : {
       "IRI-based" : "isPrerequisiteToEnroll",
@@ -958,8 +958,8 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "46"
   }, {
-    "iri" : "https://w3id.org/ontocis/curricula#credits",
-    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "iri" : "https://w3id.org/ontocis/courses#credits",
+    "baseIri" : "https://w3id.org/ontocis/courses",
     "range" : "50",
     "label" : {
       "IRI-based" : "credits",
@@ -974,8 +974,8 @@
     "attributes" : [ "datatype", "functional" ],
     "id" : "49"
   }, {
-    "iri" : "https://w3id.org/ontocis/curricula#totalCreditIsPrerequisiteToPass",
-    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "iri" : "https://w3id.org/ontocis/courses#totalCreditIsPrerequisiteToPass",
+    "baseIri" : "https://w3id.org/ontocis/courses",
     "range" : "1",
     "label" : {
       "IRI-based" : "totalCreditIsPrerequisiteToPass",
@@ -1188,8 +1188,8 @@
     "attributes" : [ "external", "datatype" ],
     "id" : "41"
   }, {
-    "iri" : "https://w3id.org/ontocis/curricula#hours",
-    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "iri" : "https://w3id.org/ontocis/courses#hours",
+    "baseIri" : "https://w3id.org/ontocis/courses",
     "range" : "62",
     "label" : {
       "IRI-based" : "hours",
@@ -1203,8 +1203,8 @@
     "attributes" : [ "datatype", "functional" ],
     "id" : "74"
   }, {
-    "iri" : "https://w3id.org/ontocis/curricula#totalCreditScore",
-    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "iri" : "https://w3id.org/ontocis/courses#totalCreditScore",
+    "baseIri" : "https://w3id.org/ontocis/courses",
     "range" : "61",
     "label" : {
       "IRI-based" : "totalCreditScore",
@@ -1235,8 +1235,8 @@
     "attributes" : [ "object", "someValues", "transitive", "external" ],
     "id" : "76"
   }, {
-    "iri" : "https://w3id.org/ontocis/curricula#isPrerequisite",
-    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "iri" : "https://w3id.org/ontocis/courses#isPrerequisite",
+    "baseIri" : "https://w3id.org/ontocis/courses",
     "range" : "1",
     "label" : {
       "IRI-based" : "isPrerequisite",
@@ -1279,8 +1279,8 @@
     "attributes" : [ "object", "external" ],
     "id" : "15"
   }, {
-    "iri" : "https://w3id.org/ontocis/curricula#isPrerequisiteToPass",
-    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "iri" : "https://w3id.org/ontocis/courses#isPrerequisiteToPass",
+    "baseIri" : "https://w3id.org/ontocis/courses",
     "range" : "1",
     "label" : {
       "IRI-based" : "isPrerequisiteToPass",
@@ -1297,8 +1297,8 @@
     "attributes" : [ "object" ],
     "id" : "53"
   }, {
-    "iri" : "https://w3id.org/ontocis/curricula#partialCreditIsPrerequisiteToEnroll",
-    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "iri" : "https://w3id.org/ontocis/courses#partialCreditIsPrerequisiteToEnroll",
+    "baseIri" : "https://w3id.org/ontocis/courses",
     "range" : "1",
     "label" : {
       "IRI-based" : "partialCreditIsPrerequisiteToEnroll",
@@ -1364,8 +1364,8 @@
     "attributes" : [ "object", "external" ],
     "id" : "22"
   }, {
-    "iri" : "https://w3id.org/ontocis/curricula#partialCreditScore",
-    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "iri" : "https://w3id.org/ontocis/courses#partialCreditScore",
+    "baseIri" : "https://w3id.org/ontocis/courses",
     "range" : "43",
     "label" : {
       "IRI-based" : "partialCreditScore",
@@ -1380,8 +1380,8 @@
     "attributes" : [ "datatype", "functional" ],
     "id" : "82"
   }, {
-    "iri" : "https://w3id.org/ontocis/curricula#partialCreditIsPrerequisiteToPass",
-    "baseIri" : "https://w3id.org/ontocis/curricula",
+    "iri" : "https://w3id.org/ontocis/courses#partialCreditIsPrerequisiteToPass",
+    "baseIri" : "https://w3id.org/ontocis/courses",
     "range" : "1",
     "label" : {
       "IRI-based" : "partialCreditIsPrerequisiteToPass",

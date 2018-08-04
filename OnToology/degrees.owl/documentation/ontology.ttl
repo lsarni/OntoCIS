@@ -7,11 +7,11 @@
 @base <https://w3id.org/ontocis/degrees> .
 
 <https://w3id.org/ontocis/degrees> rdf:type owl:Ontology ;
-                                                        <http://purl.org/dc/terms/#license> <https://opensource.org/licenses/MIT> ;
-                                                        rdfs:comment "Brinda información sobre los títulos que pueden obtenerse al cursar una carrera de una facultad o universidad."@es ,
-                                                                     "Provides information about the degrees that can be awarded after completing a curricula at an university or faculty."@en ;
-                                                        rdfs:label "OntoCIS Degrees"@en ,
-                                                                   "OntoCIS Títulos"@es .
+                                    <http://purl.org/dc/terms/#license> <https://opensource.org/licenses/MIT> ;
+                                    rdfs:comment "Brinda información sobre los títulos que pueden obtenerse al cursar una carrera de una facultad o universidad."@es ,
+                                                 "Provides information about the degrees that can be awarded after completing a curricula at an university or faculty."@en ;
+                                    rdfs:label "OntoCIS Degrees"@en ,
+                                               "OntoCIS Títulos"@es .
 
 #################################################################
 #    Object Properties

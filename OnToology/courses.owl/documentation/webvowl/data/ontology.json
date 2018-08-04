@@ -112,7 +112,7 @@
     "label" : {
       "IRI-based" : "Term",
       "en" : "Term",
-      "es" : "Periodo"
+      "es" : "Período Académico"
     },
     "comment" : {
       "en" : "A portion of an academic year, the time during which an educational institution holds classes.",
@@ -164,7 +164,7 @@
     "label" : {
       "IRI-based" : "Placeholder_Course",
       "en" : "Placeholder Course",
-      "es" : "Asignatura Placeholder"
+      "es" : "Asignatura Nominal"
     },
     "comment" : {
       "en" : "Course used to state that the student must take a course but can choose among any elective course.",
@@ -238,7 +238,7 @@
       "es" : "Asignatura Obligatoria"
     },
     "comment" : {
-      "en" : "Course that the students must attend as part of the curricula to obtain a degree.",
+      "en" : "Course that the students must attend as part of the curriculum to obtain a degree.",
       "es" : "Asignatura que los estudiantes deben cursar como parte de la currícula para obtener un título."
     },
     "id" : "45",
@@ -258,12 +258,12 @@
     },
     "id" : "64"
   }, {
-    "iri" : "https://w3id.org/ontocis/courses#Curricula",
+    "iri" : "https://w3id.org/ontocis/courses#Curriculum",
     "baseIri" : "https://w3id.org/ontocis/courses",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Curricula",
-      "en" : "Curricula",
+      "IRI-based" : "Curriculum",
+      "en" : "Curriculum",
       "es" : "Curriculo"
     },
     "comment" : {
